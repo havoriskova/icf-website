@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import styles from './navbar.module.css';
 
 
 export default function Navbar() {
@@ -11,7 +12,7 @@ export default function Navbar() {
                 <li><Link href='/'><Image alt='logo' src='/icf_logo.ico.png'
                 width={70} height={55}/></Link></li>
 
-                <li><Link href='/get-involved'>Get involved</Link></li>
+                <li className={styles.navbarTest}><Link href='/get-involved'>Get involved</Link></li>
                 <li><Link href='/about'>About</Link>
                     <ul>
                         <li><Link href='/about/team'>Team</Link></li>
