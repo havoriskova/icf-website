@@ -14,7 +14,7 @@ export default function Home() {
       
 
           <h1 className={styles.title}>
-            Setup for ICF website
+            Homepage
           </h1>
 
           <p> Testing of CSS files: <br />
@@ -22,7 +22,7 @@ export default function Home() {
             <span className={styles.homeTest}> home module</span>, 
             <span className={utilStyles.utilsTest}> utils</span>, 
             <span> layout - is functioning in the layout.js</span>, 
-            <span> bootstrap</span>
+            <span className='text-success'> bootstrap</span>
           </p>
 
 
@@ -31,10 +31,10 @@ export default function Home() {
           and an actual width would be always set in the parent page component 
           - that means this HeroSection bellow will have its width set in Home.module.css  */}
 
-          <div><HeroSection /></div> 
-          <div><Mission /></div>
-          <div><MeetTheTeam /></div>
-          <div><Partnerships /></div>
+          <div className={styles.article}><HeroSection /></div> 
+          <div className={styles.article}><Mission /></div>
+          <div className={styles.article}><MeetTheTeam /></div>
+          <div className={styles.article}><Partnerships /></div>
 
 
         

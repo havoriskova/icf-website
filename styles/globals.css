@@ -13,6 +13,8 @@ a {
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 img {
@@ -20,15 +22,8 @@ img {
   height: auto;
 }
 
-h1,
-h2,
-p,
-ul {
-  margin: 0;
-}
 
 ul {
-  padding: 0;
   list-style: none;
 }
 
