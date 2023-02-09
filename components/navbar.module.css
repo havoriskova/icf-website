@@ -2,3 +2,7 @@
 .navbarTest {
     color: blue;
 }
+
+.active {
+    text-decoration: underline;
+}
