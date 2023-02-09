@@ -1,77 +1,44 @@
-import Head from 'next/head';
+
 import styles from '../styles/Home.module.css';
+import Partnerships from '../components/Partnerships';
+import Mission from '../components/Mission';
+import MeetTheTeam from '../components/MeetTheTeam';
+import HeroSection from '../components/HeroSection';
+import Layout from '../components/layout';
+import utilStyles from '../styles/utils.module.css';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Setup for ICF website</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <Layout home pageTitle='ICF Upemba Home'>
+      <div className={styles.container}>
+      
 
-      <main>
-        <h1 className={styles.title}>
-          Setup for ICF website
-        </h1>
+          <h1 className={styles.title}>
+            Setup for ICF website
+          </h1>
 
-   
+          <p> Testing of CSS files: <br />
+            <span className='globalsTest'> global</span>, 
+            <span className={styles.homeTest}> home module</span>, 
+            <span className={utilStyles.utilsTest}> utils</span>, 
+            <span> layout - is functioning in the layout.js</span>, 
+            <span> bootstrap</span>
+          </p>
 
-      </main>
 
-      <footer>
-     
-      </footer>
+          {/* since the components bellow as HeroSection, Mission, MeetTheTeam,... are on multiple pages and their width can differentiate,
+          their width will be 100%,
+          and an actual width would be always set in the parent page component 
+          - that means this HeroSection bellow will have its width set in Home.module.css  */}
 
-      <style jsx>{`
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        footer img {
-          margin-left: 0.5rem;
-        }
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          text-decoration: none;
-          color: inherit;
-        }
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-        }
-      `}</style>
+          <div><HeroSection /></div> 
+          <div><Mission /></div>
+          <div><MeetTheTeam /></div>
+          <div><Partnerships /></div>
 
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-        }
-        * {
-          box-sizing: border-box;
-        }
-      `}</style>
-    </div>
+
+        
+      </div>
+    </Layout>
   )
 }
