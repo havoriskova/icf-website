@@ -1,4 +1,5 @@
 import Layout from '../components/layout.js';
+import DonorBox from '../components/DonorBox.js';
 
 
 export default function Donate() {
@@ -10,6 +11,8 @@ export default function Donate() {
             
         
                 Donate content
+
+                <DonorBox />
             </div>
         </Layout>
     )

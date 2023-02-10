@@ -9,7 +9,7 @@ export default function News() {
 
         
         
-                News content
+                News content, API for news, most likely component for each article
             </div>
         </Layout>
     )
