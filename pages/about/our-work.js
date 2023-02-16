@@ -5,7 +5,7 @@ export default function OurWork() {
 
     return (
         <Layout pageTitle='ICF Our Work'>
-            <div>
+            <div className='container'>
 
                 Our Work content
             </div>

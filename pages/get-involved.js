@@ -5,7 +5,7 @@ export default function GetInvolved() {
 
     return (
         <Layout pageTitle='ICF Get Involved'>
-            <div>
+            <div className='container'>
 
             
         

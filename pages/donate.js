@@ -6,8 +6,8 @@ export default function Donate() {
 
     return (
         <Layout>
-            <div>
-
+            <div className='container'>
+                
             
         
                 Donate content

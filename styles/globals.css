@@ -36,3 +36,14 @@ button {
   color: pink;
   text-decoration: underline;
 }
+
+.container {
+  margin: 0 auto;
+  max-width: 80%; /* has to be for each page - for homepage it can differ because of the video !!! Can change due to the wireframes */
+  background-color: rgba(0 0 0 / .1);
+}
+
+.articleComponent {
+  border: solid 1px black;
+  padding: 10%; /* can change due to the wireframes */
+}

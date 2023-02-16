@@ -6,11 +6,12 @@ import MeetTheTeam from '../components/MeetTheTeam';
 import HeroSection from '../components/HeroSection';
 import Layout from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
+import OurStories from '../components/OurStories';
 
 export default function Home() {
   return (
     <Layout home pageTitle='ICF Upemba Home'>
-      <div className={styles.container}>
+      <div className="container">
       
 
           <h1 className={styles.title}>
@@ -31,10 +32,11 @@ export default function Home() {
           and an actual width would be always set in the parent page component 
           - that means this HeroSection bellow will have its width set in Home.module.css  */}
 
-          <div className={styles.article}><HeroSection /></div> 
-          <div className={styles.article}><Mission /></div>
-          <div className={styles.article}><MeetTheTeam /></div>
-          <div className={styles.article}><Partnerships /></div>
+          <div className='articleComponent'><HeroSection /></div> 
+          <div className='articleComponent'><OurStories /></div>
+          <div className={`articleComponent ${utilStyles.halfWidth}`} ><Mission /></div>
+          <div className={`articleComponent ${utilStyles.halfWidth}`}><MeetTheTeam /></div>
+          <div className='articleComponent'><Partnerships /></div>
 
 
         

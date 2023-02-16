@@ -5,7 +5,7 @@ export default function Contact() {
 
     return (
         <Layout pageTitle='ICF Contact'>
-            <div>
+            <div className='container'>
 
            
                 Contact content

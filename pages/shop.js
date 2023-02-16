@@ -6,7 +6,7 @@ export default function Shop() {
 
     return (
         <Layout pageTitle='ICF Shop'>
-            <div>
+            <div className='container'>
 
             
         

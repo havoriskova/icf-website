@@ -5,7 +5,7 @@ export default function News() {
 
     return (
         <Layout pageTitle='ICF News'>
-            <div>
+            <div className='container'>
 
         
         

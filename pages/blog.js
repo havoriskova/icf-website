@@ -5,7 +5,7 @@ export default function Stories() {
 
     return (
         <Layout pageTitle='ICF Stories'>
-            <div>
+            <div className='container'>
 
             
         

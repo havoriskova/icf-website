@@ -18,7 +18,7 @@ export default function AnimalDonate({animal}) {
                 <br /> 2. it will be special /animal-donate, which 
                 will be only for the animals, changing according to which animal you clicked on the map OR 
                 <br /> 3. every animal will be having their own page like
-                 /elephant-donate, /zebra-donate,... </p>
+                 icf.earth/elephant-donate, /zebra-donate,... so then you can share the link anywhere - on social media </p>
 
                 <DonorBox />
             </div>
