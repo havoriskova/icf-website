@@ -19,7 +19,7 @@ export default function Layout({ children, home, pageTitle }) {
         <Navbar />
       </header>
       
-      <main>{children}</main> {/* I don't want to put the class container in here on main because of the video component */}
+      <main className={styles.container}>{children}</main> {/* I don't want to put the class container in here on main because of the video component */}
 
       <div className={styles.footer}>
         <Footer />

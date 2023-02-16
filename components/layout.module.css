@@ -7,10 +7,16 @@
 
 .container {
     border: solid 1px black;
+    margin-top: 150px; /*because of the fixed nav on the top*/
 }
 
 .header {
     border: solid 1px black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0 0 0 / .1);
 }
 
 .footer {
