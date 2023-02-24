@@ -6,9 +6,16 @@ body {
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+body {
+  --dark-green: #2E4010;
+  --middle-green: #84A54B;
+  --light-green: #BDD98D;
+  --dark-orange: #8A3100;
+  --middle-orange: #EF6C23;
+  --light-orange: #FF9559;
+  --bkg-light-gradient: linear-gradient(97.43deg, #ECFFCC 1.26%, rgba(255, 213, 189, 0.56) 58.76%, rgba(225, 255, 173, 0.41) 98.26%);
+  --bkg-footer-gradient: radial-gradient(77.98% 1921.66% at 50% 22.02%, rgba(189, 217, 141, 0.79) 6.25%, rgba(208, 197, 126, 0.66) 46.35%, rgba(254, 160, 108, 0.62) 100%);
+  --max-width-of-content: 1200px;
 }
 
 * {
@@ -22,6 +29,10 @@ img {
   height: auto;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
 ul {
   list-style: none;
@@ -39,11 +50,20 @@ button {
 
 .container {
   margin: 0 auto;
-  max-width: 80%; /* has to be for each page - for homepage it can differ because of the video !!! Can change due to the wireframes */
+  max-width: 100%; /* has to be for each page - for homepage it can differ because of the video !!! Can change due to the wireframes */
   background-color: rgba(0 0 0 / .1);
 }
 
 .articleComponent {
   border: solid 1px black;
-  padding: 10%; /* can change due to the wireframes */
+  padding: 5%; /* can change due to the wireframes */
+}
+
+
+
+@media (min-width:700px) {
+  
+  .container {
+    max-width: 80%;
+  }
 }

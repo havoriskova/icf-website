@@ -6,3 +6,12 @@
 .active {
     text-decoration: underline;
 }
+
+.flexRow {
+    display: flex;
+    justify-content: space-around;
+}
+
+.hidden {
+    display: none;
+}

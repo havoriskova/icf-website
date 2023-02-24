@@ -1,15 +1,15 @@
 import Layout from '../components/layout.js';
 
 
-export default function News() {
+export default function Partners() {
 
     return (
-        <Layout pageTitle='ICF News'>
+        <Layout pageTitle='ICF Partners'>
             <div className='container'>
 
         
         
-                News content, API for news, most likely component for each article
+                Partners component
             </div>
         </Layout>
     )
