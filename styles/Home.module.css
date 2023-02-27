@@ -2,3 +2,7 @@
   color: green;
   text-decoration: underline;
 }
+
+.title {
+  position: absolute;
+}

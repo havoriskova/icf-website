@@ -13,10 +13,10 @@ export default function About() {
             <div className='container'>
 
                 
-                <div className='articleComponent'><Founding /></div> 
+                <div className='articleComponent firstComponentOnPage'><Founding /></div> 
                 <div className={`articleComponent ${utilStyles.halfWidth}`} ><Mission /></div>
                 <div className={`articleComponent ${utilStyles.halfWidth}`}><MeetTheTeam /></div>
-                <div className='articleComponent'><Projects /></div>
+                <div className='articleComponent lastComponentOnPage'><Projects /></div>
             </div>
         </Layout>
     )

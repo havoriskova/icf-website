@@ -3,6 +3,11 @@
     color: blue;
 }
 
+.navbarContainer {
+    /* position: absolute; */
+   
+}
+
 .active {
     text-decoration: underline;
 }

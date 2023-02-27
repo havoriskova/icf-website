@@ -8,7 +8,7 @@ export default function Contact() {
             <div className='container'>
 
            
-                Contact content
+            <div className='firstComponentOnPage'>Contact content</div>
             </div>
         </Layout>
     )

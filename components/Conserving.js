@@ -1,10 +1,8 @@
-
-
-export default function Mission() {
+export default function Conserving() {
 
     return(
         <div className="contentWidth">
-            Mission component
+            Conserving component
         </div>
     )
 }

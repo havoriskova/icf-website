@@ -7,7 +7,7 @@
 
 .container {
     border: solid 1px black;
-    margin-top: 50px; /*because of the fixed nav on the top*/
+   /* margin-top: 50px; /*because of the fixed nav on the top*/
 }
 
 .header {
@@ -17,11 +17,13 @@
     left: 0;
     right: 0;
     background-color: rgba(0 0 0 / .1);
+    z-index: 100;
 }
 
 .footer {
     border: solid 1px black;
     padding: 1rem;
+    /* margin-top: 1rem; */
     background: var(--bkg-footer-gradient);
     font-size: 12px;
 }

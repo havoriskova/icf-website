@@ -7,7 +7,7 @@ export default function OurWork() {
         <Layout pageTitle='ICF Our Work'>
             <div className='container'>
 
-                Our Work content
+            <div className='firstComponentOnPage'>Our work content</div>
             </div>
         </Layout>
     )

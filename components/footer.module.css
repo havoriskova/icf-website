@@ -14,7 +14,7 @@
 .containerContent {
     max-width: var(--max-width-of-content);
     margin: 0 auto;
-    padding-top: 2rem;
+    padding-top: 0;
 }
 
 .bottomBorder {

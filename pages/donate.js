@@ -10,7 +10,7 @@ export default function Donate() {
                 
             
         
-                Donate content
+            <div className='firstComponentOnPage'>Donate content</div>
 
                 <DonorBox />
             </div>

@@ -3,7 +3,7 @@
 export default function Founding() {
 
     return(
-        <div>
+        <div className="contentWidth">
             Founding component
         </div>
     )

@@ -9,7 +9,7 @@ export default function GetInvolved() {
 
             
         
-                Get Involved content
+                <div className='firstComponentOnPage'>Get involved content</div>
             </div>
         </Layout>
     )

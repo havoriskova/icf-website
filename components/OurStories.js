@@ -1,7 +1,7 @@
 export default function OurStories() {
 
     return(
-        <div>
+        <div className="contentWidth">
             OurStories component
         </div>
     )

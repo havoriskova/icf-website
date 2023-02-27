@@ -16,9 +16,9 @@ export default function Layout({ children, home, pageTitle }) {
         <link rel="icon" href="/icf_logo.ico.png" />    
       </Head>
 
-      <header className={styles.header}>
+      <div className={styles.header}>
         <Navbar />
-      </header>
+      </div>
       
       <main className={styles.container}>{children}</main> {/* I don't want to put the class container in here on main because of the video component */}
 

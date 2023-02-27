@@ -3,7 +3,7 @@
 export default function Projects() {
 
     return(
-        <div>
+        <div className="contentWidth">
             Projects component
         </div>
     )

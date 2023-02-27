@@ -4,7 +4,7 @@
 export default function MeetTheTeam() {
 
     return(
-        <div>
+        <div className="contentWidth">
             Meet The Team component
         </div>
     )

@@ -9,7 +9,7 @@ function Navbar({router}) {
 
     return(
         
-        <div>
+        <div className={styles.navbarContainer}>
        
             
             <ul className={styles.flexRow}>

@@ -2,7 +2,7 @@
 export default function DonorBox() {
 
     return(
-        <div>
+        <div className="contentWidth">
            Donor Box - donorbox.org
         </div>
     )

@@ -10,7 +10,7 @@ export default function Shop() {
 
             
         
-                Shop content - reusing current webshop / stripe
+            <div className='firstComponentOnPage'>Shop content - reusing current webshop / stripe </div>
             </div>
         </Layout>
     )

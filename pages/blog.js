@@ -9,7 +9,7 @@ export default function Stories() {
 
             
         
-                Stories content
+            <div className='firstComponentOnPage'>Blog content</div>
             </div>
         </Layout>
     )

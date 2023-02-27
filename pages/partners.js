@@ -9,7 +9,7 @@ export default function Partners() {
 
         
         
-                Partners component
+            <div className='firstComponentOnPage'>Partners content</div>
             </div>
         </Layout>
     )
