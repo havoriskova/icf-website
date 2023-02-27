@@ -6,7 +6,7 @@ body {
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-body {
+:root {
   --dark-green: #2E4010;
   --middle-green: #84A54B;
   --light-green: #BDD98D;
@@ -58,6 +58,11 @@ button {
   border: solid 1px black;
   padding: 5%; /* can change due to the wireframes */
 }
+
+.halfWidth {
+  width: 50%;
+  display: inline-block;
+ }
 
 
 

@@ -4,6 +4,7 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 
 
+
 const name = 'ICF Upemba';
 
 export default function Layout({ children, home, pageTitle }) {

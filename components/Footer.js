@@ -22,23 +22,33 @@ export default function Footer() {
                     <img alt='logo' src='/icf_logo.ico.png'/>
                 </p>
                 <p className={styles.footerBottomGridChild}>
-                    <p>Get in touch</p>
-                    <p>
-                        <img alt='logo-place' src='../images/Place.png' />
-                        <p>Cattenhagestraat 211411 CR</p>
-                        <p>Naarden, Nederland</p>
-                    </p>
-                    <p>
-                        <img alt='logo-letter' src='../images/Letter.png' />
-                        <p>hello@icf.earth</p> {/* kdyz to zmacknes, tak se ti to zkopiruje*/}
-                    </p>
-                    
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="2">Get in touch</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr className={styles.row}>
+                                <td><img alt='logo-place' src='../images/Place.png' /></td>
+                                <td>Cattenhagestraat 211411 CR<br/>
+                                    Naarden, Nederland</td>
+                            </tr>
+                            <tr className={styles.row}>
+                                <td><img alt='logo-letter' src='../images/Letter.png' /></td>
+                                <td>hello@icf.earth</td> {/* kdyz to zmacknes, tak se ti to zkopiruje*/}
+                            </tr>
+                        </tbody>
+                    </table>
                 </p>
                 <p className={styles.footerBottomGridChild}>
-                    <p>Terms of use</p>
-                    <p>Privacy policy</p>
+                    Sitemap?
                 </p>
             </div>
+            <p className={styles.termsOfUse}>
+                    <p>Terms of use</p>
+                    <p>Privacy policy</p>
+            </p>
         </div>
         </div>
         

@@ -21,4 +21,14 @@
 
 .footer {
     border: solid 1px black;
+    padding: 1rem;
+    background: var(--bkg-footer-gradient);
+    font-size: 12px;
+}
+
+@media (min-width:1200px) {
+
+    .footer {
+        font-size: 14px;
+    }
 }
