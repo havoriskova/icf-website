@@ -52,9 +52,34 @@
 }
 
 
+.copyEmail {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 .termsOfUse {
     display: flex;
     justify-content: flex-end;
     gap: 1rem;
     margin-bottom: 0;
+}
+
+.copyEmailNotification {
+    display: block;
+    position: fixed;
+    bottom: 2rem;
+    left: 0;
+    right: 0;
+    background: black;
+    padding: 1em 2em;
+    border-radius: 5px;
+    color: var(--white);
+    width: fit-content;
+    margin: 0 auto;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.active {
+    opacity: 1;
 }
