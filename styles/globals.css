@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Peace Sans';
+  src: url('/fonts/PeaceSans/PaceSansWebfont.ttf');
+}
+
+
 html,
 body {
   padding: 0;

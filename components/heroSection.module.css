@@ -27,13 +27,15 @@
 
 .header {
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 800;
     font-size: 20px;
     line-height: 1.5em;
+    font-family: 'Peace Sans', sans-serif;
+    text-shadow: 0px 4px 4px rgba(46, 46, 46, 0.35);
 }
 
 .subHeader {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 20px;
     line-height: 1.5em;
     text-align: justify;
