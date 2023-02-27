@@ -8,7 +8,7 @@
     position: relative;
     color: var(--white);
     overflow: hidden;
-    height: 70vh;
+    height: 100vh;
 }
 
 .heroVideo {
@@ -20,8 +20,27 @@
 
 .headerContainer {
     position: absolute;
-    bottom: 0;
+    bottom: 6rem;
     z-index: 100;
+    margin: 0 1rem;
+}
+
+.header {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.subHeader {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.buttons {
+    font-size: 14px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3em;
 }
 
 .buttonHero {
@@ -29,6 +48,7 @@
     background: #799745;
     border: 4px solid #FFFBE1;
     border-radius: 36px;
+    padding: .6em 2em;
 }
 
 .buttonHeroTwo {
@@ -36,6 +56,7 @@
     background: transparent;
     border: 4px solid var(--white);
     border-radius: 36px;
+    padding: .6em 2em;
 }
 
 @media (min-width:800px) {
@@ -49,4 +70,31 @@
         max-width: 100%;
         position: static;
     }
+
+    .headerContainer {
+        margin: 0 2rem;
+    }
+
+    .header, .subHeader {
+        font-size: 26px;
+    }
+
+    .buttons {
+        font-size: 20px;
+       justify-content: flex-start;
+       gap: 2em;
+    }
+}
+
+@media (min-width: 1000px) {
+
+    .headerContainer {
+        margin: 0 4rem;
+        max-width: 70%;
+    }
+
+    .header, .subHeader {
+        font-size: 32px;
+    }
+    
 }
