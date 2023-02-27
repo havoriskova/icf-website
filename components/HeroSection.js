@@ -5,8 +5,8 @@ export default function HeroSection() {
 
     return(
         <div>
-            Video component
-            <p class={heroStyles.heroSectionTest}>test heroSection.module.css</p>
+            <video className={heroStyles.heroVideo} src='../videos/lion-placeholder.mp4' autoPlay loop muted />
+            <p className={heroStyles.heroSectionTest}>test heroSection.module.css</p>
         </div>
     )
 }

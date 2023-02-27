@@ -18,14 +18,14 @@ export default function Footer() {
                     
                 </div>
             <div className={styles.footerBottomGrid}>
-                <p className={styles.footerBottomGridChild}>
+                <div className={styles.footerBottomGridChild}>
                     <img alt='logo' src='/icf_logo.ico.png'/>
-                </p>
-                <p className={styles.footerBottomGridChild}>
+                </div>
+                <div className={styles.footerBottomGridChild}>
                     <table>
                         <thead>
                             <tr>
-                                <th colspan="2">Get in touch</th>
+                                <th colSpan="2">Get in touch</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -40,15 +40,15 @@ export default function Footer() {
                             </tr>
                         </tbody>
                     </table>
-                </p>
-                <p className={styles.footerBottomGridChild}>
+                </div>
+                <div className={styles.footerBottomGridChild}>
                     Sitemap?
-                </p>
+                </div>
             </div>
-            <p className={styles.termsOfUse}>
+            <div className={styles.termsOfUse}>
                     <p>Terms of use</p>
                     <p>Privacy policy</p>
-            </p>
+            </div>
         </div>
         </div>
         
