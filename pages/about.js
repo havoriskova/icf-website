@@ -11,6 +11,7 @@ export default function About() {
     return (
         <Layout pageTitle='ICF About'>
             <div className='container'>
+                
 
                 
                 <div className='articleComponent firstComponentOnPage'><Founding /></div> 
