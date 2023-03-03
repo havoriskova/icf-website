@@ -9,7 +9,42 @@ export default function Mission() {
                 <span className="subHeading">Since the beginning</span>
                 <h3>what we've achieved<span className='headingRedDot'>.</span></h3>
             </div>
-            Mission component
+
+            <div className="two-four-grid mission">
+                <div className="mission-small">
+                    <div className="mission-small-picture"><img alt='one'/></div>
+                    <div>
+                        <div><b>+12%</b></div>
+                        <div className="mission-small-text">of wildlife population growth</div>
+                    </div>
+                </div>
+
+                <div className="mission-small">
+                    <div className="mission-small-picture"><img alt='two'/></div>
+                    <div>
+                        <div><b>+1980 km</b></div>
+                        <div className="mission-small-text">increased park area patrol covered to ensure preservation</div>
+                    </div>
+                </div>
+
+                <div className="mission-small">
+                    <div className="mission-small-picture"><img alt='three'/></div>
+                    <div>
+                        <div><b>+12%</b></div>
+                        <div className="mission-small-text">of wildlife population growth</div>
+                    </div>
+                </div>
+
+                <div className="mission-small">
+                    <div className="mission-small-picture"><img alt='four'/></div>
+                    <div>
+                        <div><b>+12%</b></div>
+                        <div className="mission-small-text">of wildlife population growth</div>
+                    </div>
+                </div>
+            </div>
+        
+            
             <button className="readMore">Read More</button>
         </div>
     )

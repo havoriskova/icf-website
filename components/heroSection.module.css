@@ -56,7 +56,7 @@
 }
 
 .buttonHero:hover {
-    background: transparent;
+    background: var(--dark-green);
 }
 
 .buttonHeroTwo {

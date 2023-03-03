@@ -166,7 +166,7 @@ button.readMore:hover {
   border: red solid 1px; /*temporary border to see*/
   max-width: 90%;
   margin: 0 auto;
-  padding: 2rem;
+  padding: .5rem;
   position: relative;
 }
 
@@ -179,29 +179,64 @@ button.readMore:hover {
 }
 
 
-.two-four-grid {
+.two-four-grid.conserving {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 
-.two-four-grid > * {
-  margin: .2rem;
+.two-four-grid.conserving > * {
+  margin-bottom: 2rem;
   max-width: 40%;
+  text-align: center;
+  font-size: 1.2rem;
+  flex: 1 1 50%;
+}
+
+.two-four-grid.mission {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.two-four-grid.mission > * {
+  margin-bottom: 2rem;
+  max-width: 40%;
+  text-align: center;
+  font-size: 1.2rem;
+  flex: 1 1 50%;
+}
+
+
+.mission-small-text {
+  font-size: 14px;
+  padding: .5rem 0;
 }
 
 @media (min-width: 600px) {
-  .two-four-grid > * {
+  .two-four-grid.conserving > * {
+    margin: 1rem;
+  }
+
+  .two-four-grid.mission > * {
     margin: 1rem;
   }
 }
 
 @media (min-width: 700px) {
-  .two-four-grid {
+  .two-four-grid.conserving {
     display: flex;
     justify-content: space-around;
     flex-wrap: nowrap;
   }
+
+  .two-four-grid.mission {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+  }
+
+ 
 }
 
 
