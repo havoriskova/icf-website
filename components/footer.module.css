@@ -57,6 +57,14 @@
     text-decoration: underline;
 }
 
+.socials > a {
+    margin: .5rem;
+}
+
+.socials > a > img {
+    max-width: 40px;
+}
+
 .termsOfUse {
     display: flex;
     justify-content: flex-end;
@@ -82,4 +90,11 @@
 
 .active {
     opacity: 1;
+}
+
+
+@media (min-width: 600px) {
+    .socials > a > img {
+        max-width: 60px;
+    }
 }

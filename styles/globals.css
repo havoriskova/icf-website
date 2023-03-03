@@ -213,6 +213,16 @@ button.readMore:hover {
   padding: .5rem 0;
 }
 
+.mission-small-picture {
+  width: 80%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: gray;
+  margin: 0 auto 1rem;
+}
+
+
 @media (min-width: 600px) {
   .two-four-grid.conserving > * {
     margin: 1rem;
@@ -234,6 +244,7 @@ button.readMore:hover {
     display: flex;
     justify-content: space-around;
     flex-wrap: nowrap;
+    gap: 1.5rem;
   }
 
  

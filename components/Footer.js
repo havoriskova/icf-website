@@ -9,10 +9,10 @@ export default function Footer() {
            <div className={styles.containerContent}>
                 <div className={styles.bottomBorder}>
                     <p className={styles.center}>Follow us</p>
-                    <p className={styles.center}>
-                        <img alt='logo-fcb' src='../images/Facebook.png' />
-                        <img alt='logo-insta' src='../images/Instagram.png' />
-                        <img alt='logo-twitter' src='../images/Twitter.png' />
+                    <p className={`${styles.center} ${styles.socials}`}>
+                        <a href=''  target='_blank'><img alt='logo-fcb' src='../images/Facebook.png' /></a>
+                        <a href='https://www.instagram.com/icf.earth/' target='_blank'><img alt='logo-insta' src='../images/Instagram.png' /></a>
+                        <a href='https://twitter.com/icf_earth'  target='_blank'><img alt='logo-twitter' src='../images/Twitter.png' /></a>
                     </p>
                 </div>
                 <div className={styles.footerBottomGrid}>

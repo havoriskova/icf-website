@@ -12,7 +12,7 @@ export default function Mission() {
 
             <div className="two-four-grid mission">
                 <div className="mission-small">
-                    <div className="mission-small-picture"><img alt='one'/></div>
+                    <div className="mission-small-picture"><img alt='one' src='./images/13.png'/></div>
                     <div>
                         <div><b>+12%</b></div>
                         <div className="mission-small-text">of wildlife population growth</div>
@@ -20,7 +20,7 @@ export default function Mission() {
                 </div>
 
                 <div className="mission-small">
-                    <div className="mission-small-picture"><img alt='two'/></div>
+                    <div className="mission-small-picture"><img alt='two' src='./images/13.png'/></div>
                     <div>
                         <div><b>+1980 km</b></div>
                         <div className="mission-small-text">increased park area patrol covered to ensure preservation</div>
@@ -28,7 +28,7 @@ export default function Mission() {
                 </div>
 
                 <div className="mission-small">
-                    <div className="mission-small-picture"><img alt='three'/></div>
+                    <div className="mission-small-picture"><img alt='three' src='./images/13.png'/></div>
                     <div>
                         <div><b>+12%</b></div>
                         <div className="mission-small-text">of wildlife population growth</div>
@@ -36,7 +36,7 @@ export default function Mission() {
                 </div>
 
                 <div className="mission-small">
-                    <div className="mission-small-picture"><img alt='four'/></div>
+                    <div className="mission-small-picture"><img alt='four' src='./images/13.png'/></div>
                     <div>
                         <div><b>+12%</b></div>
                         <div className="mission-small-text">of wildlife population growth</div>
