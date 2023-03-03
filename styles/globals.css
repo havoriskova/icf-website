@@ -90,6 +90,27 @@ button {
   font-weight: bold;
 }
 
+button.readMore {
+  background-color: var(--middle-green);
+  color: var(--white);
+  box-shadow: 0px 4px 30px rgba(132, 165, 75, 0.25);
+  border-radius: 36px;
+  border: none;
+  display: block;
+  margin: 1rem auto;
+}
+
+.halfWayDownContainer {
+  position: relative;
+  display: block;
+}
+
+.readMoreHalfWayDown {
+  position: relative;
+  bottom: -4.5rem;
+
+}
+
 .globalsTest {
   color: pink;
   text-decoration: underline;
@@ -121,6 +142,7 @@ button {
   max-width: 90%;
   margin: 0 auto;
   padding: 2rem;
+  position: relative;
 }
 
 .firstComponentOnPage {

@@ -8,6 +8,8 @@ export default function OurStories() {
             </div>
 
             OurStories component
+
+            <button className="readMore">Read More</button>
         </div>
     )
 }

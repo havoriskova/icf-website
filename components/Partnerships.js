@@ -8,6 +8,9 @@ export default function Partnerships() {
                 <h3>Our partners<span className='headingRedDot'>.</span></h3>
             </div>
             Alliance and Partnerships component
+            <div className="halfWayDownContainer">
+                <button className="readMore readMoreHalfWayDown">Read More</button>
+            </div>
         </div>
     )
 }
