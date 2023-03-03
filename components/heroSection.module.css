@@ -49,10 +49,14 @@
 
 .buttonHero {
     color: var(--white);
-    background: #799745;
+    background: var(--middle-green);
     border: 2px solid var(--white);
     border-radius: 36px;
     padding: .6em 2em;
+}
+
+.buttonHero:hover {
+    background: transparent;
 }
 
 .buttonHeroTwo {
@@ -61,6 +65,10 @@
     border: 2px solid var(--white);
     border-radius: 36px;
     padding: .6em 2em;
+}
+
+.buttonHeroTwo:hover {
+    background: var(--middle-green);
 }
 
 @media (min-width:800px) {

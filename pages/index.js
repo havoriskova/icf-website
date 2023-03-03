@@ -33,7 +33,7 @@ export default function Home() {
           <div className='articleComponent gradientBkgComponent whiteStripe'><OurStories /></div>
           <div className={`articleComponent bkgWhiteComponent ${utilStyles.halfWidth}`} ><Mission /></div>
           <div className={`articleComponent bkgWhiteComponent ${utilStyles.halfWidth}`}><MeetTheTeam /></div>
-          <div className='articleComponent gradientBkgComponent'><Partnerships /></div>
+          <div className='articleComponent bkgBeigeComponent'><Partnerships /></div>
           <div className='articleComponent bkgWhiteComponent lastComponentOnPage'><Conserving /></div>
 
 

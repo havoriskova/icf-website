@@ -25,6 +25,7 @@ body {
   --max-width-of-content: 1200px;
   --white: #FFFBE1;
   --bkg-white: #F5F5F5;
+  --bkg-beige: #FFFDED;
 }
 
 * {
@@ -37,7 +38,7 @@ body {
 .whiteStripe::before {
 content: '';
 width: 100%;
-height: 3.5rem;
+height: 5rem;
 background-color: var(--bkg-white);
 top: 0;
 position: absolute;
@@ -57,6 +58,7 @@ a {
 
 .headingForSections {
 position: relative;
+margin: 2rem 0;
 }
 
 .headingForSections h3 {
@@ -112,7 +114,11 @@ button.readMore {
   margin: 1rem auto;
 }
 
-.halfWayDownContainer {
+button.readMore:hover {
+  background-color: var(--dark-green);
+}
+
+/* .halfWayDownContainer {
   position: relative;
   display: block;
 }
@@ -123,7 +129,7 @@ button.readMore {
   z-index: 200;
   left: 50%;
   transform: translateX(-50%);
-}
+} */
 
 .globalsTest {
   color: pink;
@@ -152,6 +158,10 @@ button.readMore {
   background: var(--bkg-white);
 }
 
+.bkgBeigeComponent {
+  background: var(--bkg-beige);
+}
+
 .contentWidth {
   border: red solid 1px; /*temporary border to see*/
   max-width: 90%;
@@ -168,8 +178,30 @@ button.readMore {
   padding-bottom: 2rem;
 }
 
-@media (min-width: 700px) {
 
+.two-four-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.two-four-grid > * {
+  margin: .2rem;
+  max-width: 40%;
+}
+
+@media (min-width: 600px) {
+  .two-four-grid > * {
+    margin: 1rem;
+  }
+}
+
+@media (min-width: 700px) {
+  .two-four-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+  }
 }
 
 
