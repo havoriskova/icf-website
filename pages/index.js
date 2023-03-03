@@ -30,7 +30,7 @@ export default function Home() {
           - that means this HeroSection bellow will have its width set in Home.module.css  */}
 
           <div className='articleComponent'><HeroSection /></div> 
-          <div className='articleComponent gradientBkgComponent'><OurStories /></div>
+          <div className='articleComponent gradientBkgComponent whiteStripe'><OurStories /></div>
           <div className={`articleComponent bkgWhiteComponent ${utilStyles.halfWidth}`} ><Mission /></div>
           <div className={`articleComponent bkgWhiteComponent ${utilStyles.halfWidth}`}><MeetTheTeam /></div>
           <div className='articleComponent gradientBkgComponent'><Partnerships /></div>
