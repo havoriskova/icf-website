@@ -4,13 +4,46 @@
   /* font-weight: 400; */
 }
 
+@font-face {
+  font-family: 'KumbhSans';
+  src: url('/fonts/KumbhSans/static/KumbhSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'KumbhSans';
+  src: url('/fonts/KumbhSans/static/KumbhSans-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'KumbhSans';
+  src: url('/fonts/KumbhSans/static/KumbhSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+
+.kumbhSansBold {
+  font-family: 'KumbhSans';
+  font-weight: 700;
+}
+
+.kumbhSansSemiBold {
+  font-family: 'KumbhSans';
+  font-weight: 600;
+}
+
+.kumbhSansMedium {
+  font-family: 'KumbhSans';
+  font-weight: 500; /*tohle defaultne na cely stranky*/
+}
+
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 500;
 }
 
 :root {
@@ -112,6 +145,8 @@ button.readMore {
   border: none;
   display: block;
   margin: 1rem auto;
+  font-family: 'KumbhSans', sans-serif;
+  font-weight: 600;
 }
 
 button.readMore:hover {
