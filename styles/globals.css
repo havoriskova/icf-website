@@ -1,6 +1,7 @@
 @font-face {
   font-family: 'PeaceSans';
   src: url('/fonts/PeaceSans/PeaceSansWebfont.ttf') format('truetype');
+  /* font-weight: 400; */
 }
 
 
@@ -42,13 +43,42 @@ a {
   text-decoration: none;
 }
 
-h3.headingForSections {
- font-family: 'PeaceSans';
-text-transform: uppercase;
+.headingForSections {
+position: relative;
+}
+
+.headingForSections h3 {
+  font-family: 'PeaceSans';
+  text-transform: uppercase;
+  position: relative;
 }
 
 .headingRedDot {
   color: var(--middle-orange);
+}
+
+.headingForSections .subHeading {
+  color: var(--middle-green);
+  position: absolute;
+  top: -1.2rem;
+  left: 1.2rem;
+  
+}
+
+.headingLeave {
+  width: 35px;
+  aspect-ratio: 1 / 1;
+  background: linear-gradient(220.06deg, #BDD98D 35.86%, #84A54B 81.59%);
+  display: inline-block;
+  position: absolute;
+  left: -20px;
+  top: -15px;
+  border-radius: 50% 12% 50% 50%;
+}
+
+.orangeLeave {
+  background: linear-gradient(220.42deg, #BDD98D 31.11%, #FF9559 90.57%);
+
 }
 
 ul {
