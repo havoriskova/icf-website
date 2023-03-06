@@ -293,6 +293,9 @@ h6 {
   flex: 1 1 40%;
   max-width: 250px;
   margin-top: 4rem;
+  background-color: var(--light-grey);
+  border: none;
+  border-radius: 20px;
 }
 
 .meetTheTeamGrid .card-for-wider-screen {
