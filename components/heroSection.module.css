@@ -9,6 +9,7 @@
     color: var(--white);
     overflow: hidden;
     height: 100vh;
+    background-color: var(--bkg-white);
 }
 
 .heroVideo {
