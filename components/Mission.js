@@ -14,8 +14,8 @@ export default function Mission() {
                 <div className="mission-small">
                     <div className="mission-small-picture"><img alt='one' src='./images/13.png'/></div>
                     <div>
-                        <div><b className="kumbhSansBold">+12%</b></div>
-                        <div className="mission-small-text kumbhSansMedium">of wildlife population growth</div>
+                        <div><b>+12%</b></div>
+                        <div className="mission-small-text">of wildlife population growth</div>
                     </div>
                 </div>
 

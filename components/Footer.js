@@ -8,7 +8,7 @@ export default function Footer() {
         <div className={`${styles.footerTest} ${styles.footer}`}>
            <div className={styles.containerContent}>
                 <div className={styles.bottomBorder}>
-                    <p className={styles.center}>Follow us</p>
+                    <p className={`${styles.center} kumbhSansSemiBold`}>Follow us</p>
                     <p className={`${styles.center} ${styles.socials}`}>
                         <a href=''  target='_blank'><img alt='logo-fcb' src='../images/Facebook.png' /></a>
                         <a href='https://www.instagram.com/icf.earth/' target='_blank'><img alt='logo-insta' src='../images/Instagram.png' /></a>
@@ -23,7 +23,7 @@ export default function Footer() {
                         <table>
                             <thead>
                                 <tr>
-                                    <th colSpan="2">Get in touch</th>
+                                    <th colSpan="2" className='kumbhSansSemiBold'>Get in touch</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -43,7 +43,7 @@ export default function Footer() {
                     Sitemap?
                     </div>
                 </div>
-                <div className={styles.termsOfUse}>
+                <div className={`${styles.termsOfUse} kumbhSansSemiBold`}>
                         <p>Terms of use</p>
                         <p>Privacy policy</p>
                 </div>
