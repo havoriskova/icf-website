@@ -4,7 +4,7 @@ export default function Conserving() {
 
     return(
         <div className="contentWidth">
-            <div className="headingForSections">
+            <div className="headingForSections centeredText">
                 <h3>working for the future<span className='headingRedDot'>.</span></h3>
             </div>
            

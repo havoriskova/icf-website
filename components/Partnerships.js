@@ -4,7 +4,7 @@ export default function Partnerships() {
 
     return(
         <div className="contentWidth">
-            <div className='headingForSections'>
+            <div className='headingForSections centeredText'>
                 <h3>Our partners<span className='headingRedDot'>.</span></h3>
             </div>
             Alliance and Partnerships component
