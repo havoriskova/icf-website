@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'PeaceSans';
   src: url('/fonts/PeaceSans/PeaceSansWebfont.ttf') format('truetype');
-  /* font-weight: 400; */
+  /* font-weight: 400; it has only one font weight */
 }
 
 @font-face {
@@ -42,7 +42,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Kumbh Sans', sans-serif;
+  font-family: 'KumbhSans', sans-serif;
   font-weight: 500;
 }
 
