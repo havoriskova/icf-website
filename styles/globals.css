@@ -59,6 +59,7 @@ body {
   --white: #FFFBE1;
   --bkg-white: #F5F5F5;
   --bkg-beige: #FFFDED;
+  --letter-spacing-button: .05em;
 }
 
 * {
@@ -148,6 +149,7 @@ button.readMore {
   margin: 1rem auto;
   font-family: 'KumbhSans', sans-serif;
   font-weight: 600;
+  letter-spacing: var(--letter-spacing-button);
 }
 
 button.readMore:hover {

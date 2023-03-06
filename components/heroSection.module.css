@@ -38,6 +38,7 @@
     font-size: 20px;
     line-height: 1.5em;
     text-align: justify;
+    font-weight: 600;
 }
 
 .buttons {
@@ -53,6 +54,7 @@
     border: 2px solid var(--white);
     border-radius: 36px;
     padding: .6em 2em;
+    letter-spacing: var(--letter-spacing-button);
 }
 
 .buttonHero:hover {
@@ -65,6 +67,7 @@
     border: 2px solid var(--white);
     border-radius: 36px;
     padding: .6em 2em;
+    letter-spacing: var(--letter-spacing-button);
 }
 
 .buttonHeroTwo:hover {

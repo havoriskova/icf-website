@@ -10,14 +10,19 @@
    /* margin-top: 50px; /*because of the fixed nav on the top*/
 }
 
-.header {
+.navbar {
     border: solid 1px black;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0 0 0 / .1);
-    z-index: 100;
+    background: transparent;
+    z-index: 999;
+    border-radius: 0 0 2rem 2rem;
+}
+
+.scrolled {
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.33) 100%);
 }
 
 .footer {

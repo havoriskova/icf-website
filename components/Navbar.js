@@ -16,7 +16,7 @@ function Navbar({router}) {
                 <li className={router.pathname === '/' ?  styles.active : ''} ><Link href='/'><Image alt='logo' src='/icf_logo.ico.png'
                 width={70} height={55}/></Link></li>
 
-                <li className={`${router.pathname === '/get-involved' ? styles.active : ''} text-success`}><Link href='/get-involved'>Get involved</Link></li>
+                <li className={`${router.pathname === '/get-involved' ? styles.active : ''}`}><Link href='/get-involved'>Get involved</Link></li>
                 <li className={router.pathname === '/about' ? styles.active : ''}><Link href='/about'>About</Link>
                     <ul className={styles.hidden}>
                         <li className={router.pathname === '/about/team' ?  styles.active : ''}><Link href='/about/team'>Team</Link></li>
