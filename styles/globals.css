@@ -276,17 +276,50 @@ h6 {
   margin: 0 auto 1rem;
 }
 
+.meetTheTeamGridContainer {
+  position: relative;
+}
+
+.gridContainerInline {
+  display: flex;
+}
 
 .meetTheTeamGrid {
   position: relative;
-  display: flex;
   margin: 0 auto;
   justify-content: space-around;
   gap: 1rem;
   flex-wrap: wrap;
   width: 85%;
   max-width: 600px;
+  transform: translateX(-100%) scale(0);
+  opacity: 0;
+  transition: all 1s ease;
+  display: none;
 }
+
+.meetTheTeamGrid.active {
+  transform: translateX(0) scale(1);
+  opacity: 1;
+  transition: all 1s ease;
+  display: flex;
+}
+
+.secondMeetTheTeamGrid {
+  transform: translateX(100%) scale(0);
+  opacity: 0;
+  transition: all 1s ease;
+  display: none;
+}
+
+.secondMeetTheTeamGrid.active {
+  transform: translateX(0) scale(1);
+  opacity: 1;
+  transition: all 1s ease;
+  display: flex;
+}
+
+
 
 .meetTheTeamGrid .card {
   position: relative;
@@ -306,7 +339,7 @@ h6 {
   height: 150px;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
   margin: 1rem;
 }
 
@@ -328,20 +361,30 @@ h6 {
  right: 0;
 }
 
-.meetTheTeamGrid .arrow {
+.meetTheTeamGridContainer .arrow {
   position: absolute;
   top: 50%;
   background-color: red;
   width: 20px;
   aspect-ratio: 1/1;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1s ease;
 }
 
-.meetTheTeamGrid .arrow_left {
-  left: -2rem;
+.meetTheTeamGridContainer .arrow.active {
+  opacity: 1;
+  pointer-events: all;
+  transition: opacity 1s ease;
+  cursor: pointer;
 }
 
-.meetTheTeamGrid .arrow_right {
-  right: -2rem;
+.meetTheTeamGridContainer .arrow_left {
+  left: -0.5rem;
+}
+
+.meetTheTeamGridContainer .arrow_right {
+  right: -0.5rem;
 }
 
 @media (min-width: 600px) {
