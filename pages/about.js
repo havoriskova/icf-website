@@ -12,9 +12,15 @@ export default function About() {
         <Layout pageTitle='ICF About'>
             <div className='container'>
                 
-
+            <div className='firstComponentOnPage'>
+                    <div  className="headingForSections centeredWithLeave">
+                        <span className="headingLeave orangeLeave centerLeave centeredLeaveAbout"></span>
+                        <h3 className='centeredText'>About ICF<span className="headingRedDot">.</span></h3>
+                        <span className="subHeadingDown centeredText">Learn about who we are</span>
+                    </div>
+                </div>
                 
-                <div className='articleComponent firstComponentOnPage'><Founding /></div> 
+                <div className='articleComponent'><Founding /></div> 
                 <div className={`articleComponent ${utilStyles.halfWidth}`} ><Mission /></div>
                 <div className={`articleComponent ${utilStyles.halfWidth}`}><MeetTheTeam /></div>
                 <div className='articleComponent lastComponentOnPage'><Projects /></div>

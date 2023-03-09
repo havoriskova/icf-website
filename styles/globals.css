@@ -101,6 +101,11 @@ margin: 2rem 0;
   text-align: center;
 }
 
+.centeredWithLeave {
+  width: max-content;
+  margin: 0 auto;
+}
+
 .headingForSections h3 {
   font-family: 'PeaceSans';
   text-transform: uppercase;
@@ -139,6 +144,16 @@ margin: 2rem 0;
 .orangeLeave {
   background: linear-gradient(220.42deg, #BDD98D 31.11%, #FF9559 90.57%);
 
+}
+
+.centerLeave {
+  position: relative;
+  left: -1rem;
+  top: 1.5rem;
+}
+
+.centeredLeaveAbout {
+  left: 0rem;
 }
 
 ul {
