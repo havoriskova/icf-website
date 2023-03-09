@@ -26,10 +26,9 @@ export default function MeetTheTeam() {
             </div>
             
             <div className="meetTheTeamGridContainer">
-                <div className="arrow arrow_left" onClick={()=>{toggleActiveClass()}}></div>
-                <div className="arrow arrow_right active" onClick={()=>{toggleActiveClass()}}></div>
+        
            
-                <div className="gridContainerInline">
+                <div className="gridContainerRow">
                     <div className="meetTheTeamGrid centeredText active" id='gridOne'>
 
                         <div className="card">
@@ -146,6 +145,9 @@ export default function MeetTheTeam() {
 
                     </div>
                 </div>
+
+                <div className="arrow arrow_left" onClick={()=>{toggleActiveClass()}}></div>
+                <div className="arrow arrow_right active" onClick={()=>{toggleActiveClass()}}></div>
             </div>
         </div>
     )
