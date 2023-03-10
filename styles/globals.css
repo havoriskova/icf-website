@@ -194,10 +194,12 @@ button {
   font-weight: 600;
   letter-spacing: var(--letter-spacing-button);
   cursor: pointer;
+  transition: all .3s ease;
 }
 
 button.readMore:hover {
   background-color: var(--dark-green);
+  transition: all .3s ease;
 }
 
 h6 {
