@@ -46,7 +46,8 @@
 .buttons {
     font-size: 14px;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
+    gap: 3rem;
     margin-top: 3em;
 }
 
