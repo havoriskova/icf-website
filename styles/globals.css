@@ -211,13 +211,16 @@ h6 {
 
 input, label {
   display: block;
-  margin: 0 auto 1.5rem;
-  text-align: center;
+  margin: 0 0 1.5rem;
 }
 
 input {
   border-radius: 16px;
   padding: .2rem .5rem;
+}
+
+form .readMore {
+  margin-left: 0;
 }
 
 
@@ -491,10 +494,7 @@ input {
     width: 100%;
   }
 
-  input, label {
-    margin: 0 auto 1.5rem;
-    text-align: left;
-  }
+ 
 
   form {
     width: 250px;
@@ -502,6 +502,7 @@ input {
 
   form button.readMore {
     margin-right: 0;
+    margin-left: auto;
   }
 
  
