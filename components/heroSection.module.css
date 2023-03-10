@@ -17,6 +17,7 @@
     pointer-events: none;
     position: relative;
     bottom: 40%;
+    left: -95%;
 }
 
 .headerContainer {
@@ -73,6 +74,15 @@
 
 .buttonHeroTwo:hover {
     background: var(--middle-green);
+}
+
+@media (min-width: 500px) {
+
+    .heroVideo {
+    
+        left: -70%;
+    }
+    
 }
 
 @media (min-width:800px) {
