@@ -153,7 +153,15 @@ margin: 2rem 0;
 
 .centered_h3_span {
   position: relative;
+  text-align: center;
+  left: -12%;
 }
+
+.centered_h3_span ~ .headingRedDot {
+ position: relative;
+ left: -12%;
+}
+
 .centerLeave {
   position: relative;
   left: -1rem;
@@ -161,7 +169,7 @@ margin: 2rem 0;
 }
 
 .centeredLeave_h3_span {
-  left: 1rem;
+  left: -0.3rem;
   top: -0.2rem;
 }
 
