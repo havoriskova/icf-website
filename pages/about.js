@@ -14,8 +14,10 @@ export default function About() {
                 
             <div className='firstComponentOnPage'>
                     <div  className="headingForSections centeredWithLeave">
-                        <span className="headingLeave orangeLeave centerLeave centeredLeaveAbout"></span>
-                        <h3 className='centeredText'>About ICF<span className="headingRedDot">.</span></h3>
+            
+                        <h3 className='centeredText'>
+                        <span className="headingLeave orangeLeave centerLeave centeredLeave_h3_span"></span>
+                        <span className='centered_h3_span'>About ICF</span><span className="headingRedDot">.</span></h3>
                         <span className="subHeadingDown centeredText">Learn about who we are</span>
                     </div>
                 </div>

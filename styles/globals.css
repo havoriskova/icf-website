@@ -151,14 +151,18 @@ margin: 2rem 0;
 
 }
 
+.centered_h3_span {
+  position: relative;
+}
 .centerLeave {
   position: relative;
   left: -1rem;
   top: 1.5rem;
 }
 
-.centeredLeaveAbout {
-  left: 0rem;
+.centeredLeave_h3_span {
+  left: 1rem;
+  top: -0.2rem;
 }
 
 ul {
