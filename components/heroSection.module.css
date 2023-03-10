@@ -57,23 +57,28 @@
     border-radius: 36px;
     padding: .6em 2em;
     letter-spacing: var(--letter-spacing-button);
+    transition: all .3s ease;
 }
 
 .buttonHero:hover {
     background: var(--dark-green);
+    transition: all .3s ease;
 }
 
 .buttonHeroTwo {
     color: var(--white);
     background: transparent;
-    border: 2px solid var(--white);
+    border: 2px solid;
     border-radius: 36px;
     padding: .6em 2em;
     letter-spacing: var(--letter-spacing-button);
+    transition: all .3s ease;
 }
 
 .buttonHeroTwo:hover {
-    background: var(--middle-green);
+    color: var(--middle-green);
+    background: rgba(255, 253, 237, 1);
+    transition: all .3s ease;
 }
 
 @media (min-width: 500px) {
