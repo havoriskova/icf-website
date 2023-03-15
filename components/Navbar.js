@@ -12,15 +12,16 @@ function Navbar({router}) {
         <div className={styles.navbarContainer}>
             
             <ul className={styles.flexRow}>
-                <li className={router.pathname === "/" ?  styles.active : ""} >
+                 <li className={styles.logo} > 
                     <Link href="/">
                         <Image alt="logo" src="/icf_logo.ico.png" width={70} height={55}/>
                     </Link>
                 </li>
-                <li className={`${router.pathname === "/get-involved" ? styles.active : ""}`}>
+
+                <li className={`${router.pathname === "/get-involved" ? styles.active : ""} ${styles.linkItem}`}> {/* this is a ternary expression */}
                     <Link href="/get-involved">Get involved</Link>
                 </li>
-                <li className={router.pathname === "/about" ? styles.active : ""}>
+                <li className={`${router.pathname === "/about" ? styles.active : ""} ${styles.linkItem}`}>
                     <Link href="/about">About ICF</Link>
                     <ul className={styles.hidden}>
                         <li className={router.pathname === "/about/team" ?  styles.active : ""}>
@@ -34,13 +35,13 @@ function Navbar({router}) {
                         </li>
                     </ul>
                 </li>
-                <li className={router.pathname === "/partners" ?  styles.active : ""}>
+                <li className={`${router.pathname === "/partners" ?  styles.active : ""} ${styles.linkItem}`}>
                     <Link href="/partners">Partners</Link>
                 </li>
-                <li className={router.pathname === "/shop" ?  styles.active : ""}>
+                <li className={`${router.pathname === "/shop" ?  styles.active : ""} ${styles.linkItem}`}>
                     <Link href="/shop">Impact Shop</Link>
                 </li>
-                <li className={router.pathname === "/donate" ?  styles.active : ""}>
+                <li className={`${router.pathname === "/donate" ?  styles.active : ""} ${styles.linkItem} ${styles.lastLinkItem}`}>
                     <Link href="/donate">Donate</Link>
                 </li>
             </ul>

@@ -8,14 +8,27 @@
    
 }
 
-.active {
-    text-decoration: underline;
-}
-
 .flexRow {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
+    padding: 13px 20px; 
+}
+
+.logo {
+    flex-grow: 1; 
+}
+
+.linkItem {
+    padding: 0 26px;
+}
+
+.lastLinkItem {
+   padding-right: 9px; 
+}
+
+.active {
+    text-decoration: underline;
 }
 
 .hidden {
