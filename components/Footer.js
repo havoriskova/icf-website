@@ -58,6 +58,7 @@ export default function Footer() {
                         </table>
                         <h6>Terms of use</h6>
                         <h6>Privacy policy</h6>
+                        <h6>Transparency</h6>
                     </div>
                    
                 </div>
