@@ -12,11 +12,15 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 13px 20px; 
+    padding: 0px 20px; 
 }
 
 .logo {
     flex-grow: 1; 
+}
+
+.logoImg {
+  padding: 7px 0;
 }
 
 .linkItem {

@@ -14,7 +14,7 @@ function Navbar({router}) {
             <ul className={styles.flexRow}>
                  <li className={styles.logo} > 
                     <Link href="/">
-                        <Image alt="logo" src="/icf_logo.ico.png" width={70} height={55}/>
+                        <Image className={styles.logoImg} alt="logo" src="/icf_logo.ico.png" width={50} height={30}/>
                     </Link>
                 </li>
 

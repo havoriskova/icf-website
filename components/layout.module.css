@@ -19,6 +19,7 @@
     background: transparent;
     z-index: 999;
     /* border-radius: 0 0 2rem 2rem; */
+    overflow: hidden;
 }
 
 .scrolled {
