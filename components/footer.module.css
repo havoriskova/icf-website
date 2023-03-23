@@ -69,7 +69,7 @@
 }
 
 .socials > a > img {
-    max-width: 40px;
+    max-height: 40px;
 }
 
 .ourAccreditation {
@@ -111,7 +111,7 @@
 
 @media (min-width: 600px) {
     .socials > a > img {
-        max-width: 60px;
+        height: 60px;
     }
 }
 
