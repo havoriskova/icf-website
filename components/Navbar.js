@@ -9,7 +9,7 @@ function Navbar({router}) {
 
     return(
         
-        <div className={styles.navbarContainer}>
+        <div className={`${styles.navbarContainer} kumbhSansSemiBold`}>
             
             <ul className={styles.flexRow}>
                  <li className={styles.logo} > 
@@ -38,10 +38,13 @@ function Navbar({router}) {
                 <li className={`${router.pathname === "/partners" ?  styles.active : ""} ${styles.linkItem}`}>
                     <Link href="/partners">Partners</Link>
                 </li>
+                <li className={`${router.pathname === "/blog" ?  styles.active : ""} ${styles.linkItem}`}>
+                    <Link href="/blog">Stories</Link>
+                </li>
                 <li className={`${router.pathname === "/shop" ?  styles.active : ""} ${styles.linkItem}`}>
                     <Link href="/shop">Impact Shop</Link>
                 </li>
-                <li className={`${router.pathname === "/donate" ?  styles.active : ""} ${styles.linkItem} ${styles.lastLinkItem}`}>
+                <li className={`${router.pathname === "/donate" ?  styles.active : ""} ${styles.linkItem} ${styles.linkAccentColor}`}>
                     <Link href="/donate">Donate</Link>
                 </li>
             </ul>

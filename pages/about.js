@@ -21,6 +21,12 @@ export default function About() {
                         <span className="subHeadingDown centeredText">Learn about who we are</span>
                     </div>
                 </div>
+
+                <div>
+                    <img></img>
+                    <h4 className='gradientText'>INSPIRATIONAL MISSION STATEMENT ON WHAT DRIVES ICF.</h4>
+                    <h5>Mission statement</h5>
+                </div>
                 
                 <div className='articleComponent'><Founding /></div> 
                 <div className={`articleComponent ${utilStyles.halfWidth}`} ><Mission /></div>
