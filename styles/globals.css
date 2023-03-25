@@ -530,9 +530,7 @@ form .readMore {
 }
 
 .aboutHeroSection_heading h5 {
-  color: var(--bkg-beige);
-  padding-top: 2rem;
-  font-size: 24px;
+  display: none;
 }
 
 .aboutHeroSection img {
@@ -613,6 +611,13 @@ form .readMore {
   form button.readMore {
     margin-right: 0;
     margin-left: auto;
+  }
+
+  .aboutHeroSection_heading h5 {
+    color: var(--bkg-beige);
+    padding-top: 2rem;
+    font-size: 24px;
+    display: block;
   }
 
  
