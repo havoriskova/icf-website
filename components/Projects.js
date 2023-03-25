@@ -4,7 +4,15 @@ export default function Projects() {
 
     return(
         <div className="contentWidth">
-            Projects component
+            <div className="headingForSections centeredText">
+                <h3>Our work<span className='headingRedDot'>.</span></h3>
+            </div>
+
+            <h3 className="whiteText headerMd">latest projects</h3>
+            <div className="whiteText">
+                <div></div>
+                <div></div>
+            </div>
         </div>
     )
 }

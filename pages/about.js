@@ -30,10 +30,10 @@ export default function About() {
                         </div>
                 </div>
                     
-                <div className='articleComponent'><Founding /></div> 
-                <div className={`articleComponent ${utilStyles.halfWidth}`} ><Mission /></div>
-                <div className={`articleComponent ${utilStyles.halfWidth}`}><MeetTheTeam /></div>
-                <div className='articleComponent lastComponentOnPage'><Projects /></div>
+                <div className='articleComponent gradientBkgComponent'><Founding /></div> 
+                <div className='articleComponent' ><Mission /></div>
+                <div className='articleComponent'><MeetTheTeam /></div>
+                <div className='articleComponent lastComponentOnPage darkGreenBkgComponent whiteStripe'><Projects /></div>
             </div>
         </Layout>
     )
