@@ -17,8 +17,22 @@
     padding-top: 0;
 }
 
+.containerContent h6 {
+font-size: 16px;
+text-align: left;
+}
+
+.containerContent p {
+    line-height: 2rem;
+}
+
+.adress {
+    line-height: 1.4rem;
+}
+
 .bottomBorder {
     border-bottom: solid 1px black;
+    padding-bottom: 1rem;
 }
 
 

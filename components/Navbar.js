@@ -44,8 +44,8 @@ function Navbar({router}) {
                 <li className={`${router.pathname === "/shop" ?  styles.active : ""} ${styles.linkItem}`}>
                     <Link href="/shop">Impact Shop</Link>
                 </li>
-                <li className={`${router.pathname === "/donate" ?  styles.active : ""} ${styles.linkItem} ${styles.linkAccentColor}`}>
-                    <Link href="/donate">Donate</Link>
+                <li className={`${router.pathname === "/donate" ?  styles.active : ""} ${styles.linkItem} ${styles.accentColor}`}>
+                    <Link href="/donate" className={styles.linkAccentColor}>Donate</Link>
                 </li>
             </ul>
 

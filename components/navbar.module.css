@@ -39,6 +39,10 @@
     text-decoration: underline;
 }
 
+.accentColor {
+    text-decoration: none;
+}
+
 .hidden {
     display: none;
 }

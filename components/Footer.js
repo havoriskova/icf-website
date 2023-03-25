@@ -47,8 +47,9 @@ export default function Footer() {
                             <tbody>
                                 <tr className={styles.row}>
                                     <td><img alt='logo-place' src='../images/Place.png' /></td>
-                                    <td>Cattenhagestraat 211411 CR<br/>
-                                        Naarden, Nederland</td>
+                                    <td className={styles.adress}>Cattenhagestraat 21 <br /> 
+                                        1411 CR Naarden <br/>
+                                        Nederland</td>
                                 </tr>
                                 <tr className={styles.row}>
                                     <td><img alt='logo-letter' src='../images/Letter.png' /></td>
