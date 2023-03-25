@@ -1,11 +1,11 @@
 
-import styles from '../styles/Home.module.css';
+// import styles from '../styles/Home.module.css';
 import Partnerships from '../components/Partnerships';
 import Mission from '../components/Mission';
 import MeetTheTeam from '../components/MeetTheTeam';
 import HeroSection from '../components/HeroSection';
 import Layout from '../components/layout';
-import utilStyles from '../styles/utils.module.css';
+// import utilStyles from '../styles/utils.module.css';
 import OurStories from '../components/OurStories';
 import Conserving from '../components/Conserving';
 

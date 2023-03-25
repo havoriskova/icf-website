@@ -91,6 +91,11 @@ img {
 a {
   color: inherit;
   text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
 }
 
 .headingForSections {
@@ -351,7 +356,7 @@ form .readMore {
 
 .meetTheTeamGrid {
   position: relative;
-  margin: 0 auto;
+  margin: 2rem auto;
   justify-content: space-around;
   gap: 1rem;
   flex-wrap: wrap;
@@ -391,10 +396,11 @@ form .readMore {
   position: relative;
   flex: 1 1 40%;
   max-width: 250px;
-  margin-top: 4rem;
-  background-color: var(--light-grey);
+  margin-top: 5rem; /**/
+  background-color: var(--middle-green);
   border: none;
   border-radius: 20px;
+  color: var(--bkg-beige);
 }
 
 .meetTheTeamGrid .card-for-wider-screen {
@@ -407,6 +413,7 @@ form .readMore {
   flex-direction: column;
   justify-content: flex-end;
   margin: 1rem;
+  font-size: 14px;
 }
 
 
@@ -422,7 +429,7 @@ form .readMore {
  margin: 0 auto;
  aspect-ratio: 1/1;
  position: absolute;
- margin-top: -30%;
+ margin-top: -35%; /**/
  left: 0;
  right: 0;
 }
@@ -430,13 +437,43 @@ form .readMore {
 .meetTheTeamGridContainer .arrow {
   position: absolute;
   top: 50%;
-  background-color: red;
+  /* background-color: red; */
   width: 20px;
   aspect-ratio: 1/1;
   opacity: 0;
   pointer-events: none;
   transition: opacity 1s ease;
+  display: grid;
+  place-content: center;
 }
+
+.arrow ellipse {
+  fill: transparent;
+  stroke: var(--middle-green);
+}
+
+.arrow path {
+  fill: var(--middle-green);
+/*   z-index: 100; pokud mam path v html pred ellipse, tak nejde path videt, a z-index nepomuze*/
+}
+
+
+.arrowSvg ellipse:hover {
+  fill: var(--middle-green);
+  stroke: var(--middle-green);
+}
+
+.arrowSvg ellipse:hover ~ path {
+  fill: white; /*tady transparent nefunguje, takze to musis udelat vzdy podle bkg, pres props??*/
+}
+
+.arrowSvg path {
+  pointer-events: none;
+}
+
+/* .arrowSvg {
+  border: black solid 1px;
+} */
 
 .meetTheTeamGridContainer .arrow.active {
   opacity: 1;
@@ -449,9 +486,44 @@ form .readMore {
   left: -0.5rem;
 }
 
+.meetTheTeamGridContainer .arrow_left .arrowSvg {
+  transform: scale(.6) scale(-1);
+}
+
 .meetTheTeamGridContainer .arrow_right {
   right: -0.5rem;
 }
+
+.meetTheTeamGridContainer .arrow_right .arrowSvg {
+  transform: scale(.6);
+}
+
+.aboutHeroSection {
+  margin-top: 2rem;
+  position: relative;
+}
+
+.aboutHeroSection_heading {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  padding: 3rem;
+  font-size: 30px;
+}
+
+.aboutHeroSection_heading h5 {
+  color: var(--bkg-beige);
+  padding-top: 2rem;
+  font-size: 24px;
+}
+
+.aboutHeroSection img {
+  width: 100%;
+}
+
+/*----------------------------------MEDIA  QUERIES-------------------------------------------------*/
 
 @media (min-width: 600px) {
   .two-four-grid.conserving > * {
@@ -463,15 +535,24 @@ form .readMore {
   }
 
   .meetTheTeamGrid .card {
-    margin-top: 5rem;
+    margin-top: 6rem; /**/
   }
 
   .meetTheTeamGrid .arrow_left {
     left: -3rem;
   }
+
+
+  .meetTheTeamGridContainer .arrow_left .arrowSvg {
+    transform: scale(.8) scale(-1);
+  }
   
   .meetTheTeamGrid .arrow_right {
     right: -3rem;
+  }
+
+  .meetTheTeamGridContainer .arrow_right .arrowSvg {
+    transform: scale(.8);
   }
 
 }
@@ -535,11 +616,22 @@ form .readMore {
     flex-basis: 30%;
   }
 
+
   .meetTheTeamGrid .card__img {
     max-width: 55%;
     margin-top: -30%;
    }
+
+   .aboutHeroSection_heading {
+    font-size: 50px;
+   }
   
+}
+
+@media (min-width:1000px) {
+  .meetTheTeamGrid .card__content {
+    font-size: 16px;
+  }
 }
 
 

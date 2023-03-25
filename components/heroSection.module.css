@@ -25,6 +25,7 @@
     bottom: 6rem;
     z-index: 100;
     margin: 0 1rem;
+    padding: 2rem;
 }
 
 .header {
@@ -33,6 +34,7 @@
     line-height: 1.5em;
     font-family: 'PeaceSans', sans-serif;
     text-shadow: 0px 4px 4px rgba(46, 46, 46, 0.35);
+    margin-bottom: 2rem;
 }
 
 .subHeader {
@@ -56,9 +58,10 @@
     background: var(--middle-green);
     border: 2px solid var(--white);
     border-radius: 36px;
-    padding: .6em 2em;
+    padding: .8em 2em;
     letter-spacing: var(--letter-spacing-button);
     transition: all .3s ease;
+    font-size: inherit;
 }
 
 .buttonHero:hover {
@@ -71,9 +74,10 @@
     background: transparent;
     border: 2px solid;
     border-radius: 36px;
-    padding: .6em 2em;
+    padding: .8em 2em;
     letter-spacing: var(--letter-spacing-button);
     transition: all .3s ease;
+    font-size: inherit;
 }
 
 .buttonHeroTwo:hover {
@@ -105,33 +109,41 @@
 
     .headerContainer {
         margin: 0 2rem;
+        bottom: 1rem;
     }
 
-    .header, .subHeader {
-        font-size: 22px;
+    .header {
+        font-size: 30px;
+    }
+    
+    .subHeader {
+        font-size: 24px;
     }
 
-    .buttons {
-        font-size: 16px;
-       justify-content: flex-start;
-       gap: 2em;
-    }
 }
 
 @media (min-width: 1000px) {
 
     .headerContainer {
         margin: 0 4rem;
-        max-width: 70%;
+        max-width: 80%;
+        padding: 0;
+        bottom: 6rem;
     }
 
-    .header, .subHeader {
-        font-size: 32px;
+    .header {
+        font-size: 36px;
+        text-align: left;
+    }
+
+    .subHeader {
+        font-size: 30px;
         text-align: left;
     }
 
     .buttons {
-        font-size: 20px;
+        font-size: 18px;
     }
+
     
 }
