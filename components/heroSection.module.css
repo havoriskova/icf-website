@@ -51,6 +51,8 @@
     justify-content: flex-start;
     gap: 2rem;
     margin-top: 3em;
+    /* font-family: 'KumbhSans';
+    font-weight: 600; */
 }
 
 .buttonHero {
@@ -126,7 +128,7 @@
 
     .headerContainer {
         margin: 0 4rem;
-        max-width: 80%;
+        max-width: 70%;
         padding: 0;
         bottom: 6rem;
     }
@@ -137,7 +139,7 @@
     }
 
     .subHeader {
-        font-size: 30px;
+        font-size: 26px;
         text-align: left;
     }
 
