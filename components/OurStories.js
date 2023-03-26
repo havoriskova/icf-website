@@ -8,7 +8,15 @@ export default function OurStories() {
                 <h3>Our story<span className='headingRedDot'>.</span></h3>
             </div>
 
-            OurStories component
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Quidem ea esse aliquid explicabo nihil nam. Ut sequi vitae corporis dolorum repellat. 
+            Ipsa exercitationem explicabo repudiandae at corrupti pariatur aspernatur autem.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni numquam quasi ratione atque repellat. 
+            Saepe laborum tempore necessitatibus nulla expedita quidem officiis quasi eveniet odio. 
+            Officiis enim assumenda vero placeat?
+            Voluptatibus at ut magnam nihil adipisci. Nihil beatae eos reprehenderit laboriosam delectus, 
+            distinctio quaerat ducimus consectetur repellat unde repudiandae eaque exercitationem dignissimos dolores, optio, 
+            expedita architecto eius voluptatibus? Ut, voluptatum.
 
             <button className="readMore">Read More</button>
         </div>
