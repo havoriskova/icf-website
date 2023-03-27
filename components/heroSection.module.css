@@ -67,7 +67,7 @@
 }
 
 .buttonHero:hover {
-    background: var(--dark-green);
+    background: #667E3C;
     transition: all .3s ease;
 }
 
