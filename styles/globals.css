@@ -44,6 +44,7 @@
   --light-green: #BDD98D;
   --dark-orange: #8A3100;
   --middle-orange: #EF6C23;
+  --middle-orange-hover: #DE631F;
   --light-orange: #FF9559;
   --bkg-light-gradient: linear-gradient(97.43deg, #ECFFCC 1.26%, rgba(255, 213, 189, 0.56) 58.76%, rgba(225, 255, 173, 0.41) 98.26%);
   --bkg-footer-gradient: radial-gradient(77.98% 1921.66% at 50% 22.02%, rgba(189, 217, 141, 0.79) 6.25%, rgba(208, 197, 126, 0.66) 46.35%, rgba(254, 160, 108, 0.62) 100%);
@@ -261,7 +262,7 @@ button.accentColor {
 }
 
 button.accentColor:hover {
-  background-color: var(--dark-orange);
+  background-color: var(--middle-orange-hover);
 }
 
 h6 {
