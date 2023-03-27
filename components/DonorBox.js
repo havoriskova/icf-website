@@ -1,3 +1,6 @@
+import Script from "next/script";
+
+
 
 export default function DonorBox() {
 
@@ -17,7 +20,7 @@ export default function DonorBox() {
                     <a href=''> Click here</a>
                 </div>
 
-                
+                <Script src="https://donorbox.org/widget.js" paypalExpress="true"></Script> 
         </div>
     )
 }
