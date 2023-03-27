@@ -1,0 +1,35 @@
+.flexParentTwoSameCol {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    background-color: var(--dark-green);
+    display: grid;
+    place-content: center;
+    padding: 3rem;
+}
+
+.card p {
+    text-align: center;
+    color: var(--white);
+    max-width: 300px;
+}
+
+.imageStyleContainer {
+    width: 100%;
+}
+
+
+/*------------media queries ------------------------ */
+
+@media (min-width: 700px) {
+    .flexParentTwoSameCol {
+        flex-direction: row;
+
+    }
+
+    .flexParentTwoSameCol > * {
+        flex: 1 1 50%;
+    }
+}

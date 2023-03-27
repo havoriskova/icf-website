@@ -39,7 +39,8 @@
 
 :root {
   --dark-green: #2E4010;
-  --middle-green: #799745;
+  --middle-green: #84A54B;
+  --middle-green-hover:#799745;
   --light-green: #BDD98D;
   --dark-orange: #8A3100;
   --middle-orange: #EF6C23;
@@ -83,8 +84,20 @@ top: 0;
 position: absolute;
 left: 0;
 right: 0;
-
 }
+
+.whiteStripeContact::before {
+  content: '';
+  width: 100%;
+  height: 5rem;
+  background-color: var(--bkg-white);
+  top: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+
 img {
   max-width: 100%;
   height: auto;
@@ -238,7 +251,7 @@ button {
 }
 
 button.readMore:hover {
-  background-color: var(--dark-green);
+  background-color: var(--middle-green-hover);
   transition: all .3s ease;
 }
 
@@ -254,6 +267,7 @@ button.accentColor:hover {
 h6 {
   padding: .5rem 0;
   font-weight: 600;
+  font-size: 16px;
 }
 
 /* .row {
