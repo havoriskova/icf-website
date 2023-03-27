@@ -39,7 +39,7 @@
 
 :root {
   --dark-green: #2E4010;
-  --middle-green: #84A54B;
+  --middle-green: #799745;
   --light-green: #BDD98D;
   --dark-orange: #8A3100;
   --middle-orange: #EF6C23;
@@ -52,6 +52,8 @@
   --bkg-beige: #FFFDED;
   --letter-spacing-button: .05em;
   --light-grey: #D9D9D9;
+  --leave-border-radius: 50% 12% 50% 50%;
+  --leave-border-radius-opposite: 12% 50% 50% 50%;
 }
 
 html,
@@ -103,6 +105,7 @@ button {
 .headingForSections {
 position: relative;
 margin: 2rem 0;
+color: var(--dark-green);
 }
 
 .gradientText {
@@ -119,8 +122,8 @@ font-family: 'PeaceSans';
   text-align: center;
 }
 
-.greenHeading {
-  color: var(--dark-green);
+.greenMiddleHeading {
+  color: var(--middle-green);
 }
 
 .centeredWithLeave {
@@ -161,7 +164,7 @@ font-family: 'PeaceSans';
   position: absolute;
   left: -20px;
   top: -15px;
-  border-radius: 50% 12% 50% 50%;
+  border-radius: var(--leave-border-radius);
 }
 
 .orangeLeave {
@@ -200,6 +203,7 @@ font-family: 'PeaceSans';
   text-transform: uppercase;
   position: relative;
   font-size: 24px;
+  margin-bottom: 2rem;
 }
 
 ul {
@@ -223,7 +227,7 @@ button {
   border-radius: 36px;
   border: none;
   display: block;
-  margin: 1rem auto;
+  margin: 3rem auto 0rem auto;
   font-family: 'KumbhSans', sans-serif;
   font-weight: 600;
   letter-spacing: var(--letter-spacing-button);

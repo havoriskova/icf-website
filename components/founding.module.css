@@ -1,0 +1,52 @@
+.flexParentTwoSameCol {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.parentLeaveShapedImages {
+    position: relative;
+}
+
+.subparentLeaveShapedImages {
+    position: relative;
+    width: 70%;
+    max-width: 300px;
+    margin: 0rem auto 7rem auto;
+    transform: translateX(2rem);
+    /* border: solid red 1px; */
+}
+
+.imageOne {
+    border-radius: var(--leave-border-radius);
+    width: 100%;
+}
+
+.imageTwo {
+   border-radius: var(--leave-border-radius-opposite);
+   position: absolute;
+   width: 70%;
+   bottom: -25%;
+   left: -25%;
+
+}
+
+
+
+@media (min-width: 800px) {
+    .flexParentTwoSameCol {
+        flex-direction: row;
+    }
+
+    .flexParentTwoSameCol > * {
+        flex: 1 1 50%;
+    }
+
+    .subparentLeaveShapedImages {
+        top: -4.5rem; /*musi byt soucet font-size headingu a padding/margin headingu a paragrapu*/
+        margin: 0rem 1rem 7rem auto;
+        transform: translateX(2rem);
+    }
+
+
+}

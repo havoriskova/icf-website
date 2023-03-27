@@ -1,0 +1,19 @@
+.flexParentTwoSameCol {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+
+
+@media (min-width: 800px) {
+    .flexParentTwoSameCol {
+        flex-direction: row;
+    }
+
+    .flexParentTwoSameCol > * {
+        flex: 1 1 50%;
+    }
+
+}

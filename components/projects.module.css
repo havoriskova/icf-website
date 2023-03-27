@@ -1,0 +1,32 @@
+.flexParentTwoSameCol {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.parentImageBlog {
+    width: 100%;
+    aspect-ratio: 1/.7;
+}
+
+.imageBlog {
+    border-radius: 16px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.titleBlog {
+    margin: 1rem 0;
+}
+
+
+@media (min-width: 800px) {
+    .flexParentTwoSameCol {
+        flex-direction: row;
+    }
+
+    .flexParentTwoSameCol > * {
+        flex: 1 1 50%;
+    }
+}

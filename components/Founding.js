@@ -1,3 +1,5 @@
+import styles from "./founding.module.css";
+
 
 
 export default function Founding() {
@@ -8,12 +10,11 @@ export default function Founding() {
                 <h3>why we started<span className='headingRedDot'>.</span></h3>
             </div>
 
-            <div> {/* flex parent */}
-                <p> 
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                    Dicta, aperiam nobis. Praesentium delectus consequatur corporis. 
-                    Inventore animi veritatis repellendus odit, nostrum nisi vitae ex, 
-                    blanditiis quia repellat est vero totam.
+            <div className={styles.flexParentTwoSameCol}>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Quidem ea esse aliquid explicabo nihil nam. Ut sequi vitae corporis dolorum repellat. 
+                    Ipsa exercitationem explicabo repudiandae at corrupti pariatur aspernatur autem.
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni numquam quasi ratione atque repellat. 
                     Saepe laborum tempore necessitatibus nulla expedita quidem officiis quasi eveniet odio. 
                     Officiis enim assumenda vero placeat?
@@ -21,9 +22,12 @@ export default function Founding() {
                     distinctio quaerat ducimus consectetur repellat unde repudiandae eaque exercitationem dignissimos dolores, optio, 
                     expedita architecto eius voluptatibus? Ut, voluptatum.
                 </p>
-
-                <div>
-
+                <div className={styles.parentLeaveShapedImages}>
+                        <div className={styles.subparentLeaveShapedImages}>
+                            <img className={styles.imageOne} alt='zebra' src='./images/pexels-zebra-placeholder.jpg' />
+                            <img className={styles.imageTwo} alt='zebra' src='./images/pexels_lion_placeholder.jpg' />
+                        </div>
+                        
                 </div>
             </div>
 
