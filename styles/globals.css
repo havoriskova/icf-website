@@ -205,6 +205,10 @@ ul {
   margin: 0;
 }
 
+p {
+  text-align: justify;
+}
+
 button {
   padding: 0.5rem 1.5rem;
   font-weight: bold;
