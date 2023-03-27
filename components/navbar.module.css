@@ -48,6 +48,11 @@
     text-decoration: none;
 }
 
-.hidden {
+
+.subNavList {
     display: none;
+}
+
+.subNav:hover .subNavList {
+    display: block;
 }

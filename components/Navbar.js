@@ -21,9 +21,9 @@ function Navbar({router}) {
                 <li className={`${router.pathname === "/get-involved" ? styles.active : ""} ${styles.linkItem}`}> {/* this is a ternary expression */}
                     <Link href="/get-involved">Get involved</Link>
                 </li>
-                <li className={`${router.pathname === "/about" ? styles.active : ""} ${styles.linkItem}`}>
+                <li className={`${router.pathname === "/about" ? styles.active : ""} ${styles.linkItem} ${styles.subNav}`}>
                     <Link href="/about">About ICF</Link>
-                    <ul className={styles.hidden}>
+                    <ul className={styles.subNavList}>
                         <li className={router.pathname === "/about/team" ?  styles.active : ""}>
                             <Link href="/about/team">Team</Link>
                         </li>
