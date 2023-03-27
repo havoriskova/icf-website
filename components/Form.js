@@ -1,6 +1,53 @@
 
 export default function Form() {
 
+    const API_KEY = "your_mailchimp_api_key"; //Go to the Mailchimp API documentation and follow the instructions to generate an API key.
+    const LIST_ID = "your_mailchimp_list_id"; //You can find your list ID in the Mailchimp dashboard by going to Audience > Manage Audience > Settings > List name and defaults.
+
+        // Handle the form submission
+        function handleFormSubmit(e) {
+
+            e.preventDefault();
+
+            console.log('submited form');
+
+            const email = document.getElementById("email").value;
+            const fullName = document.getElementById("fullName").value;
+
+            const [firstName, lastName] = fullName.split(" ");
+
+            console.log(email, firstName, lastName);
+
+            // Call the Mailchimp API to add the subscriber to the list
+            fetch(`https://us7.api.mailchimp.com/3.0/lists/${LIST_ID}/members`, {
+                method: "POST",
+                headers: {
+                Authorization: `apikey ${API_KEY}`,
+                "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                email_address: email,
+                status: "subscribed",
+                merge_fields: {
+                    FNAME: firstName,
+                    LNAME: lastName,
+                },
+                }),
+            })
+                .then((response) => {
+                if (response.ok) {
+                    alert("Thanks for subscribing!");
+                } else {
+                    alert("Error subscribing. Please try again later.");
+                }
+                })
+                .catch((error) => {
+                console.error(error);
+                alert("Error subscribing. Please try again later.");
+                });
+        }
+
+
     return(
         <div className="contentWidth">
 
@@ -17,7 +64,7 @@ export default function Form() {
                     </div>
 
                     <div>
-                        <form>
+                        <form onSubmit={handleFormSubmit}>
                             <label htmlFor='fullName'>Full name</label>
                             <input id="fullName"></input>
                             
