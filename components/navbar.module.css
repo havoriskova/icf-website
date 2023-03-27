@@ -36,7 +36,7 @@
 }
 
 .linkAccentColor:hover {
-    background-color: var(--dark-orange);
+    background-color: var(--middle-orange-hover);
     transition: all .3s ease;
 }
 
