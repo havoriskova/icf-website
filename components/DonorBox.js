@@ -1,5 +1,5 @@
 import Script from "next/script";
-
+import Link from 'next/link';
 
 
 export default function DonorBox() {
@@ -17,7 +17,7 @@ export default function DonorBox() {
                 </div>
 
                 <div className="centeredText">Prefer donating in crypto?  
-                    <a href=''> Click here</a>
+                    <Link href='/donate-crypto'> Click here</Link>
                 </div>
 
                 <Script src="https://donorbox.org/widget.js" paypalExpress="true"></Script> 
