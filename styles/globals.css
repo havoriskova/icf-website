@@ -190,6 +190,10 @@ font-family: 'PeaceSans';
   top: -0.2rem;
 }
 
+.centeredLeave_h3_span_two {
+  top: -0.2rem;
+}
+
 .whiteText {
   color: var(--bkg-beige);
 }
@@ -645,6 +649,10 @@ form .readMore {
 
 @media (min-width: 800px) {
 
+  .contentWidth.contenctWidthGetInvolved {
+    max-width: 700px;
+  }
+
   .meetTheTeamGrid {
     max-width: var(--max-width-of-content);
   }
@@ -680,5 +688,6 @@ form .readMore {
   .contentWidth {
    max-width: 1000px;
   }
+
 
 }

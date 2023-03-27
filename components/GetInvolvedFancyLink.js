@@ -10,12 +10,28 @@ export default function GetInvolvedFancyLink({imageStyle}) {
                 <div className={styles.smallLeaveTwo}></div>
             </div>
 
+    const oneImageLeaveShaped = 
+            <div className={styles.oneImageLeaveShapedContainer}>
+                <img alt='placeholder' src='/images/pexels-zebra-placeholder.jpg' />
+            </div>
+
+
+    const twoImagesLeaveShaped = 
+            <div className={styles.twoImagesLeaveShapedContainer}>
+                <div className={styles.subparentLeaveShapedImages}>
+                    <img className={styles.imageOne} alt='zebra' src='/images/pexels-zebra-placeholder.jpg' />
+                    <img className={styles.imageTwo} alt='zebra' src='/images/pexels_lion_placeholder.jpg' />
+                </div>
+            </div>
+
 
     return(
-        <div className="contentWidth kumbhSansSemiBold">
+        <div className="contentWidth contenctWidthGetInvolved kumbhSansSemiBold">
             <div className={styles.flexParentTwoSameCol}>
                 <div className={styles.imageStyleContainer}>
-                    {imageStyle === 'circleWithLeaves' ? circleWithLeaves : none}
+                    {imageStyle === 'circleWithLeaves' ? circleWithLeaves : null}
+                    {imageStyle === 'OneImageLeaveShaped' ? oneImageLeaveShaped : null}
+                    {imageStyle === 'TwoImagesLeaveShaped' ? twoImagesLeaveShaped : null}
                 </div>
                 <div className={styles.card}>
                     <p>Want to contribute to our mission? <br/> Learn how you can get involved</p>

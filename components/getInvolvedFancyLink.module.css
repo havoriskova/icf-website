@@ -16,6 +16,8 @@
 
 /* ------------------------ imageStyles -----------*/
 
+/* -------- circleWithLeaves ------*/
+
 .circleWithLeavesContainer {
     /* background-color: pink; */
     width: 90%;
@@ -47,6 +49,49 @@
     border-radius: var(--leave-border-radius);
     background: linear-gradient(220.06deg, #BDD98D 35.86%, #84A54B 81.59%);
     transform: rotate(5.71deg);
+}
+
+
+/* -----  OneImageLeaveShaped -----*/
+
+.oneImageLeaveShapedContainer {
+    width: 90%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.oneImageLeaveShapedContainer > img {
+    border-radius: var(--leave-border-radius);
+}
+
+/* ----- twoImagesLeaveShaped ----- */
+
+.twoImagesLeaveShapedContainer {
+    position: relative;
+
+}
+
+.subparentLeaveShapedImages {
+    position: relative;
+    width: 70%;
+    max-width: 300px;
+    margin: 0rem auto 0rem auto;
+    transform: translateX(2rem);
+    /* border: solid red 1px; */
+}
+
+.imageOne {
+    border-radius: var(--leave-border-radius);
+    width: 100%;
+}
+
+.imageTwo {
+   border-radius: var(--leave-border-radius-opposite);
+   position: absolute;
+   width: 70%;
+   bottom: 0;
+   left: -25%;
+
 }
 
 

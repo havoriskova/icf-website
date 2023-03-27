@@ -24,8 +24,8 @@ export default function Founding() {
                 </p>
                 <div className={styles.parentLeaveShapedImages}>
                         <div className={styles.subparentLeaveShapedImages}>
-                            <img className={styles.imageOne} alt='zebra' src='./images/pexels-zebra-placeholder.jpg' />
-                            <img className={styles.imageTwo} alt='zebra' src='./images/pexels_lion_placeholder.jpg' />
+                            <img className={styles.imageOne} alt='zebra' src='/images/pexels-zebra-placeholder.jpg' />
+                            <img className={styles.imageTwo} alt='zebra' src='/images/pexels_lion_placeholder.jpg' />
                         </div>
                         
                 </div>
