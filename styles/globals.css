@@ -461,6 +461,7 @@ form .readMore {
   transition: opacity 1s ease;
   display: grid;
   place-content: center;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .arrow ellipse {
