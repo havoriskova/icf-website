@@ -35,6 +35,11 @@
    box-shadow: 0px 4px 30px rgba(239, 108, 35, 0.25);
 }
 
+.linkAccentColor:hover {
+    background-color: var(--dark-orange);
+    transition: all .3s ease;
+}
+
 .active {
     text-decoration: underline;
 }

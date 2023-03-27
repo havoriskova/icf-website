@@ -82,6 +82,10 @@ text-align: left;
     margin: .5rem;
 }
 
+/* .socials > a:hover ~ img {
+    fill: gray;
+} */
+
 .socials > a > img {
     max-height: 40px;
 }

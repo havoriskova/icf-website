@@ -1,0 +1,65 @@
+
+.flexParentTwoSameCol {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.imageStyleContainer {
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.card p {
+    text-align: center;
+}
+
+/* ------------------------ imageStyles -----------*/
+
+.circleWithLeavesContainer {
+    /* background-color: pink; */
+    width: 90%;
+    max-width: 300px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.image {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.smallLeave, .smallLeaveTwo {
+    position: absolute;
+    width: 20%;
+    aspect-ratio: 1/1;
+    background: linear-gradient(220.06deg, rgba(254, 160, 108, 0.74) 35.86%, #EF6C23 90.58%);
+    transform: rotate(-71.45deg);
+    bottom: 0;
+    right: 25%;
+    border-radius: var(--leave-border-radius);
+}
+
+.smallLeaveTwo {
+    right: 10%;
+    border-radius: var(--leave-border-radius);
+    background: linear-gradient(220.06deg, #BDD98D 35.86%, #84A54B 81.59%);
+    transform: rotate(5.71deg);
+}
+
+
+
+/*------------media queries ------------------------ */
+
+@media (min-width: 700px) {
+    .flexParentTwoSameCol {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .flexParentTwoSameCol > * {
+        flex: 1 1 50%;
+    }
+}

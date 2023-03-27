@@ -97,10 +97,6 @@ a {
   -webkit-tap-highlight-color: transparent;
 }
 
-button {
-  cursor: pointer;
-  -webkit-tap-highlight-color: transparent;
-}
 
 .headingForSections {
 position: relative;
@@ -218,6 +214,8 @@ p {
 button {
   padding: 0.5rem 1.5rem;
   font-weight: bold;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .readMore {
@@ -238,6 +236,15 @@ button {
 button.readMore:hover {
   background-color: var(--dark-green);
   transition: all .3s ease;
+}
+
+button.accentColor {
+  background-color: var(--middle-orange);
+  box-shadow: 0px 4px 30px rgba(239, 108, 35, 0.25);
+}
+
+button.accentColor:hover {
+  background-color: var(--dark-orange);
 }
 
 h6 {
@@ -440,11 +447,13 @@ form .readMore {
   justify-content: flex-end;
   margin: 1rem;
   font-size: 14px;
+  gap: .3rem;
 }
 
 
 .meetTheTeamGrid .card__job ~ div {
   font-style: italic;
+  padding-bottom: .3rem;
 }
 
 .meetTheTeamGrid .card__img {

@@ -3,7 +3,8 @@ import Founding from '../components/Founding.js';
 import Mission from '../components/Mission';
 import MeetTheTeam from '../components/MeetTheTeam.js';
 import Projects from '../components/Projects';
-import utilStyles from '../styles/utils.module.css';
+//import utilStyles from '../styles/utils.module.css';
+import GetInvolvedFancyLink from '../components/GetInvolvedFancyLink.js';
 
 
 export default function About() {
@@ -33,7 +34,8 @@ export default function About() {
                 <div className='articleComponent gradientBkgComponent'><Founding /></div> 
                 <div className='articleComponent' ><Mission /></div>
                 <div className='articleComponent'><MeetTheTeam /></div>
-                <div className='articleComponent lastComponentOnPage darkGreenBkgComponent whiteStripe'><Projects /></div>
+                <div className='articleComponent darkGreenBkgComponent whiteStripe'><Projects /></div>
+                <div className='articleComponent lastComponentOnPage'><GetInvolvedFancyLink imageStyle='circleWithLeaves' /></div>
             </div>
         </Layout>
     )
