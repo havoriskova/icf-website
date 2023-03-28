@@ -85,12 +85,17 @@
     backdrop-filter: blur(3px); /* filter must be same as on layout.module.css .scrolled*/
 }
 
-.subNav:hover .subNavList > * {
-    padding: .5rem 1rem .5rem .5rem;
-}
 
 .subNavLinkItem {
  transition: color .3s ease;
+ width: 100%;
+ /* border: solid black 1px; */
+}
+
+.subNavLinkItem > a {
+    /* border: solid pink 1px; */
+    display: block;
+    padding: .5rem 1rem .5rem .5rem;
 }
 
 .subNavLinkItem:hover {
