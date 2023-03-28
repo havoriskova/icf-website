@@ -253,7 +253,6 @@ button {
 
 button.readMore:hover {
   background-color: var(--middle-green-hover);
-  transition: all .3s ease;
 }
 
 button.accentColor {

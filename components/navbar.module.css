@@ -33,11 +33,11 @@
    border-radius: 36px;
    color: white;
    box-shadow: 0px 4px 30px rgba(239, 108, 35, 0.25);
+   transition: all .3s ease;
 }
 
 .linkAccentColor:hover {
     background-color: var(--middle-orange-hover);
-    transition: all .3s ease;
 }
 
 .active {
@@ -48,6 +48,10 @@
     text-decoration: none;
 }
 
+/* .subNav {
+    position: relative;
+} */
+
 
 .subNavList {
     display: none;
@@ -55,4 +59,12 @@
 
 .subNav:hover .subNavList {
     display: block;
+    position: absolute;
+    background: rgba(252, 252, 252, 0.6);
+    backdrop-filter: blur(3px); /* filter must be same as on layout.module.css .scrolled*/
+    /* margin-top: 1.5rem; must be */
+}
+
+.subNav:hover .subNavList > * {
+    padding: .5rem 1rem .5rem .5rem;
 }
