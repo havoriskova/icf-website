@@ -13,7 +13,8 @@ const name = 'ICF Upemba';
 
 export default function Layout({ children, home, pageTitle }) {
 
-  
+  // this onScroll function will be only for homepage, other pages will have styling of 'scrolled nav' by default:
+
   const [offset, setOffset] = useState(0);
 
   useEffect(() => {
@@ -24,7 +25,7 @@ export default function Layout({ children, home, pageTitle }) {
       return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  // console.log(offset); 
+  // console.log(home, offset); 
 
   return (
     <div className={styles.container}>
@@ -34,7 +35,7 @@ export default function Layout({ children, home, pageTitle }) {
         <link rel="icon" href="/icf_logo.ico.png" />    
       </Head>
 
-      <div className={`${styles.navbar} ${offset > 0 ? styles.scrolled : null}`}>
+      <div className={`${styles.navbar} ${(!home || offset > 0) ? styles.scrolled : null}`}>
         <Navbar />
       </div>
       
