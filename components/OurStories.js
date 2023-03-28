@@ -1,4 +1,5 @@
 import styles from "./ourStories.module.css";
+import Link from 'next/link';
 
 
 export default function OurStories() {
@@ -38,7 +39,7 @@ export default function OurStories() {
                 </div>
             </div>
 
-            <button className="readMore">Read More</button>
+            <button className="readMore"><Link href='/about'>Read more</Link></button>
         </div>
     )
 }

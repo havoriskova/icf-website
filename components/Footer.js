@@ -1,5 +1,6 @@
 
 import styles from './footer.module.css';
+import Image from 'next/image';
 
 
 export default function Footer() {
@@ -18,7 +19,7 @@ export default function Footer() {
 
                 <div className={styles.footerBottomGrid}>
                     <div className={styles.footerBottomGridChild}>
-                        <img alt='logo' src='/icf_logo.ico.png'/>
+                        <Image className={styles.logoImg} alt="logo" src="/icf_logo.ico.svg" width={60} height={60}/>
                     </div>
                     <div className={`${styles.footerBottomGridChild} ${styles.sitemap}`}>
                         <h6>Get involved</h6>
@@ -65,7 +66,7 @@ export default function Footer() {
                 </div>
 
                 <div className={styles.ourAccreditation}>
-                        <h6>Our accreditaion</h6>
+                        <h6>Our accreditations</h6>
                         <div className={styles.ourAccreditationFlex}>
                             <span><img alt='anbi' src='/images/anbi.png'/></span>
                             <span><img alt='ngo' src='/images/ngo.png'/></span>

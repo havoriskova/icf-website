@@ -1,4 +1,5 @@
 import styles from "./projects.module.css";
+import Link from 'next/link';
 
 export default function Projects() {
 
@@ -27,7 +28,7 @@ export default function Projects() {
                 </div>
             </div>
 
-            <button className="readMore">Explore all our projects</button>
+            <button className="readMore"><Link href='/about/our-work'>Explore all our projects</Link></button>
         </div>
     )
 }

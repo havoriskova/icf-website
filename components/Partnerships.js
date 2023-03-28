@@ -1,4 +1,4 @@
-
+import Link from 'next/link';
 
 export default function Partnerships() {
 
@@ -9,7 +9,7 @@ export default function Partnerships() {
             </div>
             Alliance and Partnerships component
            
-            <button className="readMore">Read More</button>
+            <button className="readMore"><Link href='/partners'>Read more</Link></button>
             
         </div>
     )

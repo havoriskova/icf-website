@@ -28,8 +28,9 @@
 .flexSubRow {
     display: flex;
     justify-content: flex-end;
-    align-items: stretch;
+    /* align-items: stretch; */
     padding: 0px 20px; 
+    height: 100%;
 }
 
 .linkItem {
@@ -68,6 +69,7 @@
 
 .active {
     text-decoration: underline;
+    /* pointer-events: none; - nemuzes, protoze porad potrebujes hover na zviditelneni subnav */
 }
 
 .accentColor {
@@ -81,18 +83,23 @@
 
 .subNavList {
     display: none;
+    position: absolute;
+    width: 110%;
+    
 }
 
 .subNav:hover .subNavList {
     display: block;
-    position: absolute;
-    width: 110%;
 }
 
-[class*='scrolled'] .subNav:hover .subNavList {
+
+.subNav:hover .subNavList {
     background: rgba(252, 252, 252, 0.6);
-    backdrop-filter: blur(3px); /* filter must be same as on layout.module.css .scrolled*/
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
 }
+
+/* filter must be same as on layout.module.css .scrolled*/
 
 
 .subNavLinkItem {

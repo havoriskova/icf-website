@@ -1,4 +1,5 @@
 import styles from './getInvolvedFancyLink.module.css';
+import Link from 'next/link';
 
 
 export default function GetInvolvedFancyLink({imageStyle}) {
@@ -35,7 +36,7 @@ export default function GetInvolvedFancyLink({imageStyle}) {
                 </div>
                 <div className={styles.card}>
                     <p>Want to contribute to our mission? <br/> Learn how you can get involved</p>
-                    <button className='readMore accentColor'>Get Involved</button>
+                    <button className='readMore accentColor'><Link href='/get-involved'>Get Involved</Link></button>
                 </div>
             </div>
         </div>

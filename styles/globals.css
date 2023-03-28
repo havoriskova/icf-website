@@ -230,11 +230,12 @@ p {
 }
 
 button {
-  padding: 0.5rem 1.5rem;
+  /* padding: 0.5rem 1.5rem; musi jit do button a */
   font-weight: bold;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
 }
+
 
 .readMore {
   background-color: var(--middle-green);
@@ -251,6 +252,11 @@ button {
   transition: all .3s ease;
 }
 
+button a {
+  padding: 0.5rem 1.5rem;
+  display: block;
+}
+
 button.readMore:hover {
   background-color: var(--middle-green-hover);
 }
@@ -262,6 +268,11 @@ button.accentColor {
 
 button.accentColor:hover {
   background-color: var(--middle-orange-hover);
+}
+
+.disabledButton, .disabledButton:hover {
+  background-color: rgb(163, 161, 161);
+  pointer-events: none;
 }
 
 h6 {

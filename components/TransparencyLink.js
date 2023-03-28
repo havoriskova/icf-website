@@ -1,4 +1,5 @@
 import styles from './transparencyLink.module.css';
+import Link from 'next/link';
 
 
 export default function TransparencyLink() {
@@ -13,7 +14,7 @@ export default function TransparencyLink() {
             <div className={styles.flexParentTwoSameCol}>
                 <div  className={styles.card}>
                     <p>Read about our transparency or download some fact sheets</p>
-                    <button className='readMore'>Read more</button>
+                    <button className='readMore'><Link href='/transparency'>Read more</Link></button>
                 </div>
                 <div className={styles.imageStyleContainer}>
                     <img alt='placeholder' src='/images/pexels_nature.jpg'/>

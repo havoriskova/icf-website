@@ -1,4 +1,4 @@
-
+import Link from 'next/link';
 
 export default function Mission() {
 
@@ -45,7 +45,7 @@ export default function Mission() {
             </div>
         
             
-            <button className="readMore">Read More</button>
+            <button className="readMore"><Link href='/about/our-work'>Explore our impact</Link></button>
         </div>
     )
 }
