@@ -32,6 +32,11 @@
  height: 100%;
  display: grid;
  place-content: center;
+ transition: color .3s ease;
+}
+
+.linkItem:not(.accentColor) > a:hover {
+    color: red;
 }
 
 .accentColor {
@@ -82,4 +87,12 @@
 
 .subNav:hover .subNavList > * {
     padding: .5rem 1rem .5rem .5rem;
+}
+
+.subNavLinkItem {
+ transition: color .3s ease;
+}
+
+.subNavLinkItem:hover {
+    color: red;
 }

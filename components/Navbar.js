@@ -24,13 +24,13 @@ function Navbar({router}) {
                 <li className={`${router.pathname === "/about" ? styles.active : ""} ${styles.linkItem} ${styles.subNav}`}>
                     <Link href="/about">About ICF</Link>
                     <ul className={styles.subNavList}>
-                        <li className={router.pathname === "/about/team" ?  styles.active : ""}>
+                        <li className={`${router.pathname === "/about/team" ?  styles.active : ""} ${styles.subNavLinkItem}`}>
                             <Link href="/about/team">Team</Link>
                         </li>
-                        <li className={router.pathname === "/about/our-work" ?  styles.active : ""}>
+                        <li className={`${router.pathname === "/about/our-work" ?  styles.active : ""} ${styles.subNavLinkItem}`}>
                             <Link href="/about/our-work">Our Work</Link>
                         </li>
-                        <li className={router.pathname === "/about/contact" ?  styles.active : ""}>
+                        <li className={`${router.pathname === "/about/contact" ?  styles.active : ""} ${styles.subNavLinkItem}`}>
                             <Link href="/about/contact">Contact</Link>
                         </li>
                     </ul>
