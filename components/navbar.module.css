@@ -38,6 +38,10 @@
     /* border: solid black 1px; */
 }
 
+.linkItem.accentColor {
+    padding: 0;
+}
+
 .linkItem:not(.accentColor) > a {
  height: 100%;
  display: grid;
@@ -89,15 +93,11 @@
     display: none;
     position: absolute;
     width: 110%;
-    
 }
+
 
 .subNav:hover .subNavList {
     display: block;
-}
-
-
-.subNav:hover .subNavList {
     background: rgba(252, 252, 252, 0.6);
     -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
@@ -127,10 +127,49 @@
 }
 
 
-@media (max-width:1000px) {
+@media (max-width:900px) {
 
-    /* .flexSubRow {
+    .navbarContainer {
+        background-color: white;
+    }
+
+    .flexSubRowParent {
+        /* order: 2; nepotrebuju, kdyz to dam pres absolute position */
+        position: absolute;
+        right: 0;
+        top: 4rem; /*zalezi na tlousce nav*/
+        background: white;
+    }
+
+    .flexSubRow {
         flex-direction: column;
-    } */
+        padding: 1rem;
+    }
+
+
+    .linkItem:not(.accentColor) > a {
+        display: block;
+        height: auto;
+        padding: .5rem 0;
+    }
+
+    .subNavList {
+        display: block;
+        position: static;
+    }
+
+    .subNav:hover .subNavList {
+        background: none;
+        -webkit-backdrop-filter: none;
+        backdrop-filter: none;
+    }
+
+    .subNavLinkItem > a {
+        padding: .5rem 0;
+    }
+
+    .accentColor {
+        margin-right: 4rem;
+    }
     
 }

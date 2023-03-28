@@ -14,7 +14,7 @@ function Navbar({router}) {
             <ul className={styles.flexRow}>
                 <li className={styles.logo} > 
                     <Link href="/">
-                        <Image className={styles.logoImg} alt="logo" src="/icf_logo.ico.svg" width={60} height={60}/>
+                        <Image className={styles.logoImg} alt="logo" src="/icf_logo.ico.svg" width={50} height={50}/>
                     </Link>
                 </li>
 
@@ -26,9 +26,9 @@ function Navbar({router}) {
                         <li className={`${router.pathname === "/about" ? styles.active : ""} ${styles.linkItem} ${styles.subNav}`}>
                             <Link href="/about">About ICF</Link>
                             <ul className={styles.subNavList}>
-                                <li className={`${router.pathname === "/about/team" ?  styles.active : ""} ${styles.subNavLinkItem}`}>
+                                {/* <li className={`${router.pathname === "/about/team" ?  styles.active : ""} ${styles.subNavLinkItem}`}>
                                     <Link href="/about/team">Team</Link>
-                                </li>
+                                </li> */}
                                 <li className={`${router.pathname === "/about/our-work" ?  styles.active : ""} ${styles.subNavLinkItem}`}>
                                     <Link href="/about/our-work">Our Work</Link>
                                 </li>
