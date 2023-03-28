@@ -36,7 +36,7 @@
 }
 
 .linkItem:not(.accentColor) > a:hover {
-    color: red;
+    color: var(--middle-orange);
 }
 
 .accentColor {
@@ -94,5 +94,5 @@
 }
 
 .subNavLinkItem:hover {
-    color: red;
+    color: var(--middle-orange);
 }
