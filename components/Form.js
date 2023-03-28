@@ -1,8 +1,8 @@
 
 export default function Form() {
 
-    const API_KEY = "your_mailchimp_api_key"; //Go to the Mailchimp API documentation and follow the instructions to generate an API key.
-    const LIST_ID = "your_mailchimp_list_id"; //You can find your list ID in the Mailchimp dashboard by going to Audience > Manage Audience > Settings > List name and defaults.
+    const API_KEY = "9787ece5d9d7bbd01e86df6fdbe2c9af-us10"; //Go to the Mailchimp API documentation and follow the instructions to generate an API key.
+    const LIST_ID = "4f257b6944"; //You can find your list ID in the Mailchimp dashboard by going to Audience > Manage Audience > Settings > List name and defaults.
 
         // Handle the form submission
         function handleFormSubmit(e) {
