@@ -12,38 +12,41 @@ function Navbar({router}) {
         <div className={`${styles.navbarContainer} kumbhSansSemiBold`}>
             
             <ul className={styles.flexRow}>
-                 <li className={styles.logo} > 
+                <li className={styles.logo} > 
                     <Link href="/">
                         <Image className={styles.logoImg} alt="logo" src="/icf_logo.ico.png" width={50} height={30}/>
                     </Link>
                 </li>
 
-                <li className={`${router.pathname === "/get-involved" ? styles.active : ""} ${styles.linkItem}`}> {/* this is a ternary expression */}
-                    <Link href="/get-involved">Get involved</Link>
-                </li>
-                <li className={`${router.pathname === "/about" ? styles.active : ""} ${styles.linkItem} ${styles.subNav}`}>
-                    <Link href="/about">About ICF</Link>
-                    <ul className={styles.subNavList}>
-                        <li className={`${router.pathname === "/about/team" ?  styles.active : ""} ${styles.subNavLinkItem}`}>
-                            <Link href="/about/team">Team</Link>
-                        </li>
-                        <li className={`${router.pathname === "/about/our-work" ?  styles.active : ""} ${styles.subNavLinkItem}`}>
-                            <Link href="/about/our-work">Our Work</Link>
-                        </li>
-                        <li className={`${router.pathname === "/about/contact" ?  styles.active : ""} ${styles.subNavLinkItem}`}>
-                            <Link href="/about/contact">Contact</Link>
-                        </li>
-                    </ul>
-                </li>
-                <li className={`${router.pathname === "/partners" ?  styles.active : ""} ${styles.linkItem}`}>
-                    <Link href="/partners">Partners</Link>
-                </li>
-                <li className={`${router.pathname === "/blog" ?  styles.active : ""} ${styles.linkItem}`}>
-                    <Link href="/blog">Stories</Link>
-                </li>
-                <li className={`${router.pathname === "/shop" ?  styles.active : ""} ${styles.linkItem}`}>
-                    <Link href="/shop">Impact Shop</Link>
-                </li>
+                <ul className={styles.flexSubRow}>
+                    <li className={`${router.pathname === "/get-involved" ? styles.active : ""} ${styles.linkItem}`}> {/* this is a ternary expression */}
+                        <Link href="/get-involved">Get involved</Link>
+                    </li>
+                    <li className={`${router.pathname === "/about" ? styles.active : ""} ${styles.linkItem} ${styles.subNav}`}>
+                        <Link href="/about">About ICF</Link>
+                        <ul className={styles.subNavList}>
+                            <li className={`${router.pathname === "/about/team" ?  styles.active : ""} ${styles.subNavLinkItem}`}>
+                                <Link href="/about/team">Team</Link>
+                            </li>
+                            <li className={`${router.pathname === "/about/our-work" ?  styles.active : ""} ${styles.subNavLinkItem}`}>
+                                <Link href="/about/our-work">Our Work</Link>
+                            </li>
+                            <li className={`${router.pathname === "/about/contact" ?  styles.active : ""} ${styles.subNavLinkItem}`}>
+                                <Link href="/about/contact">Contact</Link>
+                            </li>
+                        </ul>
+                    </li>
+                    <li className={`${router.pathname === "/partners" ?  styles.active : ""} ${styles.linkItem}`}>
+                        <Link href="/partners">Partners</Link>
+                    </li>
+                    <li className={`${router.pathname === "/blog" ?  styles.active : ""} ${styles.linkItem}`}>
+                        <Link href="/blog">Stories</Link>
+                    </li>
+                    <li className={`${router.pathname === "/shop" ?  styles.active : ""} ${styles.linkItem}`}>
+                        <Link href="/shop">Impact Shop</Link>
+                    </li>
+                </ul>
+
                 <li className={`${router.pathname === "/donate" ?  styles.active : ""} ${styles.linkItem} ${styles.accentColor}`}>
                     <Link href="/donate" className={styles.linkAccentColor}>Donate</Link>
                 </li>
