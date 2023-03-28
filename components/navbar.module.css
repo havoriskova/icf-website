@@ -49,6 +49,10 @@
     color: var(--middle-orange);
 }
 
+.linkItem.active:not(.accentColor) > a:hover {
+    color: black;
+}
+
 .accentColor {
     display: grid;
     place-content: center;
@@ -63,7 +67,7 @@
    transition: all .3s ease;
 }
 
-.linkAccentColor:hover {
+.linkAccentColor:hover, .accentColor.active .linkAccentColor{
     background-color: var(--middle-orange-hover);
 }
 
