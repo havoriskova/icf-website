@@ -11,7 +11,7 @@
 .flexRow {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items: stretch;
     padding: 0px 20px; 
 }
 
@@ -25,6 +25,18 @@
 
 .linkItem {
     padding: 0 26px;
+    /* border: solid black 1px; */
+}
+
+.linkItem:not(.accentColor) > a {
+ height: 100%;
+ display: grid;
+ place-content: center;
+}
+
+.accentColor {
+    display: grid;
+    place-content: center;
 }
 
 .linkAccentColor {
@@ -48,9 +60,9 @@
     text-decoration: none;
 }
 
-/* .subNav {
+.subNav {
     position: relative;
-} */
+}
 
 
 .subNavList {
@@ -60,9 +72,12 @@
 .subNav:hover .subNavList {
     display: block;
     position: absolute;
+    width: 110%;
+}
+
+[class*='scrolled'] .subNav:hover .subNavList {
     background: rgba(252, 252, 252, 0.6);
     backdrop-filter: blur(3px); /* filter must be same as on layout.module.css .scrolled*/
-    /* margin-top: 1.5rem; must be */
 }
 
 .subNav:hover .subNavList > * {
