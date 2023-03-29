@@ -126,6 +126,10 @@
     color: black;
 }
 
+.hamburgerMenu {
+    display: none;
+}
+
 
 @media (max-width:900px) {
 
@@ -142,6 +146,12 @@
     }
 
     .flexSubRow {
+        display: none;
+    }
+
+
+    .flexSubRow.activeSubRow {
+        display: flex;
         flex-direction: column;
         padding: 1rem;
     }
@@ -169,7 +179,50 @@
     }
 
     .accentColor {
-        margin-right: 4rem;
+        margin-right: 5rem;
     }
+
+    .hamburgerMenu {
+        display: block;
+        /* background-color: red; */
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 3rem;
+        height: 1.6rem;
+        margin: 1.2rem;
+        cursor: pointer;
+    }
+
+    .hamburgerMenu span {
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        top: 0;
+        left:0;
+        background-color: black;
+    }
+
+    .hamburgerMenu span:nth-child(2) {
+        top: 47%;
+
+    }
+
+    .hamburgerMenu span:nth-child(3) {
+        top: 100%;
+    }
+
+    .hamburgerMenu.activeHamburger span:nth-child(1) {
+        transform: rotate(45deg) translate(10px, 10px);
+      }
+
+    .hamburgerMenu.activeHamburger span:nth-child(2) {
+      background-color: transparent;
+    }
+
+    .hamburgerMenu.activeHamburger span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -10px);
+      }
+
     
 }

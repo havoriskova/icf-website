@@ -2,10 +2,17 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "./navbar.module.css";
 import {withRouter} from "next/router";
-
+import { useState } from "react";
 
 
 function Navbar({router}) {
+
+    const [activeMobileNav, setActiveMobileNav] = useState(false);
+
+    const toggleMobileNav = () => {
+        activeMobileNav ? setActiveMobileNav(false) : setActiveMobileNav(true);
+    }
+
 
     return(
         
@@ -19,7 +26,7 @@ function Navbar({router}) {
                 </li>
 
                 <li className={styles.flexSubRowParent}>
-                    <ul className={styles.flexSubRow}>
+                    <ul className={`${styles.flexSubRow} ${activeMobileNav ? styles.activeSubRow : null}`}>
                         <li className={`${router.pathname === "/get-involved" ? styles.active : ""} ${styles.linkItem}`}> {/* this is a ternary expression */}
                             <Link href="/get-involved">Get involved</Link>
                         </li>
@@ -52,6 +59,7 @@ function Navbar({router}) {
                 <li className={`${router.pathname === "/donate" ?  styles.active : ""} ${styles.linkItem} ${styles.accentColor}`}>
                     <Link href="/donate" className={styles.linkAccentColor}>Donate</Link>
                 </li>
+                <li className={`${styles.hamburgerMenu} ${activeMobileNav ? styles.activeHamburger : null}`} onClick={toggleMobileNav}><span></span><span></span><span></span></li>
             </ul>
 
         </div>
