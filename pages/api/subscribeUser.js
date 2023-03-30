@@ -1,40 +1,102 @@
-// import axios from 'axios';
+//---------oficial from https://mailchimp.com/developer/marketing/api/list-members/add-member-to-list/:
 
-// export default async (req, res) => {
+// const client = require("@mailchimp/mailchimp_marketing");
 
+// client.setConfig({
+//   apiKey: "YOUR_API_KEY",
+//   server: "YOUR_SERVER_PREFIX",
+// });
 
-//    const email = req.body.emailAddress;
+// const run = async () => {
+//   const response = await client.lists.addListMember("list_id", {
+//     email_address: "Ebony_Brekke@gmail.com",
+//     status: "pending",
+//   });
+//   console.log(response);
+// };
 
-//    console.log({ email });
-
-//    try {
-//     const response = await axios({
-//       method: 'post',
-//       headers: {
-//         'Content-Type': 'application/json',
-//         'Authorization': process.env.MAILCHIMP_API_KEY,
-//       },
-//       url: `https://${process.env.MAILCHIMP_API_SERVER}.api.mailchimp.com/3.0/lists/${process.env.MAILCHIMP_AUDIENCE_ID}/members`,
-//       data: {
-//         email_address: email,
-//         status: 'subscribed'
-//       }
-//     })
+// run();
 
 
-//     if (response.status === 200) {
-//       res.statusCode = 200
-//       res.end()
-//     } else {
-//       res.statusCode = 400
-//       res.end()
-//     }
+//-----------------
 
-//    } catch {
 
+import axios from 'axios'; // pokud fetch, nepotrebujes axios
+
+
+function getRequestParams(email) {
+    const API_KEY = process.env.MAILCHIMP_API_KEY;
+    const LIST_ID = process.env.MAILCHIMP_AUDIENCE_ID;
+    const DATACENTER = process.env.MAILCHIMP_API_SERVER;
+
+    const url = `https://${DATACENTER}.api.mailchimp.com/3.0/lists/${LIST_ID}/members`;
+
+    const data = {
+        email_address: email,
+        status: "subscribed",
+    };
+
+    // const base64ApiKey = Buffer.from(`anystring:${API_KEY}`).toString("base64");
+    const headers = {
+        "Content-Type": "application/json",
+        Authorization: {API_KEY},
+    };
+
+    return {
+        url,
+        data,
+        headers,
+      };
+}
+
+export default async (req, res) => {
+
+
+   const {email} = req.body; //z form.js si posilas request s 'body', co tady prijimas
+
+   console.log(email);
+
+   if (!email || !email.length) {
+    return res.status(400).json({
+      error: "Forgot to add your email?",
+    });
+  }
+
+   try {
+        // const response = await fetch({
+        // method: 'post',
+        // headers: {
+        //     'Content-Type': 'application/json',
+        //     'Authorization': process.env.MAILCHIMP_API_KEY,
+        // },
+        // url: `https://${process.env.MAILCHIMP_API_SERVER}.api.mailchimp.com/3.0/lists/${process.env.MAILCHIMP_AUDIENCE_ID}/members`,
+        // data: {
+        //     email_address: email,
+        //     status: 'subscribed'
+        // }
+        // })
+        const { url, data, headers } = getRequestParams(email);
+        const res = await axios.post(url, data, { headers });
+
+
+        // if (response.status === 200) {
+        //     res.statusCode = 200
+        //     res.end()
+        // } else {
+        //     res.statusCode = 400
+        //     res.end()
+        // }
+
+//    } catch(err) {
+//     console.log('sorry', err);
 //    }
+            return res.status(201).json({ error: null });
+        } catch (error) {
+            return res.status(400).json({
+            error: `Oops, something went wrong...`,
+  });
 
-// }
+}
 
 // //   if (!email) {
 // //     return res.status(400).json({ error: 'Email is required' });
@@ -73,4 +135,4 @@
 // //   } catch (error) {
 // //     return res.status(500).json({ error: error.message || error.toString() });
 // //   }
-// // };
+ }

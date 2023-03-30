@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-
+import axios from 'axios';
 
 export default function Form() {
 
@@ -16,26 +16,38 @@ export default function Form() {
 
             const fullName = inputRefFname.current.value;
             const [firstName, lastName] = fullName.split(" ");
+            const email =  inputRefEmail.current.value;
 
-            console.log('submited form', firstName, lastName, inputRefEmail.current.value);
 
-            // try {  
-            //     const res = await fetch('/api/subscribeUser', {
-            //         body: JSON.stringify({
-            //             email: inputRefEmail.current.value,
-            //         }),
+            console.log('submited form', firstName, lastName, email);
+
+            try {  
+                const res = await axios.post('/api/subscribeUser', {
+                    // body: JSON.stringify({
+                    //         email: inputRefEmail.current.value,
+                    //     }),
+                    email
             
-            //         headers: {
-            //             'Content-Type': 'application/json',
-            //         },
+                    // headers: {
+                    //     'Content-Type': 'application/json',
+                    // },
             
-            //         method: 'POST',
-            //     });
-            // } catch (err) {
-            //     console.log(err);
-            //     console.log(err.response.data.error);
-            //     alert("Error subscribing. Please try again later.");
-            // }
+                    // method: 'POST',
+                });
+
+                // console.log(res.status);
+
+                // if (res.status === 200) {
+                //     alert('you are subscribed');
+                // } else {
+                //    alert('Sorry, something went wrong.')
+                // }
+
+            } catch (e) {
+                console.log(e);
+                // console.log(err.response);
+                alert("Error subscribing. Please try again later.");
+            }
         };
 
 
