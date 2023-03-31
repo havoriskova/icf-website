@@ -13,6 +13,7 @@
     justify-content: flex-end;
     align-items: stretch;
     padding: 0px 20px; 
+    font-weight: 500;
 }
 
 
@@ -87,8 +88,9 @@
     background-color: var(--middle-orange-hover);
 }
 
-.active {
-    text-decoration: underline;
+.active:not(.accentColor) {
+    /* text-decoration: underline; */
+    font-weight: 900;
     /* pointer-events: none; - nemuzes, protoze porad potrebujes hover na zviditelneni subnav */
 }
 
