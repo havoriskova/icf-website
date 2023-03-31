@@ -53,6 +53,11 @@
     color: var(--middle-orange);
 }
 
+.linkItem a:hover .subNavArrow path {
+    fill: var(--middle-orange);
+    transition: fill .3s ease;
+}
+
 .linkItem.active:not(.accentColor) > a:hover, .linkItem.subNav a.active:hover {
     color: black;
 }
@@ -88,20 +93,44 @@
     position: relative;
 }
 
+.subNavLink {
+    padding-right: 1.5rem;
+    position: relative;
+}
+
+.subNavArrow {
+    position: absolute;
+    /* background-color: pink; */
+    transform: scale(.4);
+    pointer-events: none;
+    right: -1.2rem;
+    top: .3rem;
+}
+
+.subNavArrow svg {
+    transform: rotate(90deg);
+  }
+  
+  
+.subNavArrow path {
+    fill: black;
+    transition: fill .3s ease;
+}
 
 .subNavList {
     display: none;
     position: absolute;
     width: 110%;
     text-decoration: revert;
+    padding: .5rem 1rem;
 }
 
 
 .subNav:hover .subNavList {
     display: block;
-    background: rgba(252, 252, 252, 0.6);
-    -webkit-backdrop-filter: blur(3px);
-    backdrop-filter: blur(3px);
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 4px 30px rgba(125, 125, 125, 0.2);
+    border-radius: 0px 20px 20px 20px;
 }
 
 /* filter must be same as on layout.module.css .scrolled*/
@@ -123,8 +152,13 @@
     color: var(--middle-orange);
 }
 
+
 .subNavLinkItem.active {
     color: black;
+}
+
+.linkItem a.active:hover .subNavArrow path {
+ fill: black;
 }
 
 .hamburgerMenu {
@@ -164,19 +198,30 @@
         padding: .5rem 0;
     }
 
+
     .subNavList {
         display: block;
         position: static;
+        background: none;
+        box-shadow: none;
+        padding: 0;
+
     }
 
     .subNav:hover .subNavList {
         background: none;
         -webkit-backdrop-filter: none;
         backdrop-filter: none;
+        background: none;
+        box-shadow: none;
     }
 
     .subNavLinkItem > a {
         padding: .5rem 0;
+    }
+
+    .subNavArrow {
+        display: none;
     }
 
     .accentColor {
