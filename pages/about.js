@@ -24,11 +24,11 @@ export default function About() {
                 </div>
 
                 <div className="aboutHeroSection">
+                        <img alt="elephants" src="/images/aboutEleph.png"></img>
                         <div className='aboutHeroSection_heading'>
                             <h4 className='gradientText'>INSPIRATIONAL MISSION STATEMENT ON WHAT DRIVES ICF.</h4>
                             <h5>Mission statement</h5>
                         </div>
-                        <img alt="elephants" src="/images/aboutEleph.png"></img>
                 </div>
                     
                 <div className='articleComponent gradientBkgComponent'><Founding /></div> 

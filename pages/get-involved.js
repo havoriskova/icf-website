@@ -1,6 +1,7 @@
 import Layout from '../components/layout.js';
 import DonorBox from '../components/DonorBox.js';
 import Form from '../components/Form.js';
+import ImpactShop from '../components/ImpactShop.js';
 
 
 export default function GetInvolved() {
@@ -18,8 +19,9 @@ export default function GetInvolved() {
                     </div>
                 </div>
 
-                <div className='articleComponent gradientBkgComponent whiteStripe'><DonorBox /></div>
+                <div className='articleComponent pictureBkg'><DonorBox /></div>
                 <div className='articleComponent'><Form /></div>
+                <div className='articleComponent bkgBeigeComponent whiteStripeMd'><ImpactShop /></div>
 
 
             </div>

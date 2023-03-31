@@ -1,0 +1,13 @@
+
+
+.flexParent {
+    display: flex;
+    background: #FFFDED;
+    border-radius: 16px;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.donorboxContainer {
+    height: min-content;
+}

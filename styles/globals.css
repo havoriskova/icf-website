@@ -88,6 +88,17 @@ left: 0;
 right: 0;
 }
 
+.whiteStripeMd::before {
+  content: '';
+  width: 100%;
+  height: 2.3rem;
+  background-color: var(--bkg-white);
+  top: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
 .whiteStripeContact::before {
   content: '';
   width: 100%;
@@ -221,6 +232,16 @@ font-family: 'PeaceSans';
   margin-bottom: 2rem;
 }
 
+.orangeText {
+  color: var(--middle-orange);
+}
+
+.greenUnderlineLink {
+  color: var(--middle-green);
+  text-decoration: underline;
+  font-weight: 800;
+}
+
 ul {
   list-style: none;
   margin: 0;
@@ -291,6 +312,10 @@ h6 {
   margin: 3rem 0;
 }
 
+.marginBottom {
+  margin-bottom: 3rem;
+}
+
 /* .row {
   display: flex;
 } */
@@ -303,6 +328,9 @@ input, label {
 input {
   border-radius: 16px;
   padding: .2rem .5rem;
+  box-shadow: 0px 4px 25px rgba(85, 85, 85, 0.2);
+  border: none;
+  height: 30px;
 }
 
 form .readMore {
@@ -356,6 +384,10 @@ form .readMore {
 
 .darkGreenBkgComponent {
   background: var(--dark-green);
+}
+
+.pictureBkg {
+  background-image: url('/images/donorbox_placeholder.png');
 }
 
 .contentWidth {

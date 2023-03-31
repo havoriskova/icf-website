@@ -36,7 +36,7 @@ function Navbar({router}) {
                                 <Link href="/about" className={`${router.pathname === "/about" ? styles.active : ""} ${styles.subNavLink}`}>
                                     <div>About ICF
                                         <div className={styles.subNavArrow}>
-                                            <svg class="arrowSvg" width="50" height="50">
+                                            <svg className="arrowSvg" width="50" height="50">
                                                 <path d="m 42.681584,33.69458 -14.14025,14.140163 c -0.68197,0.681967 -1.78761,0.681967 -2.46951,0 l -1.64923,-1.649203 c -0.68079,-0.680852 -0.6821,-1.784279 -0.003,-2.466652 L 35.626034,32.459732 24.419654,21.200739 c -0.6792,-0.682403 -0.67789,-1.78579 0.003,-2.46659 l 1.64921,-1.649224 c 0.68197,-0.681968 1.78761,-0.681968 2.46951,0 l 14.14014,14.140162 c 0.68197,0.681867 0.68197,1.787526 1.1e-4,2.469493 z" fill="#ffffff"/>
                                             </svg>
                                         </div>
