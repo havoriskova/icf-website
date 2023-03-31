@@ -90,6 +90,10 @@ text-align: left;
     max-height: 40px;
 }
 
+.socials:hover img {
+    fill: var(--black-hover); /*needs redo*/
+}
+
 .ourAccreditation {
     margin-left: 102px;
     margin-bottom: 0;

@@ -33,6 +33,13 @@
     height: 100%;
 }
 
+.flexSubRowParent {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+}
+
 .linkItem {
     padding: 0 26px;
     /* border: solid black 1px; */
@@ -173,11 +180,21 @@
         background-color: var(--bkg-white);
     }
 
+    .flexSubRowParentContainer {
+        position: fixed;
+        top: 4.25rem;  /*zalezi na tlousce nav*/
+        left: 0;
+        right: 0;
+        bottom: 0;
+        backdrop-filter: grayscale(100%);
+    }
+
     .flexSubRowParent {
         /* order: 2; nepotrebuju, kdyz to dam pres absolute position */
-        position: absolute;
+        /* position: absolute; */
+        position: fixed;
         right: 0;
-        top: 4.2rem; /*zalezi na tlousce nav*/
+        top: 0;
         background: var(--bkg-white);
         box-shadow: 0px 4px 30px rgba(125, 125, 125, 0.2);
     }
@@ -192,6 +209,7 @@
         flex-direction: column;
         padding: 3rem;
         font-size: 2.5rem;
+        justify-content: flex-start;
     }
 
 
