@@ -25,6 +25,7 @@
     /* backdrop-filter: blur(3px); */ 
     /* background: rgba(255, 255, 255, 0.8); */
     background-color: var(--bkg-white);
+    box-shadow: 0px 4px 30px rgba(125, 125, 125, 0.2);
 }
 
 .footer {
