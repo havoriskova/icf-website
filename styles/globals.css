@@ -257,6 +257,11 @@ button a {
   display: block;
 }
 
+.inlineButton {
+  display: inline-block;
+  margin: 2rem 1rem;
+}
+
 button.readMore:hover {
   background-color: var(--middle-green-hover);
 }
