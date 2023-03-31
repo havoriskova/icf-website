@@ -31,25 +31,31 @@ function getRequestParams(email) {
 
     const url = `https://${DATACENTER}.api.mailchimp.com/3.0/lists/${LIST_ID}/members`;
 
-    const data = {
+    const body = JSON.stringify({
         email_address: email,
-        status: "subscribed",
-    };
+        status: "subscribed"
+      });
 
     // const base64ApiKey = Buffer.from(`anystring:${API_KEY}`).toString("base64");
     const headers = {
         "Content-Type": "application/json",
-        Authorization: {API_KEY},
+        'Authorization': `Basic properlivingproperty:${API_KEY}`,
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+        "Access-Control-Allow-Origin": "*"
     };
+
+    console.log('hi from requestparams');
+    console.log(res);
 
     return {
         url,
-        data,
+        body,
         headers,
       };
 }
 
-export default async (req, res) => {
+export default async function subscribeUser(req, res) {
 
 
    const {email} = req.body; //z form.js si posilas request s 'body', co tady prijimas
@@ -77,7 +83,7 @@ export default async (req, res) => {
         // })
         const { url, data, headers } = getRequestParams(email);
         const res = await axios.post(url, data, { headers });
-
+        console.log(res);
 
         // if (response.status === 200) {
         //     res.statusCode = 200

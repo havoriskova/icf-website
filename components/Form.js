@@ -22,26 +22,25 @@ export default function Form() {
             console.log('submited form', firstName, lastName, email);
 
             try {  
-                const res = await axios.post('/api/subscribeUser', {
-                    // body: JSON.stringify({
+                const res = await axios.post('/api/subscribeUser', {email});
+                        // body: JSON.stringify({
                     //         email: inputRefEmail.current.value,
                     //     }),
-                    email
-            
+                   
+                
                     // headers: {
                     //     'Content-Type': 'application/json',
                     // },
             
                     // method: 'POST',
-                });
 
                 // console.log(res.status);
 
-                // if (res.status === 200) {
-                //     alert('you are subscribed');
-                // } else {
-                //    alert('Sorry, something went wrong.')
-                // }
+                if (res.status === 200) {
+                    alert('you are subscribed');
+                } else {
+                   alert('Sorry, something went wrong.')
+                }
 
             } catch (e) {
                 console.log(e);
