@@ -209,8 +209,8 @@
     .flexSubRow.activeSubRow {
         display: flex;
         flex-direction: column;
-        padding: 3rem;
-        font-size: 2.5rem;
+        padding: 1rem;
+        font-size: 2rem;
         justify-content: flex-start;
     }
 

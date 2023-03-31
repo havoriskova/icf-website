@@ -576,6 +576,7 @@ form .readMore {
 .aboutHeroSection {
   margin-top: 2rem;
   position: relative;
+  background: var(--bkg-light-gradient);
 }
 
 .aboutHeroSection_heading {
