@@ -68,8 +68,8 @@ export default function Footer() {
                 <div className={styles.ourAccreditation}>
                         <h6>Our accreditations</h6>
                         <div className={styles.ourAccreditationFlex}>
-                            <span><img alt='anbi' src='/images/anbi.png'/></span>
-                            <span><img alt='ngo' src='/images/ngo.png'/></span>
+                            <span><Image alt='anbi' src='/images/anbi.svg' width={150} height={100}></Image></span>
+                            <span><Image alt='ngo' src='/images/ngo.png' width={250} height={100}></Image></span>
                         </div>
                 </div>
                 <div className={styles.copyEmailNotification} id='copyEmail' >"hello@icf.earth" copied to your clipboard</div>
