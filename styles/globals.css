@@ -281,6 +281,10 @@ h6 {
   font-size: 16px;
 }
 
+.articleMargin {
+  margin: 3rem 0;
+}
+
 /* .row {
   display: flex;
 } */
@@ -361,7 +365,7 @@ form .readMore {
 }
 
 .lastComponentOnPage {
-  padding-bottom: 2rem;
+  padding-bottom: 5rem;
 }
 
 

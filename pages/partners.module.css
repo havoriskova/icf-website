@@ -1,0 +1,30 @@
+
+
+.flexParentForLogos {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 4rem auto;  
+}
+
+.logoParent {
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: gray;
+    display: grid;
+    place-content: center;
+    flex: 0 1 35%;
+}
+
+
+@media (min-width: 600px) {
+
+    .logoParent {
+        flex: 1 1 20%;
+        max-width: 170px;
+    }
+
+}
+
