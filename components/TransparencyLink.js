@@ -17,7 +17,7 @@ export default function TransparencyLink() {
                     <button className='readMore'><Link href='/transparency'>Read more</Link></button>
                 </div>
                 <div className={styles.imageStyleContainer}>
-                    <img alt='placeholder' src='/images/pexels_nature.jpg'/>
+                    <img alt='placeholder' src='/images/transparency_picture.jpg'/>
                 </div>
             </div>
 

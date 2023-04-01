@@ -20,6 +20,11 @@
     width: 100%;
 }
 
+.imageStyleContainer img {
+    object-fit: cover;
+    height: 100%;
+}
+
 
 /*------------media queries ------------------------ */
 
