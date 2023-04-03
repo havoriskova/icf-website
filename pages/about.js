@@ -34,7 +34,7 @@ export default function About() {
                 <div className='articleComponent gradientBkgComponent'><Founding /></div> 
                 <div className='articleComponent' ><Mission /></div>
                 <div className='articleComponent'><MeetTheTeam /></div>
-                <div className='articleComponent darkGreenBkgComponent whiteStripe'><Projects /></div>
+                <div className='articleComponent bkgBeigeComponent whiteStripe'><Projects /></div>
                 <div className='articleComponent lastComponentOnPage'><GetInvolvedFancyLink imageStyle='circleWithLeaves' /></div>
             </div>
         </Layout>

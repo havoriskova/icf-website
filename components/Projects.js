@@ -9,9 +9,9 @@ export default function Projects() {
                 <h3>Our work<span className='headingRedDot'>.</span></h3>
             </div>
 
-            <h3 className="whiteText headerMd">latest projects</h3>
+            <h3 className="greenMiddleHeading headerMd">latest projects</h3>
             
-            <div className={`whiteText ${styles.flexParentTwoSameCol}`}>
+            <div className={styles.flexParentTwoSameCol}>
                 <div>
                     <div className={styles.parentImageBlog}>
                         <img className={styles.imageBlog} alt='placeholder' src='./images/pexels-blog-placeholder.jpg'/>

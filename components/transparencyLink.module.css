@@ -1,10 +1,12 @@
 .flexParentTwoSameCol {
     display: flex;
     flex-direction: column;
+    border-radius: 16px;
+    overflow: hidden;
 }
 
 .card {
-    background-color: var(--dark-green);
+    background-color: var(--bkg-beige);
     display: grid;
     place-content: center;
     padding: 3rem;
@@ -12,7 +14,6 @@
 
 .card p {
     text-align: center;
-    color: var(--white);
     max-width: 300px;
 }
 
