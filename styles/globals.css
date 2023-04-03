@@ -387,7 +387,8 @@ form .readMore {
 }
 
 .pictureBkg {
-  background-image: url('/images/donorbox_placeholder.png');
+  background: linear-gradient(0deg, rgba(255, 251, 225, 0.3), rgba(255, 251, 225, 0.3)), url('/images/homepage_1.jpg');
+  /* background-image: url('/images/donorbox_placeholder.png'); */
 }
 
 .contentWidth {
@@ -462,9 +463,9 @@ form .readMore {
   position: relative;
   margin: 2rem auto;
   justify-content: space-around;
-  gap: 1rem;
+  gap: .5rem;
   flex-wrap: wrap;
-  width: 85%;
+  width: 100%;
   display: none;
   opacity: 0;
   animation: opacityChanging backwards 1s;
@@ -542,7 +543,7 @@ form .readMore {
 
 .meetTheTeamGridContainer .arrow {
   position: absolute;
-  top: 50%;
+  top: 53%;
   /* background-color: red; */
   width: 20px;
   aspect-ratio: 1/1;
@@ -609,6 +610,7 @@ form .readMore {
   margin-top: 2rem;
   position: relative;
   background: var(--bkg-light-gradient);
+  height: 300px;
 }
 
 .aboutHeroSection_heading {
@@ -626,10 +628,32 @@ form .readMore {
 }
 
 .aboutHeroSection img {
-  width: 100%;
+  /* object-fit: cover; */
+  height: 100%;
+  max-width:min-content;
 }
 
 /*----------------------------------MEDIA  QUERIES-------------------------------------------------*/
+
+@media (min-width: 400px) {
+  .meetTheTeamGrid {
+    width: 85%;
+    gap: 1rem;
+  }
+
+  
+}
+
+@media (min-width: 500px) {
+  
+  .aboutHeroSection {
+    height: auto;
+  }
+
+  .aboutHeroSection img {
+    width: 100%;
+  }
+}
 
 @media (min-width: 600px) {
   .two-four-grid.conserving > * {
@@ -639,6 +663,7 @@ form .readMore {
   .two-four-grid.mission > * {
     margin: 1rem;
   }
+
 
   .meetTheTeamGrid .card {
     margin-top: 6rem; /**/
