@@ -33,8 +33,8 @@
     bottom: .3rem;
 }
 
-
-@media (min-width: 700px) {
+/*----------- musi byt 960px, a doborbox musi byt na vetsi sirce strcenej na flex-end*/
+@media (min-width: 960px) {
     .flexParent {
      flex-direction: row;
     }
