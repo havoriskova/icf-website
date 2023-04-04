@@ -1,24 +1,25 @@
 import Script from "next/script";
 import Link from 'next/link';
 import styles from './donorbox.module.css';
+import Image from 'next/image';
 
 
-export default function DonorBox() {
+export default function DonorBox({getInvolved}) {
 
     return(
         <div className='contentWidth'>
 
 
-                <div className="headerMd orangeText articleMargin">
+                {getInvolved ? <div className="headerMd orangeText articleMargin">
                     <h3>Donate</h3>
-                </div>
+                </div> : null}
 
                 <div className={styles.flexParent}>
-                    <div>
+                    <div className={styles.donateMessage}>
                         <div><p>Text about how donation will help (what it funds, etc)</p></div>
-                        <div className="centeredText">Prefer donating in crypto?  
-                            <Link href='/donate-crypto'> Click here</Link>
-                        </div>
+                        {getInvolved ? <button className={`readMore ${styles.buttonBitcoin}`}>  
+                            <Link href='/donate-crypto'> Donate in crypto   <Image className={styles.bitcoin} alt='logo' src='/images/bitcoin-vector.svg' width={20} height={20}></Image></Link>
+                        </button> : null }
                     </div>
 
                     <div className={styles.donorboxContainer}>

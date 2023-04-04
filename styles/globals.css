@@ -387,8 +387,13 @@ form .readMore {
 }
 
 .pictureBkg {
-  background: linear-gradient(0deg, rgba(255, 251, 225, 0.3), rgba(255, 251, 225, 0.3)), url('/images/homepage_1.jpg');
+  background: linear-gradient(0deg, rgba(255, 251, 225, 0.3), rgba(255, 251, 225, 0.3)), url('/images/donorbox_placeholder.png');
+  background-repeat: no-repeat;
+  background-size: cover;
   /* background-image: url('/images/donorbox_placeholder.png'); */
+  width: 100%;
+  max-width: auto;
+  /* height: auto; */
 }
 
 .contentWidth {

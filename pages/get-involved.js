@@ -19,7 +19,7 @@ export default function GetInvolved() {
                     </div>
                 </div>
 
-                <div className='articleComponent pictureBkg'><DonorBox /></div>
+                <div className='articleComponent pictureBkg'><DonorBox getInvolved/></div>
                 <div className='articleComponent'><Form /></div>
                 <div className='articleComponent bkgBeigeComponent whiteStripeMd'><ImpactShop /></div>
 

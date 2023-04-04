@@ -6,8 +6,36 @@
     border-radius: 16px;
     overflow: hidden;
     justify-content: space-between;
+    flex-direction: column;
 }
 
 .donorboxContainer {
     height: min-content;
+    flex: 1 1 50%;
+}
+
+.donateMessage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    flex:1 1 50%;
+}
+
+.buttonBitcoin {
+ padding-right: 1rem;
+ position: relative;
+}
+
+.bitcoin {
+    position: absolute;
+    right: .8rem;
+    bottom: .3rem;
+}
+
+
+@media (min-width: 700px) {
+    .flexParent {
+     flex-direction: row;
+    }
 }
