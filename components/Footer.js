@@ -10,11 +10,11 @@ export default function Footer() {
            <div className={styles.containerContent}>
                 <div className={styles.bottomBorder}>
                     <h6 className={styles.center}>Follow us</h6>
-                    <p className={`${styles.center} ${styles.socials}`}>
+                    <div className={`${styles.center} ${styles.socials}`}>
                         <a href='https://www.linkedin.com/company/international-conservation-fund/'  target='_blank'><img alt='logo-linkedIn' src='/images/linkedIn.svg' /></a>
                         <a href='https://www.instagram.com/icf.earth/' target='_blank'><img alt='logo-insta' src='/images/insta.svg' /></a>
                         <a href='https://twitter.com/icf_earth'  target='_blank'><img alt='logo-twitter' src='/images/twitter.svg' /></a>
-                    </p>
+                    </div>
                 </div>
 
                 <div className={styles.footerBottomGrid}>
@@ -23,15 +23,15 @@ export default function Footer() {
                     </div>
                     <div className={`${styles.footerBottomGridChild} ${styles.sitemap}`}>
                         <h6>Get involved</h6>
-                        <p>Donate</p>
-                        <p>Donate using crypto</p>
+                        <div className={styles.sitemapLink}>Donate</div>
+                        <div className={styles.sitemapLink}>Donate using crypto</div>
                         <h6>Stories</h6>
                     </div>
                     <div className={`${styles.footerBottomGridChild} ${styles.sitemap}`}>
                         <h6>About ICF</h6>
-                        <p>Meet the team</p>
-                        <p>Our work</p>
-                        <p>Contact us</p>
+                        <div className={styles.sitemapLink}>Meet the team</div>
+                        <div className={styles.sitemapLink}>Our work</div>
+                        <div className={styles.sitemapLink}>Contact us</div>
                         <h6>Impact shop</h6>
                     </div>
                     <div className={`${styles.footerBottomGridChild} ${styles.sitemap}`}>

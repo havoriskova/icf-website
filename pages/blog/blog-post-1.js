@@ -6,7 +6,17 @@ export default function BlogPostOne() {
         <Layout pageTitle='Blog post'>
             <div className='container'>
                 
-        </div>
+                <div className='firstComponentOnPage'>  
+                    <div  className="headingForSections centeredWithLeave">
+                            <span className="headingLeave orangeLeave centerLeave"></span>
+                            <h3>Our stories<span className="headingRedDot">.</span></h3>
+                    </div>
+                </div>
+
+                <div>blog post 1</div>
+
+                
+            </div>
         </Layout>
     )
 }
