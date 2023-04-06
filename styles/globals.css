@@ -337,6 +337,7 @@ input {
 
 form .readMore {
   margin-left: 0;
+  font-size: 16px;
 }
 
 
@@ -811,7 +812,7 @@ form .readMore {
 @media (min-width: 800px) {
 
   .contentWidth.contenctWidthGetInvolved {
-    max-width: 700px;
+    max-width: 850px;
   }
 
   .meetTheTeamGrid {

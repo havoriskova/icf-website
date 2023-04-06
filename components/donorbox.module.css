@@ -46,6 +46,20 @@
 }
 
 /*----------- musi byt 960px---*/
+
+@media (min-width: 700px) {
+    .buttonBitcoin {
+        padding-right: 2rem;
+       }
+       
+       .bitcoin {
+           position: absolute;
+           right: 1.3rem;
+           bottom: .7rem;
+       }
+}
+
+
 @media (min-width: 850px) {
     .flexParent {
      flex-direction: row;
