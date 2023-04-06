@@ -1,0 +1,39 @@
+
+
+
+/*------------------------grid ------------------*/
+.blogGridContainer {
+    margin: 2rem auto;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.card {
+   flex: 1 0 250px;
+   margin: 1rem 0;
+}
+
+
+.imageContainer {
+    overflow: hidden;
+    /* background-color: gray; */
+}
+
+.imageContainer img {
+    object-fit: cover;
+    height: 250px;
+    width: 100%;
+    border-radius: 16px;
+}
+
+.cardInfo {
+    font-size: 16px;
+    margin: .5rem 0;
+}
+
+.cardTitle {
+    font-size: 24px;
+    margin: 1rem 0;
+}
+

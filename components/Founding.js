@@ -11,7 +11,7 @@ export default function Founding() {
             </div>
 
             <div className={styles.flexParentTwoSameCol}>
-                <p>
+                <p className="paragraph">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Quidem ea esse aliquid explicabo nihil nam. Ut sequi vitae corporis dolorum repellat. 
                     Ipsa exercitationem explicabo repudiandae at corrupti pariatur aspernatur autem.

@@ -13,7 +13,7 @@ export default function OurStories() {
             </div>
 
             <div className={styles.flexParentTwoSameCol}>
-                <p>
+                <p className="paragraph">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Quidem ea esse aliquid explicabo nihil nam. Ut sequi vitae corporis dolorum repellat. 
                     Ipsa exercitationem explicabo repudiandae at corrupti pariatur aspernatur autem.
@@ -24,8 +24,8 @@ export default function OurStories() {
                     distinctio quaerat ducimus consectetur repellat unde repudiandae eaque exercitationem dignissimos dolores, optio, 
                     expedita architecto eius voluptatibus? Ut, voluptatum.
                 </p>
-                <div>
-                    <p>
+            <div>
+                    <p className="paragraph">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Quidem ea esse aliquid explicabo nihil nam. Ut sequi vitae corporis dolorum repellat. 
                         Ipsa exercitationem explicabo repudiandae at corrupti pariatur aspernatur autem.
@@ -36,7 +36,7 @@ export default function OurStories() {
                         distinctio quaerat ducimus consectetur repellat unde repudiandae eaque exercitationem dignissimos dolores, optio, 
                         expedita architecto eius voluptatibus? Ut, voluptatum.
                     </p>
-                </div>
+            </div>
             </div>
 
             <button className="readMore"><Link href='/about'>Read more</Link></button>

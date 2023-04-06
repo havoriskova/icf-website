@@ -1,4 +1,7 @@
 import Layout from '../../components/layout.js';
+import GetInvolvedFancyLink from '../../components/GetInvolvedFancyLink.js';
+import RelatedStories from '../../components/RelatedStories.js';
+import BlogPost from '../../components/BlogPost.js';
 
 export default function BlogPostOne() {
 
@@ -13,8 +16,11 @@ export default function BlogPostOne() {
                     </div>
                 </div>
 
-                <div>blog post</div>
+                <div className='articleComponent'><BlogPost /></div>
 
+                <div className='articleComponent bkgBeigeComponent'><RelatedStories /></div>
+
+                <div className='articleComponent lastComponentOnPage'><GetInvolvedFancyLink imageStyle='OneImageLeaveShaped' /></div>
                 
             </div>
         </Layout>
