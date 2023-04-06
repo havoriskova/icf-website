@@ -19,8 +19,8 @@ export default function About() {
                             <h3 className='centeredText'>
                             <span className="headingLeave orangeLeave centerLeave centeredLeave_h3_span"></span>
                             <span className='centered_h3_span'>About ICF</span><span className="headingRedDot">.</span></h3>
-                            <span className="subHeadingDown centeredText">Learn about who we are</span>
                         </div>
+                        <div className="subHeadingDown centeredText">Learn about who we are</div>
                 </div>
 
                 <div className="aboutHeroSection">

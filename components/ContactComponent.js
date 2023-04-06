@@ -11,7 +11,7 @@ return(
                         <h3>contact us<span className="headingRedDot">.</span></h3>
         </div>
 
-        <div className="headingForSections greenMiddleHeading">
+        <div className="headerMd greenMiddleHeading">
             <h3>Got questions?</h3>
         </div>
 
@@ -19,7 +19,7 @@ return(
             mailchimp form
         </div>
 
-        <div className="headingForSections greenMiddleHeading">
+        <div className="headerMd greenMiddleHeading">
             <h3>Or come say hello at</h3>
         </div>
 

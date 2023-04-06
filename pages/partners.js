@@ -20,7 +20,7 @@ export default function Partners() {
                 
                 <div className='contentWidth'>
 
-                    <div className="headingForSections greenMiddleHeading">
+                    <div className="headerMd greenMiddleHeading">
                         <h3>Subtitle (type of partner)</h3>
                     </div>
 
@@ -44,7 +44,7 @@ export default function Partners() {
 
                     </div>
 
-                    <div className="headingForSections greenMiddleHeading">
+                    <div className="headerMd greenMiddleHeading">
                         <h3>Subtitle (type of partner)</h3>
                     </div>
 

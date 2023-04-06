@@ -14,8 +14,8 @@ export default function OurWork() {
                                 <span className="headingLeave orangeLeave centerLeave centeredLeave_h3_span_two"></span>
                                 <span className='centered_h3_span'>Our work</span><span className="headingRedDot">.</span>
                             </h3>
-                            <span className="subHeadingDown centeredText">Learn about our contribution and impact</span>
                         </div>
+                        <div className="subHeadingDown centeredText">Learn about our contribution and impact</div>
                 </div>
 
 

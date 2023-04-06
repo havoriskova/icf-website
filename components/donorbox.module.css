@@ -1,4 +1,8 @@
-
+.contentWidthDonate {
+    position: relative;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
 
 .flexParent {
     display: flex;

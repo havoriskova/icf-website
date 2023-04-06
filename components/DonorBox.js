@@ -7,7 +7,7 @@ import Image from 'next/image';
 export default function DonorBox({getInvolved}) {
 
     return(
-        <div className='contentWidth'>
+        <div className={styles.contentWidthDonate}>
 
 
                 {getInvolved ? <div className="headerMd orangeText articleMargin centeredText">

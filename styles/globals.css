@@ -80,7 +80,7 @@ body {
 .whiteStripe::before {
 content: '';
 width: 100%;
-height: 4.4rem;
+height: 5.7rem;
 background-color: var(--bkg-white);
 top: 0;
 position: absolute;
@@ -91,7 +91,7 @@ right: 0;
 .whiteStripeMd::before {
   content: '';
   width: 100%;
-  height: 2.3rem;
+  height: 2.7rem;
   background-color: var(--bkg-white);
   top: 0;
   position: absolute;
@@ -102,7 +102,7 @@ right: 0;
 .whiteStripeContact::before {
   content: '';
   width: 100%;
-  height: 5rem;
+  height: 3.7rem;
   background-color: var(--bkg-white);
   top: 0;
   position: absolute;
@@ -158,6 +158,7 @@ font-family: 'PeaceSans';
   text-transform: uppercase;
   position: relative;
   font-size: 26px;
+  padding: 1rem 0 0;
 }
 
 .headingRedDot {
@@ -167,8 +168,8 @@ font-family: 'PeaceSans';
 .headingForSections .subHeading {
   color: var(--middle-green);
   position: absolute;
-  top: -1.2rem;
-  left: 1.2rem;
+  top: -.5rem;
+  left: 2rem; 
   font-weight: 600;
   
 }
@@ -179,13 +180,13 @@ font-family: 'PeaceSans';
 }
 
 .headingLeave {
-  width: 35px;
+  width: 50px;
   aspect-ratio: 1 / 1;
   background: linear-gradient(220.06deg, #BDD98D 35.86%, #84A54B 81.59%);
   display: inline-block;
   position: absolute;
-  left: -20px;
-  top: -15px;
+  left: -25px;
+  top: -7px;
   border-radius: var(--leave-border-radius);
 }
 
@@ -197,28 +198,28 @@ font-family: 'PeaceSans';
 .centered_h3_span {
   position: relative;
   text-align: center;
-  left: -12%;
+  /* left: -12%; */
 }
 
 .centered_h3_span ~ .headingRedDot {
  position: relative;
- left: -12%;
+ /* left: -12%; */
 }
 
-.centerLeave {
+/* .centerLeave {
   position: relative;
   left: -1rem;
   top: 1.5rem;
-}
+} */
 
-.centeredLeave_h3_span {
+/* .centeredLeave_h3_span {
   left: -0.3rem;
   top: -0.2rem;
 }
 
 .centeredLeave_h3_span_two {
   top: -0.2rem;
-}
+} */
 
 .whiteText {
   color: var(--bkg-beige);
@@ -228,7 +229,7 @@ font-family: 'PeaceSans';
   font-family: 'PeaceSans';
   text-transform: uppercase;
   position: relative;
-  font-size: 24px;
+  font-size: 22px;
   margin-bottom: 2rem;
 }
 
@@ -400,7 +401,7 @@ form .readMore {
   /*border: red solid 1px; /*temporary border to see */
   max-width: 90%;
   margin: 0 auto;
-  padding: 1rem 2rem 2rem;
+  padding: 1rem .5rem 2rem; /*musis nechat kvuli MeetTheTeam*/
   position: relative;
 }
 
@@ -664,12 +665,11 @@ form .readMore {
     max-width: 100%;
   }
 
-  .headingForSections h3 {
-    font-size: 40px;
-  }
 }
 
 @media (min-width: 600px) {
+
+
   .two-four-grid.conserving > * {
     margin: 1rem;
   }
@@ -703,6 +703,51 @@ form .readMore {
 }
 
 @media (min-width: 700px) {
+
+  .headingForSections h3 {
+    font-size: 54px;
+    /* padding: 1rem 0 0; */
+    padding: 3rem 0 0;
+  }
+
+  .headingForSections .subHeading {
+    top: 0.2rem;
+    left: 4rem; 
+    font-size: 30px;
+  }
+
+  .subHeadingDown {
+    font-size: 30px;
+  }
+
+  .headerMd {
+    font-size: 35px;
+  } 
+
+  .headingLeave {
+    width: 96px;
+    /* left: -25px;
+    top: -7px; */
+    left: -45px;
+    top: 7px;
+  }
+
+  .whiteStripe::before {
+    height: 9.4rem;
+  }
+
+  .whiteStripeMd::before {
+    height: 3.6rem;
+  }
+
+  .whiteStripeContact::before {
+    height: 7.5rem;
+  }
+
+  .readMore {
+    font-size: 24px;
+  }
+
   .two-four-grid.conserving {
     display: flex;
     justify-content: space-around;
