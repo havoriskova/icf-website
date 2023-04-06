@@ -10,14 +10,16 @@ export default function DonateCrypto() {
                 
             
         
-            <div className='firstComponentOnPage'>
-                <div  className="headingForSections centeredWithLeave">
-                        <span className="headingLeave orangeLeave centerLeave"></span>
-                        <h3>Donate in crypto<span className="headingRedDot">.</span></h3>
+                <div className='firstComponentOnPage'>
+                    <div  className="headingForSections centeredWithLeave">
+                            <span className="headingLeave orangeLeave centerLeave"></span>
+                            <h3>Donate in crypto<span className="headingRedDot">.</span></h3>
+                    </div>
                 </div>
-            </div>
 
-                <DonorCrypto />
+
+                <div className='pictureBkg'> <DonorCrypto /> </div>
+
             </div>
         </Layout>
     )

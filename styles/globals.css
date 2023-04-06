@@ -157,7 +157,7 @@ font-family: 'PeaceSans';
   font-family: 'PeaceSans';
   text-transform: uppercase;
   position: relative;
-  font-size: 30px;
+  font-size: 26px;
 }
 
 .headingRedDot {
@@ -400,7 +400,7 @@ form .readMore {
   /*border: red solid 1px; /*temporary border to see */
   max-width: 90%;
   margin: 0 auto;
-  padding: .5rem .5rem 2rem;
+  padding: 1rem 2rem 2rem;
   position: relative;
 }
 
@@ -662,6 +662,10 @@ form .readMore {
     object-fit: cover;
     max-height: 100%;
     max-width: 100%;
+  }
+
+  .headingForSections h3 {
+    font-size: 40px;
   }
 }
 

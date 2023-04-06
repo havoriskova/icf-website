@@ -1,0 +1,62 @@
+.contentWidthCrypto {
+    position: relative;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.flexParent {
+    display: flex;
+    background: #FFFDED;
+    border-radius: 16px;
+    overflow: hidden;
+    justify-content: space-between;
+    flex-direction: column;
+    max-width: 330px; /*podle cryptoboxu*/
+    margin: 0 auto;
+    padding: 0;
+    gap: 2rem;
+}
+
+.donorCryptoContainer {
+    /* height:  */
+    flex: 1 1 50%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* width:  */
+    /* max-width:  */
+    margin: 0 auto;
+}
+
+.donateMessage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex:1 1 50%;
+    padding: 2rem;
+}
+
+
+
+
+/*----------- musi byt 750 protoze na pc width uz by se nevesel text..... 900px protoze donorBox ma taky 900px ---*/
+@media (min-width: 750px) {
+    .contentWidthCrypto {
+        margin: 2rem;
+    }
+
+    .flexParent {
+     flex-direction: row;
+     max-width: 900px;
+     padding: 2rem;
+    }
+
+    .donorCryptoContainer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .donateMessage {
+        padding: 0;
+    }
+}

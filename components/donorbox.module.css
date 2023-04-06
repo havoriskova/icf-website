@@ -9,6 +9,7 @@
     flex-direction: column;
     max-width: 420px; /*800*/
     margin: 0 auto;
+    gap: 2rem;
 }
 
 .donorboxContainer {
@@ -45,6 +46,7 @@
     .flexParent {
      flex-direction: row;
      max-width: 900px;
+     gap: 0;
     }
 
     .donorboxContainer {
