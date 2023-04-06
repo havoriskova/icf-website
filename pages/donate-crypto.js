@@ -1,5 +1,6 @@
 import Layout from '../components/layout.js';
 import DonorCrypto from '../components/DonorCrypto.js';
+import GetInvolvedNotFancyLink from '../components/getInvolvedNotFancyLink.js';
 
 
 export default function DonateCrypto() {
@@ -19,6 +20,7 @@ export default function DonateCrypto() {
 
 
                 <div className='pictureBkg'> <DonorCrypto /> </div>
+                <div className='lastComponentOnPage'><GetInvolvedNotFancyLink /></div>
 
             </div>
         </Layout>

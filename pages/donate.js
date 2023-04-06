@@ -1,5 +1,6 @@
 import Layout from '../components/layout.js';
 import DonorBox from '../components/DonorBox.js';
+import GetInvolvedNotFancyLink from '../components/getInvolvedNotFancyLink.js';
 
 
 export default function Donate() {
@@ -17,6 +18,7 @@ export default function Donate() {
         
             <div className='pictureBkg'>  <DonorBox /> </div>
 
+            <div className='lastComponentOnPage'><GetInvolvedNotFancyLink /></div>
               
             </div>
         </Layout>
