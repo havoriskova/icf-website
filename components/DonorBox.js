@@ -10,7 +10,7 @@ export default function DonorBox({getInvolved}) {
         <div className='contentWidth'>
 
 
-                {getInvolved ? <div className="headerMd orangeText articleMargin">
+                {getInvolved ? <div className="headerMd orangeText articleMargin centeredText">
                     <h3>Donate</h3>
                 </div> : null}
 
@@ -23,7 +23,7 @@ export default function DonorBox({getInvolved}) {
                     </div>
 
                     <div className={styles.donorboxContainer}>
-                        <iframe src="https://donorbox.org/embed/support-our-mission-38?default_interval=m&amount=25" name="donorbox" allowpaymentrequest="allowpaymentrequest" seamless="seamless" frameBorder="0" scrolling="no" height="900px" width="100%" style={{maxWidth: '500px', minWidth: '250px', maxHeight: '700px'}}></iframe>
+                        <iframe src="https://donorbox.org/embed/support-our-mission-38?default_interval=m&amount=25" name="donorbox" allowpaymentrequest="allowpaymentrequest" seamless="seamless" frameBorder="0" scrolling="no" height="599px" width="100%" style={{maxWidth: '423px', minWidth: '250px', maxHeight: '599px'}}></iframe>
                     </div>
                 </div>
 

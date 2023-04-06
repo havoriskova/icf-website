@@ -8,11 +8,16 @@ export default function Donate() {
         <Layout>
             <div className='container'>
                 
-            
+            <div className='firstComponentOnPage'>  
+                <div  className="headingForSections centeredWithLeave">
+                        <span className="headingLeave orangeLeave centerLeave"></span>
+                        <h3>Make a donation<span className="headingRedDot">.</span></h3>
+                </div>
+            </div>
         
-            <div className='firstComponentOnPage'>Donate content</div>
+            <div className='pictureBkg'>  <DonorBox /> </div>
 
-                <DonorBox />
+              
             </div>
         </Layout>
     )

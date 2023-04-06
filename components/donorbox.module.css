@@ -7,11 +7,18 @@
     overflow: hidden;
     justify-content: space-between;
     flex-direction: column;
+    max-width: 420px; /*800*/
+    margin: 0 auto;
 }
 
 .donorboxContainer {
-    height: min-content;
+    height: 599px; /*599px*/
     flex: 1 1 50%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* width: 423px; nesmi byt, jinak se donorbox nezuzi - meni styl podle sirky */
+    max-width: 423px;
 }
 
 .donateMessage {
@@ -33,9 +40,14 @@
     bottom: .3rem;
 }
 
-/*----------- musi byt 960px, a doborbox musi byt na vetsi sirce strcenej na flex-end*/
-@media (min-width: 960px) {
+/*----------- musi byt 960px---*/
+@media (min-width: 850px) {
     .flexParent {
      flex-direction: row;
+     max-width: 900px;
+    }
+
+    .donorboxContainer {
+        height: 599px;
     }
 }
