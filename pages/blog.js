@@ -19,10 +19,13 @@ export default function Stories() {
 
                 <div className='articleComponent bkgBeigeComponent'><StoriesGrid /></div>
 
-                <div className='contentWidth lastComponentOnPage kumbhSansSemiBold'>
-                    <p className='centeredText'>Want to contribute to our mission? Learn how you can get involved</p>
-                    <button className='readMore accentColor'><Link href='/get-involved'>Get Involved</Link></button>
+                <div className='articleComponent lastComponentOnPage'>
+                    <div className='contentWidth kumbhSansSemiBold'>
+                        <p className='centeredText'>Want to contribute to our mission? Learn how you can get involved</p>
+                        <button className='readMore accentColor'><Link href='/get-involved'>Get Involved</Link></button>
+                    </div>
                 </div>
+               
             
            
             </div>

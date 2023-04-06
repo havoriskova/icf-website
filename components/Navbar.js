@@ -61,7 +61,8 @@ function Navbar({router}) {
                                 <Link href="/blog">Stories</Link>
                             </li>
                             <li className={`${router.pathname === "/shop" ?  styles.active : ""} ${styles.linkItem}`}>
-                                <Link href="/shop">Impact Shop</Link>
+                                {/* <Link href="/shop">Impact Shop</Link> */}
+                                <a href='https://www.linkedin.com/company/international-conservation-fund/'  target='_blank'>Impact Shop</a>
                             </li>
                         </ul>
                     </div>

@@ -753,6 +753,10 @@ form .readMore {
     font-size: 24px;
   }
 
+  .centeredText {
+    font-size: 24px;
+  }
+
   .two-four-grid.conserving {
     display: flex;
     justify-content: space-around;

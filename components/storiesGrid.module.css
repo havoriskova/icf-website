@@ -1,0 +1,108 @@
+
+
+.searchStoriesContainer {
+    position: relative;
+    margin: 2rem auto;
+    width: 90%;
+    max-width: 830px;
+}
+
+input.searchStoriesInput {
+    width: 100%;
+    margin: 0 auto;
+    height: 40px;
+    border-radius: 40px;
+    padding-left: 3rem; 
+}
+
+.searchIcon {
+    position: absolute;
+    top: .7rem;
+    left: 1rem;
+    cursor: pointer;
+}
+
+.filterStoriesContainer {
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.filterButton {
+    background-color: var(--middle-green);
+    color: var(--white);
+    box-shadow: 0px 4px 30px rgba(132, 165, 75, 0.25);
+    border-radius: 36px;
+    border: none;
+    display: block;
+    margin: 3rem auto 0rem auto;
+    font-family: 'KumbhSans', sans-serif;
+    font-weight: 600;
+    letter-spacing: var(--letter-spacing-button);
+    cursor: pointer;
+    transition: all .3s ease;
+    padding: 0.5rem 1.5rem;
+    display: block;
+    background-color: #778461;
+}
+
+input:checked + label .filterButton {
+    background-color: #2E4010;
+}
+
+.filterStoriesContainer input[type='radio'] {
+    display: none;
+}
+
+
+
+/*------------------------grid ------------------*/
+.blogGridContainer {
+    margin: 2rem auto;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.card {
+   flex: 1 0 250px;
+   margin: 1rem 0;
+}
+
+
+.imageContainer {
+    overflow: hidden;
+    /* background-color: gray; */
+}
+
+.imageContainer img {
+    object-fit: cover;
+    height: 250px;
+    width: 100%;
+    border-radius: 16px;
+}
+
+.cardInfo {
+    font-size: 16px;
+    margin: .5rem 0;
+}
+
+.cardTitle {
+    font-size: 24px;
+    margin: 1rem 0;
+}
+
+
+
+/*-------------------media queries*/
+
+
+@media (min-width: 700px) {
+    .filterButton {
+        font-size: 24px;
+    }
+
+    .filterStoriesContainer {
+        gap: 3rem;
+    }
+}
