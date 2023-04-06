@@ -25,7 +25,11 @@ text-transform: none;
     border-radius: 16px;
 }
 
+/* .imageContainerHalfWidth {
+} */
+
 .imageContainerHalfWidth img {
+    display: block;
     object-fit: cover;
     height: 250px;
     aspect-ratio: 1/1;
@@ -54,9 +58,22 @@ text-transform: none;
     }  
 
     .lastParagraph {
+        display: flex;
+        gap: 2rem;
+        justify-content: space-between;
 
     }
 
+    .imageContainerHalfWidth {
+       flex: 1 0 300px;
+        /* width: 50%;
+        padding-left: 5%; */
+    }
+
+    .imageContainerHalfWidth img {
+        height: 300px;
+        margin: 1rem 0;
+    } 
     
 
     .buttonsAfterArticle {
