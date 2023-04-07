@@ -26,6 +26,7 @@ export default function Footer() {
                         <div className={styles.sitemapLink}>Donate</div>
                         <div className={styles.sitemapLink}>Donate using crypto</div>
                         <h6>Stories</h6>
+                        <h6>Partners</h6>
                     </div>
                     <div className={`${styles.footerBottomGridChild} ${styles.sitemap}`}>
                         <h6>About ICF</h6>
@@ -34,11 +35,13 @@ export default function Footer() {
                         <div className={styles.sitemapLink}>Contact us</div>
                         <h6>Impact shop</h6>
                     </div>
-                    <div className={`${styles.footerBottomGridChild} ${styles.sitemap}`}>
+                    {/* <div className={`${styles.footerBottomGridChild} ${styles.sitemap}`}>
                         <h6>Partners</h6>
-                    </div>
-                    
-                    <div className={`${styles.footerBottomGridChild} ${styles.getInTouch}`}>
+                    </div> */}
+                   
+                </div>
+
+                <div className={`${styles.footerBottomGridChild} ${styles.getInTouch}`}>
                         <table>
                             <thead>
                                 <tr>
@@ -58,12 +61,7 @@ export default function Footer() {
                                 </tr>
                             </tbody>
                         </table>
-                        <h6>Terms of use</h6>
-                        <h6>Privacy policy</h6>
-                        <h6>Transparency</h6>
                     </div>
-                   
-                </div>
 
                 <div className={styles.ourAccreditation}>
                         <h6>Our accreditations</h6>
@@ -72,6 +70,15 @@ export default function Footer() {
                             <span><Image alt='ngo' src='/images/ngo.png' width={250} height={100}></Image></span>
                         </div>
                 </div>
+                <div className={styles.termsOfUse}>
+                        <h6>Terms of use</h6>
+                        <h6>Privacy policy</h6>
+                        <h6>Transparency</h6>
+                </div>
+
+
+
+
                 <div className={styles.copyEmailNotification} id='copyEmail' >"hello@icf.earth" copied to your clipboard</div>
             </div>
         </div>

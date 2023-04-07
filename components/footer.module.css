@@ -15,6 +15,7 @@
     max-width: var(--max-width-of-content);
     margin: 0 auto;
     padding-top: 0;
+    position: relative;
 }
 
 .containerContent h6 {
@@ -43,6 +44,10 @@ text-align: left;
     
 }
 
+.logoImg {
+    display: none;
+}
+
 .footerBottomGridChild:nth-child(1) {
     flex: 1 1 auto;
     display: flex;
@@ -54,12 +59,12 @@ text-align: left;
 }
 
 .footerBottomGrid .sitemap {
-    display: none;
+    display: block;
     flex: 1 1 150px;
 }
 
 .footerBottomGridChild.getInTouch {
-     flex: 1 1 auto;
+     display: none;
 }
 
 .row {
@@ -95,19 +100,38 @@ text-align: left;
 }
 
 .ourAccreditation {
-    margin-left: 102px;
+    /* margin-left: 102px; */
     margin-bottom: 0;
     margin-top: 2rem;
-    display: none;
+}
+
+.ourAccreditation h6 {
+    text-align: center;
 }
 
 
 .ourAccreditationFlex {
     display: flex;
+    justify-content: center;
     align-items: flex-end;
     gap: 2rem;
-    margin-top: 1rem;
+    margin: 1rem auto;
 }
+
+
+.termsOfUse {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.termsOfUse > * {
+    padding: .3rem 0;
+}
+
+
+
+
 
 .copyEmailNotification {
     display: block;
@@ -130,14 +154,20 @@ text-align: left;
 }
 
 
+/*---------------media ---------------*/
 
 @media (min-width: 600px) {
+
+    .logoImg {
+        display: block;
+    }
+
     .socials > a > img {
         height: 60px;
     }
 }
 
-@media (min-width: 765px) {
+@media (min-width: 800px) {
 
     .footerBottomGridChild:nth-child(1) {
         align-items: flex-start;
@@ -145,17 +175,47 @@ text-align: left;
         flex: 0 0 70px;
     }
 
-    .footerBottomGrid .sitemap {
-        display: block;
+    .footerBottomGrid {
+        width: 100%;
     }
+
+    .footerBottomGrid .sitemap {
+        flex: 0 1 200px;
+    }   
 
     .footerBottomGridChild.getInTouch {
-        flex: 1 1 300px;
-        justify-self: flex-end;
+        position: absolute;
+        right: 30px;
+        top: 125px;
+        display: block;
    }
 
-    .ourAccreditation {
-        display: block;
+
+
+
+   .ourAccreditation {
+        margin-left: 102px;
     }
+
+    .ourAccreditation h6 {
+    text-align: left;
+    }
+
+
+    .ourAccreditationFlex {
+    justify-content: flex-start;
+    }
+
+
+    .termsOfUse {
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    bottom: 0;
+    right: 100px;
+    }
+
+
 
 }
