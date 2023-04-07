@@ -118,7 +118,7 @@ export default function Form() {
 
                 <div className="row kumbhSansSemiBold">
                     <div className='marginBottom'>
-                        <p>Text about what people are subscribing for and how many times they will get e-mails. 
+                        <p className='paragraph'>Text about what people are subscribing for and how many times they will get e-mails. 
                         They can always unscubscribe again whenever they want!</p>
                     </div>
 

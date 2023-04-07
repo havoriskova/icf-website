@@ -70,4 +70,8 @@
     .donorboxContainer {
         height: 599px;
     }
+
+    .donateMessage {
+       padding-bottom: 4.1rem;
+    }
 }

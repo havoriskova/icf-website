@@ -16,6 +16,9 @@
     /* max-width: 100%; */
     pointer-events: none;
     position: relative;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
     /* bottom: 40%; */
     /* left: -95%; */
 
@@ -25,8 +28,8 @@
     position: absolute;
     bottom: 2rem;
     z-index: 100;
-    margin: 0 1rem;
-    padding: 0rem;
+    /* margin: 0 1rem; */
+    padding: 2rem 1rem 3rem;
 }
 
 .header {
