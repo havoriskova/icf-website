@@ -12,20 +12,20 @@ export default function Projects() {
             <h3 className="greenMiddleHeading headerMd">latest projects</h3>
             
             <div className={styles.flexParentTwoSameCol}>
-                <div>
+                <Link href='/blog/blog-post-1' className={styles.card}>
                     <div className={styles.parentImageBlog}>
                         <img className={styles.imageBlog} alt='placeholder' src='./images/pexels-blog-placeholder.jpg'/>
                     </div>
                     <h4 className={styles.titleBlog}>Title of the blog - Mar 10, 2023</h4>
                     <p>A short summary of what the blog is about.</p>
-                </div>
-                <div>
+                </Link>
+                <Link href='/blog/blog-post-1' className={styles.card}>
                     <div className={styles.parentImageBlog}>
                         <img className={styles.imageBlog} alt='placeholder' src='./images/pexels-blog-placeholder-two.jpg'/>
                     </div>
                     <h4 className={styles.titleBlog}>Title of the blog - Mar 10, 2023</h4>
                     <p>A short summary of what the blog is about.</p>
-                </div>
+                </Link>
             </div>
 
             <button className="readMore"><Link href='/about/our-work'>Explore all our projects</Link></button>
