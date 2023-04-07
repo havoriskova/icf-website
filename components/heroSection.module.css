@@ -131,8 +131,8 @@
     .headerContainer {
         margin: 0 4em;
         max-width: 70%;
-        padding: 0;
-        bottom: 4rem;
+        padding: 2rem 1rem 4rem;
+        bottom: 0rem;
     }
 
 
