@@ -67,7 +67,7 @@ export default function Footer() {
                 <div className={styles.ourAccreditation}>
                         <h6>Our accreditations</h6>
                         <div className={styles.ourAccreditationFlex}>
-                            <span><Image alt='anbi' src='/images/anbi.svg' width={150} height={100}></Image></span>
+                            <a href='https://www.belastingdienst.nl/wps/wcm/connect/nl/aftrek-en-kortingen/content/anbi-status-controleren'><Image alt='anbi' src='/images/anbi.svg' width={150} height={100}></Image></a>
                             <a href='https://www.ngosource.org/about-equivalency-determination-on-file-badge?ref=https%3A%2F%2Ficf.earth%2F' target='_blank'><Image alt='ngo' src='/images/ngo.png' width={250} height={100}></Image></a>
                         </div>
                 </div>

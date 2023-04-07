@@ -15,6 +15,6 @@ export default function HeroSection() {
             </div>
             <video className={heroStyles.heroVideo} src='../videos/lion-placeholder.mp4' autoPlay loop muted />
             
-        </div>
+        </div> 
     )
 }
