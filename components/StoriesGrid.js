@@ -39,9 +39,9 @@ export default function BlogPostOne() {
                             <div className={styles.imageContainer}>
                                 <img alt='placeholder' src='/images/blog_1.jpg' />
                             </div>
+                            <div className={styles.cardInfo}>Mar 10, 2023 by Author</div>
+                            <div className={styles.cardTitle}>Title of blog</div>
                         </Link>
-                        <div className={styles.cardInfo}>Mar 10, 2023 by Author</div>
-                        <div className={styles.cardTitle}>Title of blog</div>
                     </div>
 
                     <div className={styles.card}>
@@ -49,9 +49,9 @@ export default function BlogPostOne() {
                             <div className={styles.imageContainer}>
                                 <img alt='placeholder' src='/images/blog_2.jpg' />
                             </div>
+                            <div className={styles.cardInfo}>Mar 10, 2023 by Author</div>
+                            <div className={styles.cardTitle}>Title of blog</div>
                         </Link>
-                        <div className={styles.cardInfo}>Mar 10, 2023 by Author</div>
-                        <div className={styles.cardTitle}>Title of blog</div>
                     </div>
 
                     <div className={styles.card}>
@@ -59,9 +59,9 @@ export default function BlogPostOne() {
                             <div className={styles.imageContainer}>
                                 <img alt='placeholder' src='/images/blog_3.jpg' />
                             </div>
+                            <div className={styles.cardInfo}>Mar 10, 2023 by Author</div>
+                            <div className={styles.cardTitle}>Title of blog</div>
                         </Link>
-                        <div className={styles.cardInfo}>Mar 10, 2023 by Author</div>
-                        <div className={styles.cardTitle}>Title of blog</div>
                     </div>
 
                     <div className={styles.card}>
@@ -69,9 +69,9 @@ export default function BlogPostOne() {
                             <div className={styles.imageContainer}>
                                 <img alt='placeholder' src='/images/blog_4.jpg' />
                             </div>
+                            <div className={styles.cardInfo}>Mar 10, 2023 by Author</div>
+                            <div className={styles.cardTitle}>Title of blog</div>
                         </Link>
-                        <div className={styles.cardInfo}>Mar 10, 2023 by Author</div>
-                        <div className={styles.cardTitle}>Title of blog</div>
                     </div>
 
                     <div className={styles.card}>
@@ -79,9 +79,9 @@ export default function BlogPostOne() {
                             <div className={styles.imageContainer}>
                                 <img alt='placeholder' src='/images/blog_5.jpg' />
                             </div>
+                            <div className={styles.cardInfo}>Mar 10, 2023 by Author</div>
+                            <div className={styles.cardTitle}>Title of blog</div>
                         </Link>
-                        <div className={styles.cardInfo}>Mar 10, 2023 by Author</div>
-                        <div className={styles.cardTitle}>Title of blog</div>
                     </div>
 
                     <div className={styles.card}>
@@ -89,9 +89,9 @@ export default function BlogPostOne() {
                             <div className={styles.imageContainer}>
                                 <img alt='placeholder' src='/images/blog_6.jpg' />
                             </div>
+                            <div className={styles.cardInfo}>Mar 10, 2023 by Author</div>
+                            <div className={styles.cardTitle}>Title of blog</div>
                         </Link>
-                        <div className={styles.cardInfo}>Mar 10, 2023 by Author</div>
-                        <div className={styles.cardTitle}>Title of blog</div>
                     </div>
                 
 

@@ -67,6 +67,16 @@ input:checked + label .filterButton {
 .card {
    flex: 1 0 250px;
    margin: 1rem 0;
+   transition: all ease .5s;
+}
+
+.card:hover img {
+    filter: brightness(80%);
+}
+
+.card:hover .cardTitle {
+    font-weight: 700;
+    text-decoration: underline;
 }
 
 
@@ -80,6 +90,7 @@ input:checked + label .filterButton {
     height: 250px;
     width: 100%;
     border-radius: 16px;
+    transition: all ease .5s;
 }
 
 .cardInfo {

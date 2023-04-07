@@ -36,7 +36,7 @@ export default function GetInvolvedFancyLink({imageStyle}) {
                 </div>
                 <div className={styles.card}>
                     <p>Want to contribute to our mission? <br/> Learn how you can get involved</p>
-                    <button className='readMore accentColor'><Link href='/get-involved'>Get Involved</Link></button>
+                    <button className='readMore accentColor'><Link href='/get-involved'>Get involved</Link></button>
                 </div>
             </div>
         </div>
