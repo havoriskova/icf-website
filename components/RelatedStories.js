@@ -20,9 +20,9 @@ export default function RelatedStories() {
                                 <div className={styles.imageContainer}>
                                     <img alt='placeholder' src='/images/blog_1.jpg' />
                                 </div>
+                                <div className={styles.cardInfo}>Title of the blog - Mar 10, 2023</div>
+                                <div className={styles.cardTitle}>A short summary of what the blog is about.</div>
                             </Link>
-                            <div className={styles.cardInfo}>Mar 10, 2023 by Author</div>
-                            <div className={styles.cardTitle}>Title of blog</div>
                     </div>
 
                     <div className={styles.card}>
@@ -30,9 +30,9 @@ export default function RelatedStories() {
                                 <div className={styles.imageContainer}>
                                     <img alt='placeholder' src='/images/blog_2.jpg' />
                                 </div>
+                                <div className={styles.cardInfo}>Title of the blog - Mar 10, 2023</div>
+                                <div className={styles.cardTitle}>A short summary of what the blog is about.</div>
                             </Link>
-                            <div className={styles.cardInfo}>Mar 10, 2023 by Author</div>
-                            <div className={styles.cardTitle}>Title of blog</div>
                     </div>
 
                 </div>

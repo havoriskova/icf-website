@@ -71,7 +71,7 @@ input:checked + label .filterButton {
 }
 
 .card:hover img {
-    filter: brightness(80%);
+    filter: brightness(90%);
 }
 
 .card:hover .cardTitle {
