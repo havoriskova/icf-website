@@ -10,6 +10,9 @@ export default function BlogPost() {
             </div>
            
             <div className={styles.blogArticle}>
+
+              <div className={styles.shareLinkContainerTop}><a  className='greenMiddleHeading'><img alt='icon' className={styles.iconShareTop}  src='/images/Vector-share-green.svg'/><span className={styles.linkShare}>Share article</span></a></div>
+
               <div className={styles.imageContainerFullWidth}>
                 <img alt='placeholder' src='/images/homepage_2.jpg'/>
               </div>
@@ -28,11 +31,16 @@ export default function BlogPost() {
                     </div>
             
               </div>
-            
+             
             </div>
 
             <div className={styles.buttonsAfterArticle}>
-                <button className='readMore'><a>Share article</a></button>
+                <button className={`readMore ${styles.shareArticleDownButton}`}>
+                    <a>
+                        Share article
+                        <img alt='icon' src='/images/Vector-share-green.svg' className={styles.iconShareDown}/>
+                    </a>
+                </button>
                 <button className='readMore'><a>Give</a></button>
             </div>
 
