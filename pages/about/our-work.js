@@ -1,6 +1,7 @@
 import Layout from '../../components/layout.js';
 import GetInvolvedFancyLink from '../../components/GetInvolvedFancyLink.js';
-import TransparencyLink from '../../components/TransparencyLink.js'
+import TransparencyLink from '../../components/TransparencyLink.js';
+import Map from '../../components/Map.js';
 
 export default function OurWork() {
 
@@ -19,6 +20,7 @@ export default function OurWork() {
                 </div>
 
 
+                <div className='articleComponent'><Map/></div>
                 <div className='articleComponent'><TransparencyLink/></div>
 
                 <div className='articleComponent lastComponentOnPage'><GetInvolvedFancyLink imageStyle='TwoImagesLeaveShaped' /></div>
