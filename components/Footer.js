@@ -1,6 +1,7 @@
 
 import styles from './footer.module.css';
 import Image from 'next/image';
+import Link from 'next/link';
 
 
 export default function Footer() {
@@ -22,17 +23,17 @@ export default function Footer() {
                         <Image className={styles.logoImg} alt="logo" src="/icf_logo.ico.svg" width={60} height={60}/>
                     </div>
                     <div className={`${styles.footerBottomGridChild} ${styles.sitemap}`}>
-                        <h6>Get involved</h6>
-                        <div className={styles.sitemapLink}>Donate</div>
-                        <div className={styles.sitemapLink}>Donate using crypto</div>
-                        <h6>Stories</h6>
-                        <h6>Partners</h6>
+                        <h6><Link href='/get-involved'>Get involved</Link></h6>
+                        <div className={styles.sitemapLink}><Link href='/donate'>Donate</Link></div>
+                        <div className={styles.sitemapLink}><Link href='/donate-crypto'>Donate using crypto</Link></div>
+                        <h6><Link href='/blog'>Stories</Link></h6>
+                        <h6><Link href='/partners'>Partners</Link></h6>
                     </div>
                     <div className={`${styles.footerBottomGridChild} ${styles.sitemap}`}>
-                        <h6>About ICF</h6>
-                        <div className={styles.sitemapLink}>Meet the team</div>
-                        <div className={styles.sitemapLink}>Our work</div>
-                        <div className={styles.sitemapLink}>Contact us</div>
+                        <h6><Link href='/about'>About ICF</Link></h6>
+                        {/* <div className={styles.sitemapLink}><Link href='/get-involved'>Meet the team</Link></div> */}
+                        <div className={styles.sitemapLink}><Link href='/about/our-work'>Our work</Link></div>
+                        <div className={styles.sitemapLink}><Link href='/about/contact'>Contact us</Link></div>
                         <h6>Impact shop</h6>
                     </div>
                     {/* <div className={`${styles.footerBottomGridChild} ${styles.sitemap}`}>
@@ -67,13 +68,13 @@ export default function Footer() {
                         <h6>Our accreditations</h6>
                         <div className={styles.ourAccreditationFlex}>
                             <span><Image alt='anbi' src='/images/anbi.svg' width={150} height={100}></Image></span>
-                            <span><Image alt='ngo' src='/images/ngo.png' width={250} height={100}></Image></span>
+                            <a href='https://www.ngosource.org/about-equivalency-determination-on-file-badge?ref=https%3A%2F%2Ficf.earth%2F' target='_blank'><Image alt='ngo' src='/images/ngo.png' width={250} height={100}></Image></a>
                         </div>
                 </div>
                 <div className={styles.termsOfUse}>
                         <h6>Terms of use</h6>
                         <h6>Privacy policy</h6>
-                        <h6>Transparency</h6>
+                        <h6><Link href='/transparency'>Transparency</Link></h6>
                 </div>
 
 
