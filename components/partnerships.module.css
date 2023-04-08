@@ -1,9 +1,38 @@
 
 
 .flexParentForLogosCarousel {
-    background-color: pink;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 4rem auto;  
+
 }
 
 .logoParent {
-    background-color: aqua;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: white;
+    display: grid;
+    place-content: center;
+    flex: 0 0 120px;
+}
+
+
+.invertColor {
+    filter: invert(100%);
+}
+
+@media (min-width: 770px) {
+
+    .flexParentForLogosCarousel {
+
+    }
+
+    .logoParent {
+        flex: 0 0 170px;
+    }
+
+
 }
