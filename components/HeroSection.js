@@ -1,13 +1,13 @@
 import heroStyles from './heroSection.module.css';
 
 
-export default function HeroSection() {
+export default function HeroSection({props}) {
 
     return(
         <div className={heroStyles.containerHero}>
             <div className={heroStyles.headerContainer}>
-                <h1 className={heroStyles.header}>Inspirational mission statement on what drives ICF.</h1>
-                <h2 className={heroStyles.subHeader}>Supporting text on what we are trying to achieve with our organization, why it’s important what we do, why we need the support of donors etc. etc.</h2>
+                <h1 className={heroStyles.header}>{props.heroTitle}</h1>
+                <h2 className={heroStyles.subHeader}>{props.heroDescription}</h2>
                 <div className={heroStyles.buttons}>
                     <button className={`${heroStyles.buttonHero} kumbhSansSemiBold`}>Take action</button>
                     <button className={`${heroStyles.buttonHeroTwo} kumbhSansSemiBold`}>Learn more</button>
@@ -18,3 +18,4 @@ export default function HeroSection() {
         </div> 
     )
 }
+

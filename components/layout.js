@@ -34,7 +34,7 @@ export default function Layout({ children, home, pageTitle }) {
 
       <Head>
         <title>{pageTitle}</title>
-        <link rel="icon" href="/icf_logo.ico.png" />    
+        <link rel="icon" href="/icf_logo.ico.svg" />    
       </Head>
 
       <div className={styles.navbar}>
