@@ -107,7 +107,7 @@
 
 @media (min-width: 700px) {
     .header {
-        font-size: 54px;
+        font-size: 40px;
         text-align: left;
     }
 
@@ -119,7 +119,7 @@
         font-size: 24px;
         border-radius: 36px;
         padding: .5em 2em;
-        border-width: 4px;
+        border-width: 3px;
     }
 
     
@@ -138,11 +138,11 @@
 
     .subHeader {
         text-align: left;
-        font-size: 30px;
+        font-size: 24px;
     }
 
     .buttonHero, .buttonHeroTwo {
-        font-size: 30px;
+        font-size: 24px;
     }
 
     

@@ -282,7 +282,7 @@ button {
 }
 
 button a {
-  padding: 0.5rem 1.5rem;
+  padding: 0.7rem 2rem;
   display: block;
 }
 
@@ -712,7 +712,7 @@ form .readMore {
 @media (min-width: 700px) {
 
   .headingForSections h3 {
-    font-size: 54px;
+    font-size: 40px;
     /* padding: 1rem 0 0; */
     padding: 3rem 0 0;
   }
@@ -720,27 +720,27 @@ form .readMore {
   .headingForSections .subHeading {
     top: 0.2rem;
     left: 4rem; 
-    font-size: 30px;
+    font-size: 24px;
   }
 
   .subHeadingDown {
-    font-size: 30px;
+    font-size: 24px;
   }
 
   .headerMd {
-    font-size: 35px;
+    font-size: 28px;
   } 
 
   .headingLeave {
-    width: 96px;
+    width: 86px;
     /* left: -25px;
     top: -7px; */
     left: -45px;
-    top: 7px;
+    top: 3px;
   }
 
   .whiteStripe::before {
-    height: 9.4rem;
+    height: 8.6rem;
   }
 
   .whiteStripeMd::before {
@@ -752,8 +752,13 @@ form .readMore {
   }
 
   .readMore {
-    font-size: 24px;
+    font-size: 16px;
   }
+
+  button a {
+    padding: .8rem 2.3rem;
+  }
+
 
   p {
     font-size: 24px;

@@ -1,5 +1,7 @@
 import { useRef } from 'react';
 import axios from 'axios';
+import client from '@mailchimp/mailchimp_marketing';
+
 
 export default function Form() {
 
@@ -25,17 +27,33 @@ export default function Form() {
             console.log('submited form', firstName, lastName, email);
 
             try {  
-                const res = await axios.post('/api/subscribeUser', {email});
-                        // body: JSON.stringify({
-                    //         email: inputRefEmail.current.value,
-                    //     }),
-                   
+
+// const API_KEY = process.env.MAILCHIMP_API_KEY;
+//const LIST_ID = process.env.MAILCHIMP_AUDIENCE_ID;
+// const SERVER_PREFIX = process.env.MAILCHIMP_API_SERVER;
+
+
+
+                client.setConfig({
+                    apiKey: process.env.MAILCHIMP_API_KEY,
+                    server: process.env.MAILCHIMP_API_SERVER,
+                });
+
+                // const run = async () => {
+                //     const response = await client.lists.getAllLists();
+                //     console.log(response);
+                // };
+
+                // run();
+
+                async function callPing() {
+                    const response = await client.ping.get();
+                    console.log(response);
+                }
+                  
+                callPing();
+
                 
-                    // headers: {
-                    //     'Content-Type': 'application/json',
-                    // },
-            
-                    // method: 'POST',
 
                 // console.log(res.status);
 
