@@ -66,7 +66,7 @@ export async function getStaticProps() {
   //     console.log(entry.fields.heroTitle)
   // });
 
-  console.log(homepage.fields);
+  //console.log(homepage.fields);
 
   return {
     props: {
@@ -80,12 +80,12 @@ export async function getStaticProps() {
       },
               
               
-              // achievement1: homepage.achievement1,
+              // achievement1: homepage.achievement1, //array ze dvou
               // achievement2: homepage.achievement2,
               // achievement3: homepage.achievement3,
               // achievement4: homepage.achievement4,
               //meetTheTeamSubheading: homepage.meetTheTeamSubheading,
-              //teamMember1: homepage.teamMember1,
+              //teamMember1: homepage.teamMember1, //array ze tri
               //teamMember1Photo: homepage.teamMember1Photo
 
     }, 
