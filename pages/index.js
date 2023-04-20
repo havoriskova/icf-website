@@ -68,6 +68,8 @@ export async function getStaticProps() {
 
   //console.log(homepage.fields);
 
+  //return {props: {...homepage.fields}} -> a tim mi vznikne objekt, kde je vsechno
+
   return {
     props: {
       heroSection: {
