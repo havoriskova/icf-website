@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import axios from 'axios';
-import client from '@mailchimp/mailchimp_marketing';
+//import mailchimp from '@mailchimp/mailchimp_marketing';
 
 
 export default function Form() {
@@ -31,13 +31,13 @@ export default function Form() {
 // const API_KEY = process.env.MAILCHIMP_API_KEY;
 //const LIST_ID = process.env.MAILCHIMP_AUDIENCE_ID;
 // const SERVER_PREFIX = process.env.MAILCHIMP_API_SERVER;
+                console.log('trying');
+              
 
-
-
-                client.setConfig({
-                    apiKey: process.env.MAILCHIMP_API_KEY,
-                    server: process.env.MAILCHIMP_API_SERVER,
-                });
+                // const client = mailchimp.setConfig({
+                //     apiKey: process.env.MAILCHIMP_API_KEY,
+                //     server: process.env.MAILCHIMP_API_SERVER,
+                // });
 
                 // const run = async () => {
                 //     const response = await client.lists.getAllLists();
@@ -46,24 +46,43 @@ export default function Form() {
 
                 // run();
 
-                async function callPing() {
-                    const response = await client.ping.get();
+
+                    const client = require("@mailchimp/mailchimp_marketing");
+
+                    client.setConfig({
+                        apiKey: process.env.MAILCHIMP_API_KEY,
+                        server: process.env.MAILCHIMP_API_SERVER,
+                    });
+
+                    const run = async () => {
+                    const response = client.ping.get();
                     console.log(response);
-                }
+                    };
+
+                    run();
+
+
+                // async function callPing() {
+                //     const response = await client.ping.get();
+                //     console.log(response);
+                // }
                   
-                callPing();
+                // callPing();
+
+                // https://us13.api.mailchimp.com/3.0/ping
 
                 
 
-                // console.log(res.status);
+                //console.log(res.status);
 
-                if (res.status === 200) {
-                    alert('you are subscribed');
-                } else {
-                   alert('Sorry, something went wrong.')
-                }
+                // if (res.status === 200) {
+                //     alert('you are subscribed');
+                // } else {
+                //    alert('Sorry, something went wrong.')
+                // }
 
             } catch (e) {
+                console.log('catching');
                 console.log(e);
                 // console.log(err.response);
                 alert("Error subscribing. Please try again later.");
