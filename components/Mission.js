@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export default function Mission() {
+export default function Mission({props}) {
 
     return(
         <div className="contentWidth">
@@ -14,32 +14,32 @@ export default function Mission() {
                 <div className="mission-small">
                     <div className="mission-small-picture"><img alt='one' src='./images/pexels_nature.jpg'/></div>
                     <div>
-                        <div><b>+12%</b></div>
-                        <div className="mission-small-text">of wildlife population growth</div>
+                        <div><b>{props.achievement1[0]}</b></div>
+                        <div className="mission-small-text">{props.achievement1[1]}</div>
                     </div>
                 </div>
 
                 <div className="mission-small">
                     <div className="mission-small-picture"><img alt='two' src='./images/pexels_nature.jpg'/></div>
                     <div>
-                        <div><b>+1980 km</b></div>
-                        <div className="mission-small-text">increased park area patrol covered to ensure preservation</div>
+                        <div><b>{props.achievement2[0]}</b></div>
+                        <div className="mission-small-text">{props.achievement2[1]}</div>
                     </div>
                 </div>
 
                 <div className="mission-small">
                     <div className="mission-small-picture"><img alt='three' src='./images/pexels_nature.jpg'/></div>
                     <div>
-                        <div><b>+12%</b></div>
-                        <div className="mission-small-text">of wildlife population growth</div>
+                        <div><b>{props.achievement3[0]}</b></div>
+                        <div className="mission-small-text">{props.achievement3[1]}</div>
                     </div>
                 </div>
 
                 <div className="mission-small">
                     <div className="mission-small-picture"><img alt='four' src='./images/pexels_nature.jpg'/></div>
                     <div>
-                        <div><b>+12%</b></div>
-                        <div className="mission-small-text">of wildlife population growth</div>
+                        <div><b>{props.achievement4[0]}</b></div>
+                        <div className="mission-small-text">{props.achievement4[1]}</div>
                     </div>
                 </div>
             </div>

@@ -38,7 +38,7 @@ export default function Home(props) {
 
           <div className='articleComponent'><HeroSection props={props.heroSection}/></div> 
           <div className='articleComponent gradientBkgComponent whiteStripe'><OurStories props={props.ourStories}/></div>
-          <div className='articleComponent' ><Mission /></div>
+          <div className='articleComponent' ><Mission props={props.mission} /></div>
           <div className='articleComponent bkgBeigeComponent whiteStripe'><MeetTheTeam /></div>
           <div className='articleComponent'><Partnerships /></div>
           <div className='articleComponent lastComponentOnPage'><Conserving /></div>
@@ -60,7 +60,7 @@ export async function getStaticProps() {
   })
 
 //  const res = await client.getEntries({ content_type: 'blog post'});
-//  console.log(res);
+//  console.log(res); --> ze bych ty vsechny entries hodila do samostatnyho js souboru, a z _app.js to pak rozhodila, nebo ty props z contentful hodila celkove vsude???
 
   const homepage = await client.getEntry(process.env.CONTENTFUL_ENTRY_ID_HOMEPAGE);
 
@@ -73,6 +73,8 @@ export async function getStaticProps() {
 
   //return {props: {...homepage.fields}} -> a tim mi vznikne objekt, kde je vsechno
 
+  //console.log(homepage.fields.achievement1[0]);
+
   return {
     props: {
       heroSection: {
@@ -84,11 +86,12 @@ export async function getStaticProps() {
         ourStoryParagraphs: homepage.fields.ourStoryParagraphs
       },
               
-              
-              // achievement1: homepage.achievement1, //array ze dvou
-              // achievement2: homepage.achievement2,
-              // achievement3: homepage.achievement3,
-              // achievement4: homepage.achievement4,
+      mission: {
+        achievement1: homepage.fields.achievement1, //array ze dvou
+        achievement2: homepage.fields.achievement2,
+        achievement3: homepage.fields.achievement3,
+        achievement4: homepage.fields.achievement4,
+      }
               //meetTheTeamSubheading: homepage.meetTheTeamSubheading,
               //teamMember1: homepage.teamMember1, //array ze tri
               //teamMember1Photo: homepage.teamMember1Photo
