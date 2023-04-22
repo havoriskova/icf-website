@@ -15,12 +15,6 @@ import * as contentful from "contentful";
 
 // console.log(contentful);
 
-const client = contentful.createClient({
-  space: process.env.CONTENTFUL_SPACE,
-  accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-})
-
-
 
 export default function Home(props) {
   return (
@@ -59,6 +53,15 @@ export default function Home(props) {
 
 
 export async function getStaticProps() {
+    
+  const client = contentful.createClient({
+    space: process.env.CONTENTFUL_SPACE, //space ID
+    accessToken: process.env.CONTENTFUL_ACCESS_TOKEN, //credentials to access the data
+  })
+
+//  const res = await client.getEntries({ content_type: 'blog post'});
+//  console.log(res);
+
   const homepage = await client.getEntry(process.env.CONTENTFUL_ENTRY_ID_HOMEPAGE);
 
   // client.getEntry(process.env.CONTENTFUL_ENTRY_ID_HOMEPAGE).then(function (entry) 

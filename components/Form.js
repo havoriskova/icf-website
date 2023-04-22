@@ -118,6 +118,7 @@ export default function Form() {
             //     headers: {
             //     Authorization: `apikey ${API_KEY}`,
             //     "Content-Type": "application/json",
+            //	   "Access-Control-Allow-Origin": "*"
             //     },
             //     body: JSON.stringify({
             //     email_address: email,

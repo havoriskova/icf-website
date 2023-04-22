@@ -5,10 +5,12 @@ import MeetTheTeam from '../components/MeetTheTeam.js';
 import Projects from '../components/Projects';
 //import utilStyles from '../styles/utils.module.css';
 import GetInvolvedFancyLink from '../components/GetInvolvedFancyLink.js';
+import * as contentful from "contentful";
 
 
-export default function About() {
+export default function About(props) {
 
+    
     return (
         <Layout pageTitle='ICF About'>
             <div className='container'>
@@ -26,12 +28,12 @@ export default function About() {
                 <div className="aboutHeroSection">
                         <img alt="elephants" src="/images/aboutEleph.png"></img>
                         <div className='aboutHeroSection_heading'>
-                            <h4 className='gradientText'>INSPIRATIONAL MISSION STATEMENT ON WHAT DRIVES ICF.</h4>
-                            <h5>Mission statement</h5>
+                            <h4 className='gradientText'>{props.title}</h4>
+                            <h5>{props.subtitle}</h5>
                         </div>
                 </div>
                     
-                <div className='articleComponent gradientBkgComponent'><Founding /></div> 
+                <div className='articleComponent gradientBkgComponent'><Founding props={props.article}/></div> 
                 <div className='articleComponent' ><Mission /></div>
                 <div className='articleComponent'><MeetTheTeam /></div>
                 <div className='articleComponent bkgBeigeComponent whiteStripe'><Projects /></div>
@@ -40,3 +42,27 @@ export default function About() {
         </Layout>
     )
 }
+
+
+export async function getStaticProps() {
+
+    
+    const client = contentful.createClient({
+        space: process.env.CONTENTFUL_SPACE,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+    })
+
+  
+    const aboutPage = await client.getEntry(process.env.CONTENTFUL_ENTRY_ID_ABOUT);
+  
+    console.log(aboutPage);
+
+  
+    return {
+      props: {
+        title: aboutPage.fields.title,
+        subtitle: aboutPage.fields.subtitle,
+        article: aboutPage.fields.whyWeStartedParagraphs 
+      }, 
+    }
+  }

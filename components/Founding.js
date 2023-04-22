@@ -2,7 +2,7 @@ import styles from "./founding.module.css";
 
 
 
-export default function Founding() {
+export default function Founding({article}) {
 
     return(
         <div className="contentWidth">
@@ -12,15 +12,7 @@ export default function Founding() {
 
             <div className={styles.flexParentTwoSameCol}>
                 <p className="paragraph">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Quidem ea esse aliquid explicabo nihil nam. Ut sequi vitae corporis dolorum repellat. 
-                    Ipsa exercitationem explicabo repudiandae at corrupti pariatur aspernatur autem.
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni numquam quasi ratione atque repellat. 
-                    Saepe laborum tempore necessitatibus nulla expedita quidem officiis quasi eveniet odio. 
-                    Officiis enim assumenda vero placeat?
-                    Voluptatibus at ut magnam nihil adipisci. Nihil beatae eos reprehenderit laboriosam delectus, 
-                    distinctio quaerat ducimus consectetur repellat unde repudiandae eaque exercitationem dignissimos dolores, optio, 
-                    expedita architecto eius voluptatibus? Ut, voluptatum.
+                    {article}
                 </p>
                 <div className={styles.parentLeaveShapedImages}>
                         <div className={styles.subparentLeaveShapedImages}>
