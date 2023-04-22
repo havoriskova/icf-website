@@ -39,7 +39,7 @@ export default function Home(props) {
           <div className='articleComponent'><HeroSection props={props.heroSection}/></div> 
           <div className='articleComponent gradientBkgComponent whiteStripe'><OurStories props={props.ourStories}/></div>
           <div className='articleComponent' ><Mission props={props.mission} /></div>
-          <div className='articleComponent bkgBeigeComponent whiteStripe'><MeetTheTeam /></div>
+          <div className='articleComponent bkgBeigeComponent whiteStripe'><MeetTheTeam props={props.meetTheTeam}/></div>
           <div className='articleComponent'><Partnerships /></div>
           <div className='articleComponent lastComponentOnPage'><Conserving /></div>
 
@@ -91,10 +91,13 @@ export async function getStaticProps() {
         achievement2: homepage.fields.achievement2,
         achievement3: homepage.fields.achievement3,
         achievement4: homepage.fields.achievement4,
-      }
-              //meetTheTeamSubheading: homepage.meetTheTeamSubheading,
-              //teamMember1: homepage.teamMember1, //array ze tri
+      },
+      
+      meetTheTeam: {
+        meetTheTeamSubheading: homepage.fields.meetTheTeamSubheading,
+        teamMember1: homepage.fields.teamMember1, //array ze tri
               //teamMember1Photo: homepage.teamMember1Photo
+      }
 
     }, 
   }

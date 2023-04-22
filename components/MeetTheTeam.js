@@ -1,7 +1,7 @@
 
 
 
-export default function MeetTheTeam() {
+export default function MeetTheTeam({props}) {
 
     const toggleActiveClass = () => {
             const gridOne = document.querySelector("#gridOne");
@@ -22,7 +22,7 @@ export default function MeetTheTeam() {
         <div className="contentWidth">
             <div  className="headingForSections centeredText">
                 <h3>Meet the Team<span className="headingRedDot">.</span></h3>
-                <span className="subHeadingDown">Sentence about the team that makes this mission happen</span>
+                <span className="subHeadingDown">{props.meetTheTeamSubheading}</span>
             </div>
             
             <div className="meetTheTeamGridContainer">
@@ -34,54 +34,54 @@ export default function MeetTheTeam() {
                         <div className="card">
                             <span className="card__img"><img alt='human' src='./images/pexels_portrait.jpg'/></span>
                             <div className="card__content">
-                                <b>John Smith</b>
-                                <div className="card__job">Volunteer</div>
-                                <div>“Quote on what motivates them to help the cause”</div>
+                                <b>{props.teamMember1[0]}</b>
+                                <div className="card__job">{props.teamMember1[1]}</div>
+                                <div>{props.teamMember1[2]}</div>
                             </div>
                         </div>
 
                         <div className="card">
                             <span className="card__img"><img alt='human' src='./images/pexels_portrait.jpg'/></span>
                             <div className="card__content">
-                                <b>John Smith</b>
-                                <div className="card__job">Volunteer</div>
-                                <div>“Quote on what motivates them to help the cause”</div>
+                                <b>{props.teamMember2[0]}</b>
+                                <div className="card__job">{props.teamMember2[1]}</div>
+                                <div>{props.teamMember2[2]}</div>
                             </div>
                         </div>
 
                         <div className="card">
                             <span className="card__img"><img alt='human' src='./images/pexels_portrait.jpg'/></span>
                             <div className="card__content">
-                                <b>John Smith</b>
-                                <div className="card__job">Volunteer</div>
-                                <div>“Quote on what motivates them to help the cause”</div>
+                                <b>{props.teamMember3[0]}</b>
+                                <div className="card__job">{props.teamMember3[1]}</div>
+                                <div>{props.teamMember3[2]}</div>
                             </div>
                         </div>
 
                         <div className="card">
                             <span className="card__img"><img alt='human' src='./images/pexels_portrait.jpg'/></span>
                             <div className="card__content">
-                                <b>John Smith</b>
-                                <div className="card__job">Volunteer</div>
-                                <div>“Quote on what motivates them to help the cause”</div>
+                                <b>{props.teamMember4[0]}</b>
+                                <div className="card__job">{props.teamMember4[1]}</div>
+                                <div>{props.teamMember4[2]}</div>
                             </div>
                         </div>
 
                         <div className="card card-for-wider-screen">
                             <span className="card__img"><img alt='human' src='./images/pexels_portrait.jpg'/></span>
                             <div className="card__content">
-                                <b>John Smith</b>
-                                <div className="card__job">Volunteer</div>
-                                <div>“Quote on what motivates them to help the cause”</div>
+                                <b>{props.teamMember5[0]}</b>
+                                <div className="card__job">{props.teamMember5[1]}</div>
+                                <div>{props.teamMember5[2]}</div>
                             </div>
                         </div>
 
                         <div className="card card-for-wider-screen">
                             <span className="card__img"><img alt='human' src='./images/pexels_portrait.jpg'/></span>
                             <div className="card__content">
-                                <b>John Smith</b>
-                                <div className="card__job">Volunteer</div>
-                                <div>“Quote on what motivates them to help the cause”</div>
+                                <b>{props.teamMember6[0]}</b>
+                                <div className="card__job">{props.teamMember6[1]}</div>
+                                <div>{props.teamMember6[2]}</div>
                             </div>
                         </div>
 
@@ -92,54 +92,54 @@ export default function MeetTheTeam() {
                         <div className="card">
                             <span className="card__img"><img alt='human' src='./images/pexels_portrait_2.jpg'/></span>
                             <div className="card__content">
-                                <b>John Smith</b>
-                                <div className="card__job">Ranger</div>
-                                <div>“Quote on what motivates them to help the cause”</div>
+                                <b>{props.teamMember7[0]}</b>
+                                <div className="card__job">{props.teamMember7[1]}</div>
+                                <div>{props.teamMember7[2]}</div>
                             </div>
                         </div>
 
                         <div className="card">
                             <span className="card__img"><img alt='human' src='./images/pexels_portrait_2.jpg'/></span>
                             <div className="card__content">
-                                <b>John Smith</b>
-                                <div className="card__job">Ranger</div>
-                                <div>“Quote on what motivates them to help the cause”</div>
+                                <b>{props.teamMember8[0]}</b>
+                                <div className="card__job">{props.teamMember8[1]}</div>
+                                <div>{props.teamMember8[2]}</div>
                             </div>
                         </div>
 
                         <div className="card">
                             <span className="card__img"><img alt='human' src='./images/pexels_portrait_2.jpg'/></span>
                             <div className="card__content">
-                                <b>John Smith</b>
-                                <div className="card__job">Ranger</div>
-                                <div>“Quote on what motivates them to help the cause”</div>
+                                <b>{props.teamMember9[0]}</b>
+                                <div className="card__job">{props.teamMember9[1]}</div>
+                                <div>{props.teamMember9[2]}</div>
                             </div>
                         </div>
 
                         <div className="card">
                             <span className="card__img"><img alt='human' src='./images/pexels_portrait_2.jpg'/></span>
                             <div className="card__content">
-                                <b>John Smith</b>
-                                <div className="card__job">Ranger</div>
-                                <div>“Quote on what motivates them to help the cause”</div>
+                                <b>{props.teamMember10[0]}</b>
+                                <div className="card__job">{props.teamMember10[1]}</div>
+                                <div>{props.teamMember10[2]}</div>
                             </div>
                         </div>
 
                         <div className="card card-for-wider-screen">
                             <span className="card__img"><img alt='human' src='./images/pexels_portrait_2.jpg'/></span>
                             <div className="card__content">
-                                <b>John Smith</b>
-                                <div className="card__job">Ranger</div>
-                                <div>“Quote on what motivates them to help the cause”</div>
+                                <b>{props.teamMember11[0]}</b>
+                                <div className="card__job">{props.teamMember11[1]}</div>
+                                <div>{props.teamMember11[2]}</div>
                             </div>
                         </div>
 
                         <div className="card card-for-wider-screen">
                             <span className="card__img"><img alt='human' src='./images/pexels_portrait_2.jpg'/></span>
                             <div className="card__content">
-                                <b>John Smith</b>
-                                <div className="card__job">Ranger</div>
-                                <div>“Quote on what motivates them to help the cause”</div>
+                                <b>{props.teamMember12[0]}</b>
+                                <div className="card__job">{props.teamMember12[1]}</div>
+                                <div>{props.teamMember12[2]}</div>
                             </div>
                         </div>
 
