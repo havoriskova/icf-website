@@ -2,9 +2,9 @@ import styles from "./ourStories.module.css";
 import Link from 'next/link';
 
 
-export default function OurStories({props}) {
+export default function OurStories() {
 
-    console.log(props.ourStoryParagraphs);
+   // console.log(props.ourStoryParagraphs);
 
     return(
         <div className="contentWidth">

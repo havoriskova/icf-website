@@ -16,7 +16,7 @@ export default function BlogPostOne() {
                     </div>
                 </div>
 
-                <div className='articleComponent'><BlogPost /></div>
+                <div className='articleComponent'><BlogPost /></div> {/* do blog postu posilat jako props ten text z Contentful */}
 
                 <div className='articleComponent bkgBeigeComponent'><RelatedStories /></div>
 
