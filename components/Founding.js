@@ -2,7 +2,7 @@ import styles from "./founding.module.css";
 
 
 
-export default function Founding({article}) {
+export default function Founding() {
 
     return(
         <div className="contentWidth">
@@ -12,7 +12,7 @@ export default function Founding({article}) {
 
             <div className={styles.flexParentTwoSameCol}>
                 <p className="paragraph">
-                    {article}
+                    {/* {article} */}
                 </p>
                 <div className={styles.parentLeaveShapedImages}>
                         <div className={styles.subparentLeaveShapedImages}>

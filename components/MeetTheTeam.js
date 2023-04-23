@@ -3,20 +3,20 @@
 
 export default function MeetTheTeam() {
 
-    const toggleActiveClass = () => {
-            const gridOne = document.querySelector("#gridOne");
-            const gridTwo = document.querySelector("#gridTwo");
+    // const toggleActiveClass = () => {
+    //         const gridOne = document.querySelector("#gridOne");
+    //         const gridTwo = document.querySelector("#gridTwo");
 
-            gridOne.classList.toggle('active');
-            gridTwo.classList.toggle('active');
+    //         gridOne.classList.toggle('active');
+    //         gridTwo.classList.toggle('active');
 
-            const arrowLeft = document.querySelector('.arrow_left');
-            const arrowRight = document.querySelector('.arrow_right');
+    //         const arrowLeft = document.querySelector('.arrow_left');
+    //         const arrowRight = document.querySelector('.arrow_right');
 
-            arrowLeft.classList.toggle('active');
-            arrowRight.classList.toggle('active');
+    //         arrowLeft.classList.toggle('active');
+    //         arrowRight.classList.toggle('active');
             
-    }
+    // }
 
     return(
         <div className="contentWidth">
