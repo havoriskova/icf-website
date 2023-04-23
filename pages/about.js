@@ -34,8 +34,8 @@ export default function About() {
                 </div>
                     
                 <div className='articleComponent gradientBkgComponent'><Founding /></div>  {/*props={props.article} */}
-                <div className='articleComponent' ><Mission /></div>
-                <div className='articleComponent'><MeetTheTeam /></div>
+                {/* <div className='articleComponent' ><Mission /></div> nejdriv hod props, a az pak zpristupni */}
+                {/* <div className='articleComponent'><MeetTheTeam /></div> nejdriv hod props, a az pak zpristupni */}
                 <div className='articleComponent bkgBeigeComponent whiteStripe'><Projects /></div>
                 <div className='articleComponent lastComponentOnPage'><GetInvolvedFancyLink imageStyle='circleWithLeaves' /></div>
             </div>
