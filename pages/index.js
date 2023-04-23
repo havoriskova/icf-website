@@ -59,8 +59,8 @@ export async function getStaticProps() {
     accessToken: process.env.CONTENTFUL_ACCESS_TOKEN, //credentials to access the data
   })
 
-//  const res = await client.getEntries({ content_type: 'blog post'});
-//  console.log(res); --> ze bych ty vsechny entries hodila do samostatnyho js souboru, a z _app.js to pak rozhodila, nebo ty props z contentful hodila celkove vsude???
+ const res = await client.getEntries({ content_type: 'blogPost1'}); // ID content typu musi byt STEJNE pro vsechny !! tj. id blogPost pro vsechny blog posty!!! 
+ console.log(res); // --> ze bych ty vsechny entries hodila do samostatnyho js souboru, a z _app.js to pak rozhodila, nebo ty props z contentful hodila celkove vsude???
 
   const homepage = await client.getEntry(process.env.CONTENTFUL_ENTRY_ID_HOMEPAGE);
 
@@ -77,13 +77,16 @@ export async function getStaticProps() {
 
   return {
     props: {
+
+      //blogPosts: res.items,
+
       heroSection: {
         heroTitle: homepage.fields.heroTitle,
         heroDescription: homepage.fields.heroDescription,
       },
 
       ourStories: {
-        ourStoryParagraphs: homepage.fields.ourStoryParagraphs
+        ourStoryParagraphs: homepage.fields.ourStoryParagraphs // rich text
       },
               
       mission: {
@@ -97,6 +100,17 @@ export async function getStaticProps() {
         meetTheTeamSubheading: homepage.fields.meetTheTeamSubheading,
         teamMember1: homepage.fields.teamMember1, //array ze tri
               //teamMember1Photo: homepage.teamMember1Photo
+        teamMember2: homepage.fields.teamMember2,
+        teamMember3: homepage.fields.teamMember3,
+        teamMember4: homepage.fields.teamMember4,
+        teamMember5: homepage.fields.teamMember5,
+        teamMember6: homepage.fields.teamMember6,
+        teamMember7: homepage.fields.teamMember7,
+        teamMember8: homepage.fields.teamMember8,
+        teamMember9: homepage.fields.teamMember9,
+        teamMember10: homepage.fields.teamMember10,
+        teamMember11: homepage.fields.teamMember11,
+        teamMember12: homepage.fields.teamMember12
       }
 
     }, 
