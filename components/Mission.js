@@ -18,8 +18,8 @@ export default function Mission({props}) {
                 <div className="mission-small">
                     <div className="mission-small-picture"><img alt='one' src='./images/pexels_nature.jpg'/></div>
                     <div>
-                        <div><b>{props.achievement1[0]}</b></div>
-                        <div className="mission-small-text">{props.achievement1[1]}</div>
+                        <div><b>{props['achievement1'][0]}</b></div>
+                        <div className="mission-small-text">{props['achievement1'][1]}</div>
                     </div>
                 </div>
 
