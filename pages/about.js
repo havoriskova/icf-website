@@ -8,7 +8,7 @@ import GetInvolvedFancyLink from '../components/GetInvolvedFancyLink.js';
 import * as contentful from "contentful";
 
 
-export default function About(props) {
+export default function About() {
 
     
     return (
@@ -44,25 +44,25 @@ export default function About(props) {
 }
 
 
-export async function getStaticProps() {
+// export async function getStaticProps() {
 
     
-    const client = contentful.createClient({
-        space: process.env.CONTENTFUL_SPACE,
-        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-    })
+//     const client = contentful.createClient({
+//         space: process.env.CONTENTFUL_SPACE,
+//         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+//     })
 
   
-    const aboutPage = await client.getEntry(process.env.CONTENTFUL_ENTRY_ID_ABOUT);
+//     const aboutPage = await client.getEntry(process.env.CONTENTFUL_ENTRY_ID_ABOUT);
   
-    console.log(aboutPage);
+//    // console.log(aboutPage);
 
   
-    return {
-      props: {
-        title: aboutPage.fields.title,
-        subtitle: aboutPage.fields.subtitle,
-        article: aboutPage.fields.whyWeStartedParagraphs 
-      }, 
-    }
-  }
+//     return {
+//       props: {
+//         title: aboutPage.fields.title,
+//         subtitle: aboutPage.fields.subtitle,
+//         article: aboutPage.fields.whyWeStartedParagraphs 
+//       }, 
+//     }
+//   }
