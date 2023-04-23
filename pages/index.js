@@ -17,6 +17,10 @@ import * as contentful from "contentful";
 
 
 export default function Home(props) {
+
+  console.log(props.mission);
+
+
   return (
     <Layout home pageTitle='ICF Upemba Home'>
       <div className="container">
@@ -82,7 +86,7 @@ export async function getStaticProps() {
 
       heroSection: {
         heroTitle: homepage.fields.heroTitle,
-        heroDescription: homepage.fields.heroDescription,
+        heroDescription: homepage.fields.heroDescription
       },
 
       ourStories: {
@@ -93,7 +97,7 @@ export async function getStaticProps() {
         achievement1: homepage.fields.achievement1, //array ze dvou
         achievement2: homepage.fields.achievement2,
         achievement3: homepage.fields.achievement3,
-        achievement4: homepage.fields.achievement4,
+        achievement4: homepage.fields.achievement4
       },
       
       meetTheTeam: {

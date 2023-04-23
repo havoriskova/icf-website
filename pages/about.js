@@ -8,7 +8,7 @@ import GetInvolvedFancyLink from '../components/GetInvolvedFancyLink.js';
 import * as contentful from "contentful";
 
 
-export default function About({props}) {
+export default function About(props) {
 
     
     return (

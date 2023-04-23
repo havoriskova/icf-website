@@ -3,7 +3,7 @@ import GetInvolvedFancyLink from '../../components/GetInvolvedFancyLink.js';
 import RelatedStories from '../../components/RelatedStories.js';
 import BlogPost from '../../components/BlogPost.js';
 
-export default function BlogPostOne() {
+export default function BlogPostSlug() {
 
     return (
         <Layout pageTitle='Blog post'>

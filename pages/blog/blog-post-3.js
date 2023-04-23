@@ -1,6 +1,6 @@
 import Layout from '../../components/layout.js';
 
-export default function BlogPostTwo() {
+export default function BlogPostThree() {
 
     return (
         <Layout pageTitle='Blog post'>
