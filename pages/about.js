@@ -5,10 +5,10 @@ import MeetTheTeam from '../components/MeetTheTeam.js';
 import Projects from '../components/Projects';
 //import utilStyles from '../styles/utils.module.css';
 import GetInvolvedFancyLink from '../components/GetInvolvedFancyLink.js';
-import * as contentful from "contentful";
+//import * as contentful from "contentful";
 
 
-export default function About(props) {
+export default function About() {
 
     
     return (
@@ -28,8 +28,8 @@ export default function About(props) {
                 <div className="aboutHeroSection">
                         <img alt="elephants" src="/images/aboutEleph.png"></img>
                         <div className='aboutHeroSection_heading'>
-                            <h4 className='gradientText'>{props.title}</h4>
-                            <h5>{props.subtitle}</h5>
+                            {/* <h4 className='gradientText'>{props.title}</h4> */}
+                            {/* <h5>{props.subtitle}</h5> */}
                         </div>
                 </div>
                     
@@ -44,25 +44,25 @@ export default function About(props) {
 }
 
 
-export async function getStaticProps() {
+// export async function getStaticProps() {
 
     
-    const client = contentful.createClient({
-        space: process.env.CONTENTFUL_SPACE,
-        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-    })
+//     const client = contentful.createClient({
+//         space: process.env.CONTENTFUL_SPACE,
+//         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+//     })
 
   
-    const aboutPage = await client.getEntry(process.env.CONTENTFUL_ENTRY_ID_ABOUT);
+//     const aboutPage = await client.getEntry(process.env.CONTENTFUL_ENTRY_ID_ABOUT);
   
-   // console.log(aboutPage);
+//    // console.log(aboutPage);
 
   
-    return {
-      props: {
-        title: aboutPage.fields.title,
-        subtitle: aboutPage.fields.subtitle,
-        //article: aboutPage.fields.whyWeStartedParagraphs 
-      }, 
-    }
-  }
+//     return {
+//       props: {
+//         title: aboutPage.fields.title,
+//         subtitle: aboutPage.fields.subtitle,
+//         //article: aboutPage.fields.whyWeStartedParagraphs 
+//       }, 
+//     }
+//   }

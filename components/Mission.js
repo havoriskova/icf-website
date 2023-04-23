@@ -1,9 +1,9 @@
 import Link from 'next/link';
 
-export default function Mission({props}) {
+export default function Mission() {
 
-    console.log(props);
-    console.log(props.achievement1);
+    // console.log(props);
+    // console.log(props.achievement1);
 
     return(
         <div className="contentWidth">
@@ -13,7 +13,7 @@ export default function Mission({props}) {
                 <h3>what we've achieved<span className='headingRedDot'>.</span></h3>
             </div>
 
-            <div className="two-four-grid mission">
+            {/* <div className="two-four-grid mission">
                 <div className="mission-small">
                     <div className="mission-small-picture"><img alt='one' src='./images/pexels_nature.jpg'/></div>
                     <div>
@@ -45,7 +45,7 @@ export default function Mission({props}) {
                         <div className="mission-small-text">{props.achievement4[1]}</div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         
             
             <button className="readMore"><Link href='/about/our-work'>Explore our impact</Link></button>

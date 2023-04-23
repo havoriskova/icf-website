@@ -1,7 +1,7 @@
 
 
 
-export default function MeetTheTeam({props}) {
+export default function MeetTheTeam() {
 
     const toggleActiveClass = () => {
             const gridOne = document.querySelector("#gridOne");
@@ -20,12 +20,12 @@ export default function MeetTheTeam({props}) {
 
     return(
         <div className="contentWidth">
-            <div  className="headingForSections centeredText">
+            {/* <div  className="headingForSections centeredText">
                 <h3>Meet the Team<span className="headingRedDot">.</span></h3>
                 <span className="subHeadingDown">{props.meetTheTeamSubheading}</span>
-            </div>
+            </div> */}
             
-            <div className="meetTheTeamGridContainer">
+            {/* <div className="meetTheTeamGridContainer">
         
            
                 <div className="gridContainerRow">
@@ -158,7 +158,7 @@ export default function MeetTheTeam({props}) {
                         <path d="m 42.681584,33.69458 -14.14025,14.140163 c -0.68197,0.681967 -1.78761,0.681967 -2.46951,0 l -1.64923,-1.649203 c -0.68079,-0.680852 -0.6821,-1.784279 -0.003,-2.466652 L 35.626034,32.459732 24.419654,21.200739 c -0.6792,-0.682403 -0.67789,-1.78579 0.003,-2.46659 l 1.64921,-1.649224 c 0.68197,-0.681968 1.78761,-0.681968 2.46951,0 l 14.14014,14.140162 c 0.68197,0.681867 0.68197,1.787526 1.1e-4,2.469493 z" fill="#ffffff"/>
                     </svg>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }
