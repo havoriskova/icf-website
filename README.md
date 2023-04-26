@@ -1,6 +1,6 @@
 <br/>
 
-This website is <b> an end project of a school semester on [TechLabs](https://techlabs.org/)</b>. We were working in an interdisciplinary group in order to create website for [International Conservation Fund](https://www.linkedin.com/company/international-conservation-fund/). Some of the wireframes:
+This website is <b> an end project of a school semester on [TechLabs](https://techlabs.org/)</b>. We were working in an interdisciplinary group in order to create website for [International Conservation Fund](https://www.linkedin.com/company/international-conservation-fund/). Webstack: Next.js, Contentful and Mailchimp. Some of the wireframes:
 
 <br/>
 <br/>
