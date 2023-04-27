@@ -2,18 +2,41 @@
 
 import * as client from '@mailchimp/mailchimp_marketing';
 
+export default function handler(req, res) {
+    
+    client.setConfig({
+        apiKey: process.env.MAILCHIMP_API_KEY,
+        server: process.env.MAILCHIMP_API_SERVER,
+    });
+    
 
-client.setConfig({
-    apiKey: process.env.MAILCHIMP_API_KEY,
-    server: process.env.MAILCHIMP_API_SERVER,
-});
+    if (req.method === 'POST') {
+        console.log('post');
+        res.status(200).json({message: 'blabla'});
 
-const run = async () => {
-const response = client.ping.get();
-console.log(response);
-};
+    } else if (req.method === 'GET') {
 
-run();
+        console.log('get');
+
+        const run = async () => {
+            const response = await client.ping.get();
+            console.log(response);
+        };
+
+        run();
+
+        res.status(200).json({message: 'blablabla'});
+
+
+
+    }
+
+    
+
+
+
+  }
+
 
 // // //----------------
 

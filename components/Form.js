@@ -29,8 +29,9 @@ export default function Form({form}) {
             try {  
 
                 console.log('trying');
-                const request = axios.get('/api');
-              
+                const request = async () => await axios.get('/api/subscribeUser');
+                request();
+               
 
             
 
