@@ -2,8 +2,9 @@ import Link from 'next/link';
 
 export default function Mission({props}) {
 
-    console.log(props['achievement1']); //obj["a"] is equivalent to obj.a
-    console.log(props.achievement1);
+
+    //console.log(props['achievement1']); //obj["a"] is equivalent to obj.a
+    //console.log(props.achievement1);
     // console.log(props.achievement1);
 
     return(
@@ -16,7 +17,7 @@ export default function Mission({props}) {
 
             <div className="two-four-grid mission">
                 <div className="mission-small">
-                    <div className="mission-small-picture"><img alt='one' src='./images/pexels_nature.jpg'/></div>
+                    <div className="mission-small-picture"><img alt='one' src={'https:' + props.achievement1photo.fields.file.url}/></div>
                     <div>
                         <div><b>{props['achievement1'][0]}</b></div>
                         <div className="mission-small-text">{props['achievement1'][1]}</div>
@@ -24,7 +25,7 @@ export default function Mission({props}) {
                 </div>
 
                 <div className="mission-small">
-                    <div className="mission-small-picture"><img alt='two' src='./images/pexels_nature.jpg'/></div>
+                    <div className="mission-small-picture"><img alt='two' src={'https:' + props.achievement2photo.fields.file.url}/></div>
                     <div>
                         <div><b>{props.achievement2[0]}</b></div>
                         <div className="mission-small-text">{props.achievement2[1]}</div>
@@ -32,7 +33,7 @@ export default function Mission({props}) {
                 </div>
 
                 <div className="mission-small">
-                    <div className="mission-small-picture"><img alt='three' src='./images/pexels_nature.jpg'/></div>
+                    <div className="mission-small-picture"><img alt='three' src={'https:' + props.achievement3photo.fields.file.url}/></div>
                     <div>
                         <div><b>{props.achievement3[0]}</b></div>
                         <div className="mission-small-text">{props.achievement3[1]}</div>
@@ -40,7 +41,7 @@ export default function Mission({props}) {
                 </div>
 
                 <div className="mission-small">
-                    <div className="mission-small-picture"><img alt='four' src='./images/pexels_nature.jpg'/></div>
+                    <div className="mission-small-picture"><img alt='four' src={'https:' + props.achievement4photo.fields.file.url}/></div>
                     <div>
                         <div><b>{props.achievement4[0]}</b></div>
                         <div className="mission-small-text">{props.achievement4[1]}</div>

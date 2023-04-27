@@ -12,7 +12,7 @@ export default function BlogPostFive() {
                     </div>
                 </div>
 
-                <div>blog post 2</div>
+                <div>blog post 5</div>
 
             </div>
         </Layout>

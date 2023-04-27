@@ -12,7 +12,7 @@ export default function BlogPostThree() {
                     </div>
                 </div>
 
-                <div>blog post 2</div>
+                <div>blog post 3</div>
 
             </div>
         </Layout>

@@ -2,9 +2,10 @@ import styles from "./ourStories.module.css";
 import Link from 'next/link';
 
 
-export default function OurStories() {
+export default function OurStories({props}) {
 
-   // console.log(props.ourStoryParagraphs);
+    // console.log(props.ourStoryParagraphs);
+    // console.log(props.ourStoryPicture1);
 
     return(
         <div className="contentWidth">
@@ -20,8 +21,8 @@ export default function OurStories() {
                 </p>
                 <div className={styles.parentLeaveShapedImages}>
                             <div className={styles.subparentLeaveShapedImages}>
-                                <img className={styles.imageOne} alt='zebra' src='/images/pexels-zebra-placeholder.jpg' />
-                                <img className={styles.imageTwo} alt='zebra' src='/images/pexels_lion_placeholder.jpg' />
+                                <img className={styles.imageOne} alt='zebra' src={'https:' + props.ourStoryPicture1.fields.file.url} />
+                                <img className={styles.imageTwo} alt='zebra' src={'https:' + props.ourStoryPicture2.fields.file.url} />
                             </div>
                             
                 </div>

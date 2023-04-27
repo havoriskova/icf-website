@@ -18,7 +18,7 @@ import * as contentful from "contentful";
 
 export default function Home(props) {
 
-  console.log(props.mission);
+ // console.log(props.mission);
 
 
   return (
@@ -63,8 +63,8 @@ export async function getStaticProps() {
     accessToken: process.env.CONTENTFUL_ACCESS_TOKEN, //credentials to access the data
   })
 
- const res = await client.getEntries({ content_type: 'blogPost1'}); // ID content typu musi byt STEJNE pro vsechny !! tj. id blogPost pro vsechny blog posty!!! 
- console.log(res); // --> ze bych ty vsechny entries hodila do samostatnyho js souboru, a z _app.js to pak rozhodila, nebo ty props z contentful hodila celkove vsude???
+ //const res = await client.getEntries({ content_type: 'blogPost'});
+ //console.log('hi', res.items); // --> ze bych ty vsechny entries hodila do samostatnyho js souboru, a z _app.js to pak rozhodila, nebo ty props z contentful hodila celkove vsude???
 
   const homepage = await client.getEntry(process.env.CONTENTFUL_ENTRY_ID_HOMEPAGE);
 
@@ -79,6 +79,8 @@ export async function getStaticProps() {
 
   //console.log(homepage.fields.achievement1[0]);
 
+  // console.log(homepage.fields.teamMember1Photo.fields.file.url);
+
   return {
     props: {
 
@@ -90,20 +92,26 @@ export async function getStaticProps() {
       },
 
       ourStories: {
-        ourStoryParagraphs: homepage.fields.ourStoryParagraphs // rich text
+        ourStoryParagraphs: homepage.fields.ourStoryParagraphs, // rich text
+        ourStoryPicture1: homepage.fields.ourStoryPhoto1,
+        ourStoryPicture2: homepage.fields.ourStoryPicture2
       },
               
       mission: {
         achievement1: homepage.fields.achievement1, //array ze dvou
         achievement2: homepage.fields.achievement2,
         achievement3: homepage.fields.achievement3,
-        achievement4: homepage.fields.achievement4
+        achievement4: homepage.fields.achievement4,
+        achievement1photo: homepage.fields.achievement1photo,
+        achievement2photo: homepage.fields.achievement2photo,
+        achievement3photo: homepage.fields.achievement3photo,
+        achievement4photo: homepage.fields.achievement4photo
+
       },
       
       meetTheTeam: {
         meetTheTeamSubheading: homepage.fields.meetTheTeamSubheading,
         teamMember1: homepage.fields.teamMember1, //array ze tri
-              //teamMember1Photo: homepage.teamMember1Photo
         teamMember2: homepage.fields.teamMember2,
         teamMember3: homepage.fields.teamMember3,
         teamMember4: homepage.fields.teamMember4,
@@ -114,7 +122,19 @@ export async function getStaticProps() {
         teamMember9: homepage.fields.teamMember9,
         teamMember10: homepage.fields.teamMember10,
         teamMember11: homepage.fields.teamMember11,
-        teamMember12: homepage.fields.teamMember12
+        teamMember12: homepage.fields.teamMember12,
+        teamMember1Photo: homepage.fields.teamMember1Photo,
+        teamMember2Photo: homepage.fields.teamMember2Photo,
+        teamMember3Photo: homepage.fields.teamMember3Photo,
+        teamMember4Photo: homepage.fields.teamMember4Photo,
+        teamMember5Photo: homepage.fields.teamMember5Photo,
+        teamMember6Photo: homepage.fields.teamMember6Photo,
+        teamMember7Photo: homepage.fields.teamMember7Photo,
+        teamMember8Photo: homepage.fields.teamMember8Photo,
+        teamMember9Photo: homepage.fields.teamMember9Photo,
+        teamMember10Photo: homepage.fields.teamMember10Photo,
+        teamMember11Photo: homepage.fields.teamMember11Photo,
+        teamMember12Photo: homepage.fields.teamMember12Photo,
       }
 
     }, 
