@@ -1,10 +1,11 @@
 import styles from "./ourStories.module.css";
 import Link from 'next/link';
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
 
 export default function OurStories({props}) {
 
-    // console.log(props.ourStoryParagraphs);
+   // console.log(props.ourStoryParagraphs);
     // console.log(props.ourStoryPicture1);
 
     return(
@@ -16,9 +17,9 @@ export default function OurStories({props}) {
             </div>
 
             <div className={styles.flexParentTwoSameCol}>
-                <p className="paragraph">
-                    {/* {props.ourStoryParagraphs} */}
-                </p>
+                <div className="paragraph">
+                    {documentToReactComponents(props.ourStoryParagraphs)}
+                </div>
                 <div className={styles.parentLeaveShapedImages}>
                             <div className={styles.subparentLeaveShapedImages}>
                                 <img className={styles.imageOne} alt='zebra' src={'https:' + props.ourStoryPicture1.fields.file.url} />

@@ -251,9 +251,10 @@ ul {
 p {
   text-align: left;
   font-size: 16px;
+  padding: .5rem 0;
 }
 
-p.paragraph {
+.paragraph {
   font-size: 16px;
   padding: .5rem 0;
 }
@@ -761,10 +762,11 @@ form .readMore {
 
 
   p {
-    font-size: 24px;
+    font-size: 18px;
+    padding: .5rem 0;
   }
 
-  p.paragraph {
+  .paragraph {
     font-size: 16px;
   }
 

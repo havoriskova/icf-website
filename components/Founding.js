@@ -1,8 +1,12 @@
 import styles from "./founding.module.css";
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
 
 
-export default function Founding() {
+export default function Founding({props}) {
+
+    console.log(props);
+
 
     return(
         <div className="contentWidth">
@@ -11,9 +15,9 @@ export default function Founding() {
             </div>
 
             <div className={styles.flexParentTwoSameCol}>
-                <p className="paragraph">
-                    {/* {article} */}
-                </p>
+                <div className="paragraph">
+                    {documentToReactComponents(props)}
+                </div>
                 <div className={styles.parentLeaveShapedImages}>
                         <div className={styles.subparentLeaveShapedImages}>
                             <img className={styles.imageOne} alt='zebra' src='/images/pexels-zebra-placeholder.jpg' />
