@@ -1,4 +1,5 @@
 import Layout from '../../components/layout.js';
+import * as contentful from "contentful";
 
 export default function BlogPostThree() {
 
@@ -12,9 +13,37 @@ export default function BlogPostThree() {
                     </div>
                 </div>
 
-                <div>blog post 3</div>
+                <div className='articleComponent'><BlogPost props={props} /></div> {/* do blog postu posilat jako props ten text z Contentful */}
+
+                <div className='articleComponent bkgBeigeComponent'><RelatedStories /></div>
+
+                <div className='articleComponent lastComponentOnPage'><GetInvolvedFancyLink imageStyle='OneImageLeaveShaped' /></div>
 
             </div>
         </Layout>
     )
 }
+
+export async function getStaticProps() {
+    
+    const client = contentful.createClient({
+      space: process.env.CONTENTFUL_SPACE, //space ID
+      accessToken: process.env.CONTENTFUL_ACCESS_TOKEN, //credentials to access the data
+    })
+  
+   
+
+    const blogThree = await client.getEntry(process.env.CONTENTFUL_ENTRY_ID_BLOG3);
+
+    return {
+      props: {
+  
+                title: blogThree.fields.title,
+                authorDate: blogThree.fields.authorAndDate,
+                summary: blogThree.fields.summary,
+                blogArticle: blogThree.fields.blogArticle
+  
+      }
+    }
+  }
+  

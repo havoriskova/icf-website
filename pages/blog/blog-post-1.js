@@ -2,8 +2,9 @@ import Layout from '../../components/layout.js';
 import GetInvolvedFancyLink from '../../components/GetInvolvedFancyLink.js';
 import RelatedStories from '../../components/RelatedStories.js';
 import BlogPost from '../../components/BlogPost.js';
+import * as contentful from "contentful";
 
-export default function BlogPostOne() {
+export default function BlogPostOne(props) {
 
     return (
         <Layout pageTitle='Blog post'>
@@ -16,7 +17,7 @@ export default function BlogPostOne() {
                     </div>
                 </div>
 
-                <div className='articleComponent'><BlogPost /></div> {/* do blog postu posilat jako props ten text z Contentful */}
+                <div className='articleComponent'><BlogPost props={props} /></div> {/* do blog postu posilat jako props ten text z Contentful */}
 
                 <div className='articleComponent bkgBeigeComponent'><RelatedStories /></div>
 
@@ -26,3 +27,27 @@ export default function BlogPostOne() {
         </Layout>
     )
 }
+
+export async function getStaticProps() {
+    
+    const client = contentful.createClient({
+      space: process.env.CONTENTFUL_SPACE, //space ID
+      accessToken: process.env.CONTENTFUL_ACCESS_TOKEN, //credentials to access the data
+    })
+  
+   
+
+    const blogOne = await client.getEntry(process.env.CONTENTFUL_ENTRY_ID_BLOG1);
+
+    return {
+      props: {
+  
+                title: blogOne.fields.title,
+                authorDate: blogOne.fields.authorAndDate,
+                summary: blogOne.fields.summary,
+                blogArticle: blogOne.fields.blogArticle
+  
+      }
+    }
+  }
+  
