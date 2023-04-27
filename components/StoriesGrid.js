@@ -47,7 +47,7 @@ export default function BlogPostOne({props}) {
                     </div>
 
                     <div className={styles.card}>
-                        <Link href='/blog/blog-post-1'>
+                        <Link href='/blog/blog-post-2'>
                             <div className={styles.imageContainer}>
                                 <img alt='placeholder' src='/images/blog_2.jpg' />
                             </div>
@@ -57,7 +57,7 @@ export default function BlogPostOne({props}) {
                     </div>
 
                     <div className={styles.card}>
-                        <Link href='/blog/blog-post-1'>
+                        <Link href='/blog/blog-post-3'>
                             <div className={styles.imageContainer}>
                                 <img alt='placeholder' src='/images/blog_3.jpg' />
                             </div>
@@ -67,7 +67,7 @@ export default function BlogPostOne({props}) {
                     </div>
 
                     <div className={styles.card}>
-                        <Link href='/blog/blog-post-1'>
+                        <Link href='/blog/blog-post-4'>
                             <div className={styles.imageContainer}>
                                 <img alt='placeholder' src='/images/blog_4.jpg' />
                             </div>
@@ -77,7 +77,7 @@ export default function BlogPostOne({props}) {
                     </div>
 
                     <div className={styles.card}>
-                        <Link href='/blog/blog-post-1'>
+                        <Link href='/blog/blog-post-5'>
                             <div className={styles.imageContainer}>
                                 <img alt='placeholder' src='/images/blog_5.jpg' />
                             </div>
@@ -87,7 +87,7 @@ export default function BlogPostOne({props}) {
                     </div>
 
                     <div className={styles.card}>
-                        <Link href='/blog/blog-post-1'>
+                        <Link href='/blog/blog-post-6'>
                             <div className={styles.imageContainer}>
                                 <img alt='placeholder' src='/images/blog_6.jpg' />
                             </div>

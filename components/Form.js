@@ -28,58 +28,11 @@ export default function Form({form}) {
 
             try {  
 
-// const API_KEY = process.env.MAILCHIMP_API_KEY;
-//const LIST_ID = process.env.MAILCHIMP_AUDIENCE_ID;
-// const SERVER_PREFIX = process.env.MAILCHIMP_API_SERVER;
                 console.log('trying');
+                const request = axios.get('/api');
               
 
-                // const client = mailchimp.setConfig({
-                //     apiKey: process.env.MAILCHIMP_API_KEY,
-                //     server: process.env.MAILCHIMP_API_SERVER,
-                // });
-
-                // const run = async () => {
-                //     const response = await client.lists.getAllLists();
-                //     console.log(response);
-                // };
-
-                // run();
-
-
-                    const client = require("@mailchimp/mailchimp_marketing");
-
-                    client.setConfig({
-                        apiKey: process.env.MAILCHIMP_API_KEY,
-                        server: process.env.MAILCHIMP_API_SERVER,
-                    });
-
-                    const run = async () => {
-                    const response = client.ping.get();
-                    console.log(response);
-                    };
-
-                    run();
-
-
-                // async function callPing() {
-                //     const response = await client.ping.get();
-                //     console.log(response);
-                // }
-                  
-                // callPing();
-
-                // https://us13.api.mailchimp.com/3.0/ping
-
-                
-
-                //console.log(res.status);
-
-                // if (res.status === 200) {
-                //     alert('you are subscribed');
-                // } else {
-                //    alert('Sorry, something went wrong.')
-                // }
+            
 
             } catch (e) {
                 console.log('catching');
@@ -88,59 +41,6 @@ export default function Form({form}) {
                 alert("Error subscribing. Please try again later.");
             }
         };
-
-
-
-
-            //-------zkouska ------
-
-            // const client = require("@mailchimp/mailchimp_marketing");
-
-            // client.setConfig({
-            //   apiKey: "9787ece5d9d7bbd01e86df6fdbe2c9af-us10",
-            //   server: "us10",
-            // });
-            
-            // const run = async () => {
-            //   const response = await client.lists.getAllLists();
-            //   console.log(response);
-            // };
-            
-            // run();
-
-
-            
-            //-------------
-
-
-            // fetch(`https://us10.api.mailchimp.com/3.0/lists/${LIST_ID}/members`, {
-            //     method: "POST",
-            //     headers: {
-            //     Authorization: `apikey ${API_KEY}`,
-            //     "Content-Type": "application/json",
-            //	   "Access-Control-Allow-Origin": "*"
-            //     },
-            //     body: JSON.stringify({
-            //     email_address: email,
-            //     status: "subscribed",
-            //     merge_fields: {
-            //         FNAME: firstName,
-            //         LNAME: lastName,
-            //     },
-            //     }),
-            // })
-            //     .then((response) => {
-            //     if (response.ok) {
-            //         alert("Thanks for subscribing!");
-            //     } else {
-            //         alert("Error subscribing. Please try again later.");
-            //     }
-            //     })
-            //     .catch((error) => {
-            //     console.error(error);
-            //     alert("Error subscribing. Please try again later.");
-            //     });
-
 
 
     return(

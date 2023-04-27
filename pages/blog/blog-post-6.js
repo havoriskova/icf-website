@@ -1,7 +1,10 @@
 import Layout from '../../components/layout.js';
 import * as contentful from "contentful";
+import GetInvolvedFancyLink from '../../components/GetInvolvedFancyLink.js';
+import RelatedStories from '../../components/RelatedStories.js';
+import BlogPost from '../../components/BlogPost.js';
 
-export default function BlogPostSix() {
+export default function BlogPostSix(props) {
 
     return (
         <Layout pageTitle='Blog post'>

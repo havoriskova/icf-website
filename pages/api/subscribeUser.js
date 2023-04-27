@@ -1,21 +1,19 @@
 // // //---------oficial from https://mailchimp.com/developer/marketing/api/list-members/add-member-to-list/:
 
-// // // const client = require("@mailchimp/mailchimp_marketing");
+import * as client from '@mailchimp/mailchimp_marketing';
 
-// // // client.setConfig({
-// // //   apiKey: "YOUR_API_KEY",
-// // //   server: "YOUR_SERVER_PREFIX",
-// // // });
 
-// // // const run = async () => {
-// // //   const response = await client.lists.addListMember("list_id", {
-// // //     email_address: "Ebony_Brekke@gmail.com",
-// // //     status: "pending",
-// // //   });
-// // //   console.log(response);
-// // // };
+client.setConfig({
+    apiKey: process.env.MAILCHIMP_API_KEY,
+    server: process.env.MAILCHIMP_API_SERVER,
+});
 
-// // // run();
+const run = async () => {
+const response = client.ping.get();
+console.log(response);
+};
+
+run();
 
 // // //----------------
 
