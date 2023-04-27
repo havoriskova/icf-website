@@ -33,7 +33,8 @@ export default function Form({form}) {
                     {email: email},
                   );
                 request();
-               
+                alert("You are subscribed!");
+              
 
             
 

@@ -22,9 +22,13 @@ export default function handler(req, res) {
               status: "pending",
             });
             console.log(response);
+          // protoze jsem na server side, nemuzu pouzit alert
+            
           };
           
           run();
+
+         
         
     } else if (req.method === 'GET') {
 
