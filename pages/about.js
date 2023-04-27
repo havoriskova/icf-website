@@ -10,6 +10,8 @@ import * as contentful from "contentful";
 
 export default function About(props) {
 
+    console.log('zkouska', props.mission.achievement1);
+
     
     return (
         <Layout pageTitle='ICF About'>
@@ -34,8 +36,8 @@ export default function About(props) {
                 </div>
                     
                 <div className='articleComponent gradientBkgComponent'><Founding props={props.article}/></div> {/*  */}
-                {/* <div className='articleComponent' ><Mission /></div> nejdriv hod props, a az pak zpristupni */}
-                {/* <div className='articleComponent'><MeetTheTeam /></div> nejdriv hod props, a az pak zpristupni */}
+                <div className='articleComponent' ><Mission props={props.mission}/></div> 
+                <div className='articleComponent'><MeetTheTeam props={props.meetTheTeam}/></div> 
                 <div className='articleComponent bkgBeigeComponent whiteStripe'><Projects /></div>
                 <div className='articleComponent lastComponentOnPage'><GetInvolvedFancyLink imageStyle='circleWithLeaves' /></div>
             </div>
@@ -54,6 +56,9 @@ export async function getStaticProps() {
 
   
     const aboutPage = await client.getEntry(process.env.CONTENTFUL_ENTRY_ID_ABOUT);
+
+    const homepage = await client.getEntry(process.env.CONTENTFUL_ENTRY_ID_HOMEPAGE);
+
   
    // console.log(aboutPage);
 
@@ -62,7 +67,47 @@ export async function getStaticProps() {
       props: {
         title: aboutPage.fields.title,
         subtitle: aboutPage.fields.subtitle,
-        article: aboutPage.fields.whyWeStartedParagraphs 
+        article: aboutPage.fields.whyWeStartedParagraphs,
+
+        mission: {
+            achievement1: homepage.fields.achievement1, //array ze dvou
+            achievement2: homepage.fields.achievement2,
+            achievement3: homepage.fields.achievement3,
+            achievement4: homepage.fields.achievement4,
+            achievement1photo: homepage.fields.achievement1photo,
+            achievement2photo: homepage.fields.achievement2photo,
+            achievement3photo: homepage.fields.achievement3photo,
+            achievement4photo: homepage.fields.achievement4photo
+    
+          },
+          
+          meetTheTeam: {
+            meetTheTeamSubheading: homepage.fields.meetTheTeamSubheading,
+            teamMember1: homepage.fields.teamMember1, //array ze tri
+            teamMember2: homepage.fields.teamMember2,
+            teamMember3: homepage.fields.teamMember3,
+            teamMember4: homepage.fields.teamMember4,
+            teamMember5: homepage.fields.teamMember5,
+            teamMember6: homepage.fields.teamMember6,
+            teamMember7: homepage.fields.teamMember7,
+            teamMember8: homepage.fields.teamMember8,
+            teamMember9: homepage.fields.teamMember9,
+            teamMember10: homepage.fields.teamMember10,
+            teamMember11: homepage.fields.teamMember11,
+            teamMember12: homepage.fields.teamMember12,
+            teamMember1Photo: homepage.fields.teamMember1Photo,
+            teamMember2Photo: homepage.fields.teamMember2Photo,
+            teamMember3Photo: homepage.fields.teamMember3Photo,
+            teamMember4Photo: homepage.fields.teamMember4Photo,
+            teamMember5Photo: homepage.fields.teamMember5Photo,
+            teamMember6Photo: homepage.fields.teamMember6Photo,
+            teamMember7Photo: homepage.fields.teamMember7Photo,
+            teamMember8Photo: homepage.fields.teamMember8Photo,
+            teamMember9Photo: homepage.fields.teamMember9Photo,
+            teamMember10Photo: homepage.fields.teamMember10Photo,
+            teamMember11Photo: homepage.fields.teamMember11Photo,
+            teamMember12Photo: homepage.fields.teamMember12Photo,
+          }
       }, 
     }
   }
