@@ -13,15 +13,27 @@ export default function handler(req, res) {
 
     if (req.method === 'POST') {
         console.log('post');
-        res.status(200).json({message: 'blabla'});
+        const email = req.body["email"];
+        console.log(typeof(email));
 
+        const run = async () => {
+            const response = await client.lists.addListMember(process.env.MAILCHIMP_AUDIENCE_ID, {
+              email_address: email,
+              status: "pending",
+            });
+            console.log(response);
+          };
+          
+          run();
+        
     } else if (req.method === 'GET') {
 
         console.log('get');
 
         const run = async () => {
             //const response = await client.ping.get();
-            const response = await client.lists.getAllLists();
+            //const response = await client.lists.getAllLists();
+            const response = await client.lists.getListMembersInfo(process.env.MAILCHIMP_AUDIENCE_ID);
             console.log(response);
         };
 
