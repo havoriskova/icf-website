@@ -9,6 +9,7 @@ export default function handler(req, res) {
         server: process.env.MAILCHIMP_API_SERVER,
     });
     
+    //process.env.MAILCHIMP_AUDIENCE_ID
 
     if (req.method === 'POST') {
         console.log('post');
@@ -19,7 +20,8 @@ export default function handler(req, res) {
         console.log('get');
 
         const run = async () => {
-            const response = await client.ping.get();
+            //const response = await client.ping.get();
+            const response = await client.lists.getAllLists();
             console.log(response);
         };
 
