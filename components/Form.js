@@ -3,7 +3,7 @@ import axios from 'axios';
 //import mailchimp from '@mailchimp/mailchimp_marketing';
 
 
-export default function Form() {
+export default function Form({form}) {
 
    //Mailchimp API documentation -> generate an API key.
    //list ID in the Mailchimp dashboard by going to Audience > Manage Audience > Settings > List name and defaults
@@ -156,8 +156,7 @@ export default function Form() {
 
                 <div className="row kumbhSansSemiBold">
                     <div className='marginBottom'>
-                        <p className='paragraph'>Text about what people are subscribing for and how many times they will get e-mails. 
-                        They can always unscubscribe again whenever they want!</p>
+                        <p className='paragraph'>{form}</p>
                     </div>
 
                     <div>

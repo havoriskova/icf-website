@@ -2,8 +2,12 @@ import Layout from '../../components/layout.js';
 import GetInvolvedFancyLink from '../../components/GetInvolvedFancyLink.js';
 import TransparencyLink from '../../components/TransparencyLink.js';
 import Map from '../../components/Map.js';
+import * as contentful from "contentful";
 
-export default function OurWork() {
+
+export default function OurWork({text}) {
+
+    //console.log(props);
 
     return (
         <Layout pageTitle='ICF Our Work'>
@@ -21,7 +25,7 @@ export default function OurWork() {
 
 
                 <div className='articleComponent'><Map/></div>
-                <div className='articleComponent'><TransparencyLink/></div>
+                <div className='articleComponent'><TransparencyLink text={text}/></div>
 
                 <div className='articleComponent lastComponentOnPage'><GetInvolvedFancyLink imageStyle='TwoImagesLeaveShaped' /></div>
 
@@ -30,3 +34,26 @@ export default function OurWork() {
         </Layout>
     )
 }
+
+export async function getStaticProps() {
+    
+    const client = contentful.createClient({
+      space: process.env.CONTENTFUL_SPACE, //space ID
+      accessToken: process.env.CONTENTFUL_ACCESS_TOKEN, //credentials to access the data
+    })
+  
+   
+  
+    const ourWork = await client.getEntry(process.env.CONTENTFUL_ENTRY_ID_OURWORK);
+
+
+  
+    return {
+      props: {
+  
+            text: ourWork.fields.readAboutTransparency
+  
+      }, 
+    }
+  }
+  

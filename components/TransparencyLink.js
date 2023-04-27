@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 
-export default function TransparencyLink() {
+export default function TransparencyLink({text}) {
 
 
     return(
@@ -14,7 +14,7 @@ export default function TransparencyLink() {
 
             <div className={styles.flexParentTwoSameCol}>
                 <div  className={styles.card}>
-                    <p>Read about our transparency or download some fact sheets</p>
+                    <p>{text}</p>
                     <button className='readMore'><Link href='/transparency'>Read more</Link></button>
                 </div>
                 <div className={styles.imageStyleContainer}>

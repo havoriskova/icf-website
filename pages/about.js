@@ -10,7 +10,7 @@ import * as contentful from "contentful";
 
 export default function About(props) {
 
-    console.log('zkouska', props.mission.achievement1);
+    //console.log('zkouska', props.mission.achievement1);
 
     
     return (

@@ -2,9 +2,10 @@ import Layout from '../components/layout.js';
 import DonorBox from '../components/DonorBox.js';
 import Form from '../components/Form.js';
 import ImpactShop from '../components/ImpactShop.js';
+import * as contentful from "contentful";
 
 
-export default function GetInvolved() {
+export default function GetInvolved({text, form}) {
 
     return (
         <Layout pageTitle='ICF Get Involved'>
@@ -19,8 +20,8 @@ export default function GetInvolved() {
                     </div>
                 </div>
 
-                <div className='articleComponent pictureBkg'><DonorBox getInvolved/></div>
-                <div className='articleComponent'><Form /></div>
+                <div className='articleComponent pictureBkg'><DonorBox getInvolved text={text}/></div>
+                <div className='articleComponent'><Form form={form}/></div>
                 <div className='articleComponent bkgBeigeComponent whiteStripeMd'><ImpactShop /></div>
 
 
@@ -28,3 +29,28 @@ export default function GetInvolved() {
         </Layout>
     )
 }
+
+
+export async function getStaticProps() {
+    
+    const client = contentful.createClient({
+      space: process.env.CONTENTFUL_SPACE, //space ID
+      accessToken: process.env.CONTENTFUL_ACCESS_TOKEN, //credentials to access the data
+    })
+  
+   
+  
+    const getInvolved = await client.getEntry(process.env.CONTENTFUL_ENTRY_ID_GETINVOLVED);
+
+
+  
+    return {
+      props: {
+  
+            text: getInvolved.fields.donationDescription,
+            form: getInvolved.fields.formDescription
+  
+      }, 
+    }
+  }
+  

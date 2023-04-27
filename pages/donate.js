@@ -1,10 +1,12 @@
 import Layout from '../components/layout.js';
 import DonorBox from '../components/DonorBox.js';
 import GetInvolvedNotFancyLink from '../components/getInvolvedNotFancyLink.js';
+import * as contentful from "contentful";
 
 
-export default function Donate() {
+export default function Donate({text}) {
 
+    //console.log(text);
     return (
         <Layout>
             <div className='container'>
@@ -16,7 +18,7 @@ export default function Donate() {
                 </div>
             </div>
         
-            <div className='pictureBkg'>  <DonorBox /> </div>
+            <div className='pictureBkg'>  <DonorBox text={text}/> </div>
 
             <div className='lastComponentOnPage'><GetInvolvedNotFancyLink /></div>
               
@@ -24,3 +26,26 @@ export default function Donate() {
         </Layout>
     )
 }
+
+export async function getStaticProps() {
+    
+    const client = contentful.createClient({
+      space: process.env.CONTENTFUL_SPACE, //space ID
+      accessToken: process.env.CONTENTFUL_ACCESS_TOKEN, //credentials to access the data
+    })
+  
+   
+  
+    const donate = await client.getEntry(process.env.CONTENTFUL_ENTRY_ID_DONATE);
+
+
+  
+    return {
+      props: {
+  
+            text: donate.fields.donationDescription
+  
+      }, 
+    }
+  }
+  

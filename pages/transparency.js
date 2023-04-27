@@ -1,7 +1,9 @@
 import Layout from '../components/layout.js';
+import * as contentful from "contentful";
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
 
-export default function Transparency() {
+export default function Transparency(props) {
 
     return (
         <Layout pageTitle='Transparency'>
@@ -17,16 +19,16 @@ export default function Transparency() {
                     </div>
 
                     <div className='contentWidth'>
-                        <p className='articleMargin paragraph'>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                        </p>
+                        <div className='articleMargin paragraph'>
+                            {documentToReactComponents(props.text)}
+                        </div>
                     </div>
 
                     <div className='articleMargin centeredText lastComponentOnPage'>
-                        <h4 className='kumbhSansSemiBold'>Sentence about downloading factsheets, etc</h4>
+                        <h4 className='kumbhSansSemiBold'>{props.downloadText}</h4>
                         
-                        <button className='readMore inlineButton'><a>Download 1</a></button>
-                        <button className='readMore inlineButton'><a>Download 2</a></button>
+                        <button className='readMore inlineButton'><a>{props.buttonOne}</a></button>
+                        <button className='readMore inlineButton'><a>{props.buttonTwo}</a></button>
                     </div>
 
 
@@ -34,3 +36,30 @@ export default function Transparency() {
         </Layout>
     )
 }
+
+export async function getStaticProps() {
+    
+    const client = contentful.createClient({
+      space: process.env.CONTENTFUL_SPACE, //space ID
+      accessToken: process.env.CONTENTFUL_ACCESS_TOKEN, //credentials to access the data
+    })
+  
+   
+  
+    const transparency = await client.getEntry(process.env.CONTENTFUL_ENTRY_ID_TRANSPARENCY);
+
+
+  
+    return {
+      props: {
+  
+            text: transparency.fields.transparencyText,
+            downloadText: transparency.fields.downloadSheetDescription,
+            buttonOne: transparency.fields.buttonOne,
+            buttonTwo: transparency.fields.buttonTwo
+
+  
+      }, 
+    }
+  }
+  
