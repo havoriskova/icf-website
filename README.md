@@ -11,7 +11,7 @@ This website is <b> an end project of a school semester on [TechLabs](https://te
 <br/>
 <br/>
 
-Down bellow are printscreens of the actual website. Currently is the website connected to [Contentful] (https://www.contentful.com/), so client can re-write its content.
+Down bellow are printscreens of the actual website. Currently is the website connected to [Contentful](https://www.contentful.com/), so client can re-write its content.
 
 ![summary_of_website](https://user-images.githubusercontent.com/67165857/235232218-eca036f4-09da-4d5b-8b8a-e8eb4bbe87de.png)
 
