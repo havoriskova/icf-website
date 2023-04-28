@@ -10,6 +10,11 @@ This website is <b> an end project of a school semester on [TechLabs](https://te
 
 <br/>
 <br/>
+
+Down bellow are printscreens of the actual website. Currently is the website connected to Contentful, so client can re-write its content.
+
+![summary_of_website](https://user-images.githubusercontent.com/67165857/235231823-6f4a9c71-e418-43a6-93cb-f31fe48986c4.png)
+
 <br/>
 <br/>
 
