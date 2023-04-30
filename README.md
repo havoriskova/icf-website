@@ -1,6 +1,6 @@
 <br/>
 
-This website is <b> an end project of a school semester on [TechLabs](https://techlabs.org/)</b>. I was working in an interdisciplinary group in order to create website for [International Conservation Fund](https://www.linkedin.com/company/international-conservation-fund/). Wireframes were made by students of web design for desktop screen size in Figma. Webstack: Next.js and Contentful. Some of the wireframes:
+This website is <b> an end project of a school semester on [TechLabs](https://techlabs.org/)</b>. Me and Sonja Mannetje were working in an interdisciplinary group in order to create website for [International Conservation Fund](https://www.linkedin.com/company/international-conservation-fund/). Wireframes were made by students of web design for desktop screen size in Figma. Webstack: Next.js and Contentful. Some of the wireframes:
 
 <br/>
 <br/>
